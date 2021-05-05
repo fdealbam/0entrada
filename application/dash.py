@@ -156,7 +156,7 @@ entidades = dbc.Card(
                           "background-color": "orange"}),
  
 
-            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/censo2020/blob/main/1nleona.png?raw=true"),
+            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/application/static/1nleona.png?raw=true"),
                          href="https://censo2020-nuevoleon.herokuapp.com/",
                                style={"background-color": "orange"}),
                       md={"size": 4,},
@@ -166,7 +166,7 @@ entidades = dbc.Card(
                              #"background-color": "orange"
                              }),
             
-            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/censo2020/blob/main/1edomex.png?raw=true"),
+            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/application/static/1edomex.png?raw=true"),
                          href="https://censo2020-nuevoleon.herokuapp.com/",
                                style={"background-color": "orange"}),
                       md={"size": 4,},
@@ -174,14 +174,14 @@ entidades = dbc.Card(
                               "margin-left": "130px"
                              }),
 
-            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/censo2020/blob/main/1jal.png?raw=true"),
+            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/application/static/1jal.png?raw=true"),
                          href="https://censo2020-nuevoleon.herokuapp.com/",
                                style={"background-color": "orange"}),
                       md={"size": 4,},
                       style= {"margin-top": "-180px",
                               "margin-left": "330px"}),
 
-            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/censo2020/blob/main/1cdmx.png?raw=true"),
+            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/application/static/1cdmx.png?raw=true"),
                          href="https://censo2020-nuevoleon.herokuapp.com/",
                                style={"background-color": "orange"}),
                       md={"size": 4,},
