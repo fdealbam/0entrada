@@ -156,7 +156,7 @@ entidades = dbc.Card(
                           "background-color": "orange"}),
  
 
-            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/application/static/1nleona.png?raw=true"),
+            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/censo2020/blob/434cb1a45a4e766a1cc6582859bf6d58771416da/1nleona.png?raw=true"),
                          href="https://censo2020-nuevoleon.herokuapp.com/",
                                style={"background-color": "orange"}),
                       md={"size": 4,},
@@ -166,7 +166,7 @@ entidades = dbc.Card(
                              #"background-color": "orange"
                              }),
             
-            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/application/static/1edomex.png?raw=true"),
+            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/censo2020/blob/434cb1a45a4e766a1cc6582859bf6d58771416da/1edomex.png?raw=true"),
                          href="https://censo2020-nuevoleon.herokuapp.com/",
                                style={"background-color": "orange"}),
                       md={"size": 4,},
@@ -174,14 +174,14 @@ entidades = dbc.Card(
                               "margin-left": "130px"
                              }),
 
-            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/application/static/1jal.png?raw=true"),
+            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/censo2020/blob/434cb1a45a4e766a1cc6582859bf6d58771416da/1jal.png?raw=true"),
                          href="https://censo2020-nuevoleon.herokuapp.com/",
                                style={"background-color": "orange"}),
                       md={"size": 4,},
                       style= {"margin-top": "-180px",
                               "margin-left": "330px"}),
 
-            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/application/static/1cdmx.png?raw=true"),
+            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/censo2020/blob/434cb1a45a4e766a1cc6582859bf6d58771416da/1cdmx.png?raw=true"),
                          href="https://censo2020-nuevoleon.herokuapp.com/",
                                style={"background-color": "orange"}),
                       md={"size": 4,},
@@ -190,22 +190,22 @@ entidades = dbc.Card(
             
              dbc.Row([
                  dbc.Col(html.H6("Nuevo León", 
-                     style={'textAlign': 'left',
+                     style={'textAlign': 'center',
                            "color": "black",
                            'text-transform': "uppercase",
                           "background-color": "light"})),
                  dbc.Col(html.H6("estado de México", 
-                     style={'textAlign': 'left',
+                     style={'textAlign': 'center',
                            "color": "black",
                            'text-transform': "uppercase",
                           "background-color": "light"})),
                  dbc.Col(html.H6("Jalisco", 
-                     style={'textAlign': 'left',
+                     style={'textAlign': 'center',
                            "color": "black",
                            'text-transform': "uppercase",
                           "background-color": "light"})),
                  dbc.Col(html.H6("Ciudad de México", 
-                     style={'textAlign': 'left',
+                     style={'textAlign': 'center',
                            "color": "black",
                            'text-transform': "uppercase",
                           "background-color": "light"}))]),            
@@ -270,7 +270,7 @@ app = dash.Dash(__name__, external_stylesheets=[dbc.themes.
 
 
 # make a reuseable navitem for the different examples
-nav_item1 = dbc.NavItem(dbc.NavLink("Inicio", href="https://innovation-learning.herokuapp.com/"))
+nav_item1 = dbc.NavItem(dbc.NavLink("Inicio", href="https://plataformacenso2020.herokuapp.com/"))
 nav_item2 = dbc.NavItem(dbc.NavLink("Entidades", href="#"))
 nav_item3 = dbc.NavItem(dbc.NavLink("Metrópolis", href="#"))
 
@@ -407,10 +407,6 @@ app.layout = html.Div([default, body,
                        #collapse, fade
                       ])
 
-from application.dash import app
-from settings import config
 
 if __name__ == '__main__':
     app.run_server(use_reloader = False)
-
-    
