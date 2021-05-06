@@ -60,12 +60,14 @@ presentation = dbc.Card(
             html.Br(),
             html.Br(),
             html.Br(),
-            html.Br(),
-            html.Br(),
             html.H6("Entidades más pobladas", 
                     style={'textAlign': 'left',
                            "color": "white",
                            "background-color": "#6A1B9A"}),
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Br(),
             html.Br(),
             html.Br(),
             html.Br(),
@@ -84,10 +86,15 @@ presentation = dbc.Card(
             html.Br(),
             html.Br(),
             html.Br(),
-         
- 
-     
-
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            
             html.H6("Contacto", 
                     style={'textAlign': 'left',
                            "color": "white",
@@ -98,7 +105,10 @@ presentation = dbc.Card(
                                              )]),
                       style={"background-color": "#6A1B9A"},),
                                   
-            
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Br(),
    #         dbc.Button(
    #             html.Span(["", html.H1(className="far fa-envelope", style={"color": "white",
    #                        "background-color": "#6A1B9A"}),]),),
@@ -108,7 +118,7 @@ presentation = dbc.Card(
            #"margin-left": "40px",
           "background-color": "#6A1B9A",
            'color':'#BA68C8',
-           "height": "850px",
+           "height": "1100px",
           })
 
 
@@ -357,13 +367,15 @@ body = html.Div([
 
     dbc.Row([
         dbc.Col(dbc.Card(laboratorio), 
-               style={'margin-top': '-830px',
+               style={'margin-top': '-1040px',
                       'margin-left': '240px', 
                      }),
     
         dbc.Col(dbc.Card(entidades),
-               style={'margin-top': '-660px',      
+               style={'margin-top': '-860px',      
                       'margin-left': '255px', 
+                      'margin-bottom': '-255px', 
+                      
                }, sm={  "offset": 1, })
      ], className="blockquote"),
             html.Br(),
@@ -372,8 +384,9 @@ body = html.Div([
             html.Br(),
     dbc.Row([
         dbc.Col(dbc.Card(metropolis),
-               style={'margin-top': '-380px',      
+               style={'margin-top': '-580px',      
                       'margin-left': '255px', 
+                      'margin-bottom': '-255px', 
                }, sm={  "offset": 1, })
      ], className="blockquote"),
     
