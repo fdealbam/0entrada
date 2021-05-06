@@ -272,7 +272,27 @@ metropolis = dbc.Card(
                       style= {"margin-top": "-195px",
                               "margin-left": "510px"}),
             
-            
+             dbc.Row([
+                 dbc.Col(html.H6("Monterrey", 
+                     style={'textAlign': 'center',
+                           "color": "black",
+                           'text-transform': "uppercase",
+                          "background-color": "light"})),
+                 dbc.Col(html.H6("Valle de México", 
+                     style={'textAlign': 'center',
+                           "color": "black",
+                           'text-transform': "uppercase",
+                          "background-color": "light"})),
+                 dbc.Col(html.H6("Guadalajara", 
+                     style={'textAlign': 'center',
+                           "color": "black",
+                           'text-transform': "uppercase",
+                          "background-color": "light"})),
+                 dbc.Col(html.H6("Puebla", 
+                     style={'textAlign': 'center',
+                           "color": "black",
+                           'text-transform': "uppercase",
+                          "background-color": "light"}))]),                  
             
             
         ]),
