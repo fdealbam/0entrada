@@ -1,4 +1,4 @@
-# Script 0entrada
+# Script 0 Entrada
 
 import dash
 from dash.dependencies import Input, Output, State
@@ -239,6 +239,41 @@ metropolis = dbc.Card(
                            "color": "black",
                            'text-transform': "uppercase",
                           "background-color": "orange"}),
+
+            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/censo2020/blob/434cb1a45a4e766a1cc6582859bf6d58771416da/1nleona.png?raw=true"),
+                         href="https://censo2020-nuevoleon.herokuapp.com/",
+                               style={"background-color": "orange"}),
+                      md={"size": 4,},
+                     
+                      style= {"margin-top": "0px",
+                              "margin-left": "-35px",
+                             #"background-color": "orange"
+                             }),
+            
+            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/censo2020/blob/434cb1a45a4e766a1cc6582859bf6d58771416da/1edomex.png?raw=true"),
+                         href="https://censo2020-mexico.herokuapp.com/",
+                               style={"background-color": "orange"}),
+                      md={"size": 4,},
+                      style= {"margin-top": "-180px",
+                              "margin-left": "130px"
+                             }),
+
+            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/censo2020/blob/434cb1a45a4e766a1cc6582859bf6d58771416da/1jal.png?raw=true"),
+                         href="https://censo2020-jalisco.herokuapp.com/",
+                               style={"background-color": "orange"}),
+                      md={"size": 4,},
+                      style= {"margin-top": "-180px",
+                              "margin-left": "330px"}),
+
+            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/censo2020/blob/434cb1a45a4e766a1cc6582859bf6d58771416da/1cdmx.png?raw=true"),
+                         href="https://censo2020-cdmx.herokuapp.com/",
+                               style={"background-color": "orange"}),
+                      md={"size": 4,},
+                      style= {"margin-top": "-195px",
+                              "margin-left": "510px"}),
+            
+            
+            
             
         ]),
     style={"width": "48rem", 
