@@ -250,7 +250,7 @@ metropolis = dbc.Card(
             #               'text-transform': "uppercase",
             #              "background-color": "orange"}),
 
-            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/cd70e780b421392cf892dc250a7523c792c9d678/application/static/1zmcdmx.png?raw=true"),
+            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/4a46d8cf0f3f3de37be8fab5d67d7d6cab96c2eb/application/static/zmcdmx.png?raw=true"),
                          href="https://censo2020-nuevoleon.herokuapp.com/",
                                style={"background-color": "orange"}),
                       md={"size": 4,},
@@ -260,7 +260,7 @@ metropolis = dbc.Card(
                              #"background-color": "orange"
                              }),
             
-            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/cd70e780b421392cf892dc250a7523c792c9d678/application/static/1zmmonterrey.png?raw=true"),
+            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/4a46d8cf0f3f3de37be8fab5d67d7d6cab96c2eb/application/static/zmmonterrey.png?raw=true"),
                          href="https://censo2020-mexico.herokuapp.com/",
                                style={"background-color": "orange"}),
                       md={"size": 4,},
@@ -268,14 +268,14 @@ metropolis = dbc.Card(
                               "margin-left": "130px"
                              }),
 
-            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/cd70e780b421392cf892dc250a7523c792c9d678/application/static/1zmguadalajara.png?raw=true"),
+            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/4a46d8cf0f3f3de37be8fab5d67d7d6cab96c2eb/application/static/zmguadalajara.png?raw=true"),
                          href="https://censo2020-jalisco.herokuapp.com/",
                                style={"background-color": "orange"}),
                       md={"size": 4,},
                       style= {"margin-top": "-130px",
                               "margin-left": "330px"}),
 
-            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/cd70e780b421392cf892dc250a7523c792c9d678/application/static/1zmpueblatlaxcala.png?raw=true"),
+            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/4a46d8cf0f3f3de37be8fab5d67d7d6cab96c2eb/application/static/zmpueblatlaxcala.png?raw=true"),
                          href="https://censo2020-cdmx.herokuapp.com/",
                                style={"background-color": "orange"}),
                       md={"size": 4,},
