@@ -223,7 +223,7 @@ entidades = dbc.Card(
     
     style={"width": "48rem", 
           "border": "0",
-          "margin-left": "-4px",
+          "margin-left": "-14px",
           "background-color": "orange",
            "justify": "justify"
           })
@@ -244,45 +244,27 @@ metropolis = dbc.Card(
                            "color": "black",
                            'text-transform': "uppercase",
                           "background-color": "orange"}),
-            #html.H6("Valle de México, Monterrrey y Guadalajara", 
-            #        style={'textAlign': 'left',
-            #               "color": "black",
-            #               'text-transform': "uppercase",
-            #              "background-color": "orange"}),
-
-            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/4a46d8cf0f3f3de37be8fab5d67d7d6cab96c2eb/application/static/zmcdmx.png?raw=true"),
+            
+            dbc.Row([
+                dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/4a46d8cf0f3f3de37be8fab5d67d7d6cab96c2eb/application/static/zmcdmx.png?raw=true"),
                          href="https://censo2020-nuevoleon.herokuapp.com/",
                                style={"background-color": "orange"}),
-                      md={"size": 4,},
+                      md={"size": 6,},
                      
-                      style= {"margin-top": "0px",
-                              "margin-left": "-35px",
-                             #"background-color": "orange"
-                             }),
-            
-            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/4a46d8cf0f3f3de37be8fab5d67d7d6cab96c2eb/application/static/zmmonterrey.png?raw=true"),
+                     # style= {"margin-top": "0px",
+                     #         "margin-left": "-38px",
+                             #"background-color": "orange"}
+                       ),
+                
+                dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/4a46d8cf0f3f3de37be8fab5d67d7d6cab96c2eb/application/static/zmmonterrey.png?raw=true"),
                          href="https://censo2020-mexico.herokuapp.com/",
                                style={"background-color": "orange"}),
-                      md={"size": 4,},
-                      style= {"margin-top": "-130px",
-                              "margin-left": "130px"
-                             }),
+                      md={"size": 6,},
+                      #style= {"margin-top": "-50px",
+                      #        "margin-left": "325px"}
+                       )]),
 
-            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/4a46d8cf0f3f3de37be8fab5d67d7d6cab96c2eb/application/static/zmguadalajara.png?raw=true"),
-                         href="https://censo2020-jalisco.herokuapp.com/",
-                               style={"background-color": "orange"}),
-                      md={"size": 4,},
-                      style= {"margin-top": "-130px",
-                              "margin-left": "330px"}),
-
-            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/4a46d8cf0f3f3de37be8fab5d67d7d6cab96c2eb/application/static/zmpueblatlaxcala.png?raw=true"),
-                         href="https://censo2020-cdmx.herokuapp.com/",
-                               style={"background-color": "orange"}),
-                      md={"size": 4,},
-                      style= {"margin-top": "-130px",
-                              "margin-left": "510px"}),
-            
-             dbc.Row([
+            dbc.Row([
                  dbc.Col(html.H6("Valle de México", 
                      style={'textAlign': 'center',
                            "color": "black",
@@ -292,13 +274,34 @@ metropolis = dbc.Card(
                      style={'textAlign': 'center',
                            "color": "black",
                            'text-transform': "uppercase",
-                          "background-color": "light"})),
-                 dbc.Col(html.H6("Guadalajara", 
+                          "background-color": "light"}))]),
+            
+            #aqui
+            dbc.Row([
+                dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/4a46d8cf0f3f3de37be8fab5d67d7d6cab96c2eb/application/static/zmguadalajara.png?raw=true"),
+                         href="https://censo2020-jalisco.herokuapp.com/",
+                               style={"background-color": "orange"}),
+                      md={"size": 6,},
+                     
+                      #style= {"margin-top": "0px",
+                      #        "margin-left": "-38px",}
+                       ),
+                
+                dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/4a46d8cf0f3f3de37be8fab5d67d7d6cab96c2eb/application/static/zmpueblatlaxcala.png?raw=true"),
+                         href="https://censo2020-cdmx.herokuapp.com/",
+                               style={"background-color": "orange"}),
+                      md={"size": 6,},
+                      #style= {"margin-top": "0px",
+                      #        "margin-left": "325px"}
+                       )]),
+            
+            dbc.Row([
+                dbc.Col(html.H6("Guadalajara", 
                      style={'textAlign': 'center',
                            "color": "black",
                            'text-transform': "uppercase",
                           "background-color": "light"})),
-                 dbc.Col(html.H6("Puebla-Tlaxcala", 
+                dbc.Col(html.H6("Puebla-Tlaxcala", 
                      style={'textAlign': 'center',
                            "color": "black",
                            'text-transform': "uppercase",
@@ -390,7 +393,18 @@ body = html.Div([
                }, sm={  "offset": 1, })
      ], className="blockquote"),
     
-
+    html.Br(),
+    html.Br(),
+    html.Br(),
+    html.Br(),
+    html.Br(),
+    html.Br(),
+    html.Br(),
+    html.Br(),
+    html.Br(),
+    html.Br(),
+    html.Br(),
+    html.Br(),
     
     dbc.Row([
                                     #https://github.com/fdealbam/CamaraDiputados/blob/b11ef31e8e0f73e1a4a06ce60402563e1bd0122e/application/static/logocamara.jfif
