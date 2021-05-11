@@ -60,18 +60,10 @@ presentation = dbc.Card(
             html.Br(),
             html.Br(),
             html.Br(),
-            html.H6("Entidades más pobladas", 
-                    style={'textAlign': 'left',
-                           "color": "white",
-                           "background-color": "#6A1B9A"}),
-            html.Br(),
-            html.Br(),
-            html.Br(),
-            html.Br(),
-            html.Br(),
-            html.Br(),
-            html.Br(),
-            html.Br(),
+            #html.H6("Entidades más pobladas", 
+            #        style={'textAlign': 'left',
+            #               "color": "white",
+            #               "background-color": "#6A1B9A"}),
             html.Br(),
             html.Br(),
             html.Br(),
@@ -82,6 +74,11 @@ presentation = dbc.Card(
                     style={'textAlign': 'left',
                            "color": "white",
                            "background-color": "#6A1B9A"}),
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Br(),
+            html.Br(),
             html.Br(),
             html.Br(),
             html.Br(),
@@ -126,12 +123,12 @@ presentation = dbc.Card(
 laboratorio = dbc.Card(
     dbc.CardBody(
         [
-            html.H5("Plataforma de Análisis Estratégico", 
+            html.H5("Zonas Metropolitanas, 2020", 
                     style={'textAlign': 'left',
+                           "font-size": "20px",
                            "color": "white",
                           "background-color": "orange"}),
-            html.H6("En esta plataforma integraremos insumos de información para los diputados y diputadas y público interesado",
-                    "Es información cuantitativa de dos referentes geojurídicos principales del país: las entidades y las zonas metropolitanas",
+            html.H6("",
                     
                     style={'textAlign': 'left',
                            "color": "black",
@@ -234,37 +231,57 @@ entidades = dbc.Card(
 metropolis = dbc.Card(
     dbc.CardBody(
         [
-            html.H6("Metrópolis más pobladas", 
+            html.H6("Las cuatro más pobladas", 
                     style={'textAlign': 'left',
                            "color": "white",
                           "background-color": "orange"}),
             
-            html.H6("Cuatro metrópolis reúnen 35,613,864 habitantes, es decir, 28.2% de la población del país", 
+            html.H6("Cuatro metrópolis reúnen 35,613,864 habitantes, es decir, 28.2% de la población del país (INEGI,2020)", 
                     style={'textAlign': 'left',
                            "color": "black",
                            'text-transform': "uppercase",
                           "background-color": "orange"}),
-            
-            dbc.Row([
-                dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/4a46d8cf0f3f3de37be8fab5d67d7d6cab96c2eb/application/static/zmcdmx.png?raw=true"),
-                         href="https://censo2020-nuevoleon.herokuapp.com/",
-                               style={"background-color": "orange"}),
-                      md={"size": 6,},
-                     
-                     # style= {"margin-top": "0px",
-                     #         "margin-left": "-38px",
-                             #"background-color": "orange"}
-                       ),
-                
-                dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/4a46d8cf0f3f3de37be8fab5d67d7d6cab96c2eb/application/static/zmmonterrey.png?raw=true"),
-                         href="https://censo2020-mexico.herokuapp.com/",
-                               style={"background-color": "orange"}),
-                      md={"size": 6,},
-                      #style= {"margin-top": "-50px",
-                      #        "margin-left": "325px"}
-                       )]),
+        
 
-            dbc.Row([
+            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/cd70e780b421392cf892dc250a7523c792c9d678/application/static/1zmcdmx.png?raw=true"),
+                         href="https://zm-valledemexico.herokuapp.com/",
+                               style={"background-color": "orange"}),
+                      md={"size": 9,},
+                     
+                      style= {"margin-top": "20px",
+                              "margin-left": "-38px",
+                             #"background-color": "orange"
+                             }),
+            
+            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/cd70e780b421392cf892dc250a7523c792c9d678/application/static/1zmmonterrey.png?raw=true"),
+                         href="https://zm-monterrey.herokuapp.com/",
+                               style={"background-color": "orange"}),
+                      md={"size": 9,},
+                      style= {"margin-top": "-320px",
+                              "margin-left": "325px"
+                             }),
+
+            
+            #aqui
+            
+            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/cd70e780b421392cf892dc250a7523c792c9d678/application/static/1zmguadalajara.png?raw=true"),
+                         href="https://zm-guadalajara.herokuapp.com/",
+                               style={"background-color": "orange"}),
+                      md={"size": 9,},
+                     
+                      style= {"margin-top": "20px",
+                              "margin-left": "-38px",
+                             }),
+
+            dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/cd70e780b421392cf892dc250a7523c792c9d678/application/static/1zmpueblatlaxcala.png?raw=true"),
+                         href="https://zm-pueblatlaxcala.herokuapp.com/",
+                               style={"background-color": "orange"}),
+                      md={"size": 9,},
+                      style= {"margin-top": "-320px",
+                              "margin-left": "325px"
+                             }),
+            
+             dbc.Row([
                  dbc.Col(html.H6("Valle de México", 
                      style={'textAlign': 'center',
                            "color": "black",
@@ -274,34 +291,13 @@ metropolis = dbc.Card(
                      style={'textAlign': 'center',
                            "color": "black",
                            'text-transform': "uppercase",
-                          "background-color": "light"}))]),
-            
-            #aqui
-            dbc.Row([
-                dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/4a46d8cf0f3f3de37be8fab5d67d7d6cab96c2eb/application/static/zmguadalajara.png?raw=true"),
-                         href="https://censo2020-jalisco.herokuapp.com/",
-                               style={"background-color": "orange"}),
-                      md={"size": 6,},
-                     
-                      #style= {"margin-top": "0px",
-                      #        "margin-left": "-38px",}
-                       ),
-                
-                dbc.Col(dbc.Button(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/4a46d8cf0f3f3de37be8fab5d67d7d6cab96c2eb/application/static/zmpueblatlaxcala.png?raw=true"),
-                         href="https://censo2020-cdmx.herokuapp.com/",
-                               style={"background-color": "orange"}),
-                      md={"size": 6,},
-                      #style= {"margin-top": "0px",
-                      #        "margin-left": "325px"}
-                       )]),
-            
-            dbc.Row([
-                dbc.Col(html.H6("Guadalajara", 
+                          "background-color": "light"})),
+                 dbc.Col(html.H6("Guadalajara", 
                      style={'textAlign': 'center',
                            "color": "black",
                            'text-transform': "uppercase",
                           "background-color": "light"})),
-                dbc.Col(html.H6("Puebla-Tlaxcala", 
+                 dbc.Col(html.H6("Puebla-Tlaxcala", 
                      style={'textAlign': 'center',
                            "color": "black",
                            'text-transform': "uppercase",
@@ -374,26 +370,55 @@ body = html.Div([
                       'margin-left': '240px', 
                      }),
     
-        dbc.Col(dbc.Card(entidades),
+        dbc.Col(dbc.Card(),
                style={'margin-top': '-860px',      
                       'margin-left': '255px', 
                       'margin-bottom': '-255px', 
                       
                }, sm={  "offset": 1, })
      ], className="blockquote"),
+    
             html.Br(),
+    dbc.Row([
+          dbc.Col(html.H6("Información estratégica de las principales variables estadísticas " 
+                          "que definen a las metrópolis mexicanas.",
+                          
+                    
+                     style={'textAlign': 'start',
+                           "color": "black",
+                            "interline": "25px",
+                           'text-transform': "uppercase",
+                          "background-color": "light"})),                  
+            
+          dbc.Col(html.H6("Hacer click para acceder a un reporte estadístico básico"
+                          ,
+                    
+                     style={'textAlign': 'start',
+                           "color": "black",
+                            "interline": "25px",
+                           'text-transform': "uppercase",
+                          "background-color": "light"})),                  
+        ],
+    style={"width": "46rem", 
+          "border": "0",
+          "margin-left": "280px",
+          #'margin-bottom': '-255px', 
+           'margin-top': '-970px',  
+          #"background-color": "orange",
+           "justify": "justify"
+          }),
+
             html.Br(),
             html.Br(),
             html.Br(),
     dbc.Row([
         dbc.Col(dbc.Card(metropolis),
-               style={'margin-top': '-580px',      
+               style={'margin-top': '0px',      
                       'margin-left': '255px', 
-                      'margin-bottom': '-255px', 
+                      'margin-bottom': '55px', 
                }, sm={  "offset": 1, })
      ], className="blockquote"),
     
-    html.Br(),
     html.Br(),
     html.Br(),
     html.Br(),
@@ -525,3 +550,4 @@ app.layout = html.Div([default, body,
 
 if __name__ == '__main__':
     app.run_server(use_reloader = False)
+    
