@@ -91,6 +91,8 @@ presentation = dbc.Card(
             html.Br(),
             html.Br(),
             html.Br(),
+            html.Br(),
+            html.Br(),
             
             html.H6("Contacto", 
                     style={'textAlign': 'left',
@@ -231,7 +233,7 @@ entidades = dbc.Card(
 metropolis = dbc.Card(
     dbc.CardBody(
         [
-            html.H6("Las cuatro más pobladas", 
+            html.H6("Las cuatro metrópolis más pobladas", 
                     style={'textAlign': 'left',
                            "color": "white",
                           "background-color": "orange"}),
@@ -260,6 +262,7 @@ metropolis = dbc.Card(
                       style= {"margin-top": "-320px",
                               "margin-left": "325px"
                              }),
+          
 
             
             #aqui
@@ -311,6 +314,67 @@ metropolis = dbc.Card(
           "background-color": "orange",
            "justify": "justify"
           })
+
+
+###################################
+
+metropolis2 = dbc.Card(
+    dbc.CardBody(
+        [
+            html.H6("Las que tienen más de un millón de habitantes", 
+                    style={'textAlign': 'left',
+                           "color": "white",
+                          "background-color": "orange"}),
+            
+            html.H6("EStas ### metrópolis reúnen ##### habitantes, es decir, #### % de la población del país (INEGI,2020)", 
+                    style={'textAlign': 'left',
+                           "color": "black",
+                           'text-transform': "uppercase",
+                          "background-color": "orange"}),
+        
+            
+            
+        ]),
+    style={"width": "48rem", 
+          "border": "0",
+          "margin-left": "-4px",
+          "margin-top": "-50px",
+
+          "background-color": "orange",
+           "justify": "justify"
+          })
+
+
+##############################
+
+
+metropolis3 = dbc.Card(
+    dbc.CardBody(
+        [
+            html.H6("Las que tienen menos de un millón de habitantes", 
+                    style={'textAlign': 'left',
+                           "color": "white",
+                          "background-color": "orange"}),
+            
+            html.H6("EStas ### metrópolis reúnen ##### habitantes, es decir, #### % de la población del país (INEGI,2020)", 
+                    style={'textAlign': 'left',
+                           "color": "black",
+                           'text-transform': "uppercase",
+                          "background-color": "orange"}),
+        
+            
+            
+        ]),
+    style={"width": "48rem", 
+          "border": "0",
+          "margin-left": "-4px",
+          "margin-top": "-50px",
+
+          "background-color": "orange",
+           "justify": "justify"
+          })
+
+
 
 
 
@@ -390,7 +454,7 @@ body = html.Div([
                            'text-transform': "uppercase",
                           "background-color": "light"})),                  
             
-          dbc.Col(html.H6("Hacer click para acceder a un reporte estadístico básico"
+          dbc.Col(html.H6("Hacer click sobre cada mapa para visualizar un reporte estadístico básico"
                           ,
                     
                      style={'textAlign': 'start',
@@ -415,7 +479,7 @@ body = html.Div([
         dbc.Col(dbc.Card(metropolis),
                style={'margin-top': '0px',      
                       'margin-left': '255px', 
-                      'margin-bottom': '55px', 
+                      'margin-bottom': '5px', 
                }, sm={  "offset": 1, })
      ], className="blockquote"),
     
@@ -424,9 +488,21 @@ body = html.Div([
     html.Br(),
     html.Br(),
     html.Br(),
+    dbc.Row([
+        dbc.Col(dbc.Card(metropolis2),
+               style={'margin-top': '-35px',      
+                      'margin-left': '255px', 
+                      'margin-bottom': '45px', 
+               }, sm={  "offset": 1, })
+     ], className="blockquote"),
     html.Br(),
-    html.Br(),
-    html.Br(),
+    dbc.Row([
+        dbc.Col(dbc.Card(metropolis3),
+               style={'margin-top': '0px',      
+                      'margin-left': '255px', 
+                      'margin-bottom': '55px', 
+               }, sm={  "offset": 1, })
+     ], className="blockquote"),
     html.Br(),
     html.Br(),
     html.Br(),
