@@ -405,7 +405,7 @@ nav_item3 = dbc.NavItem(dbc.NavLink("Metrópolis", href="#"))
 
 default = dbc.NavbarSimple(
     children=[nav_item1,nav_item2,nav_item3,],
-    brand="Menu",
+    brand="Menu",  style={'margin-left': '50px'},
     brand_href="#",
     sticky="top",
     className="mb-5",
