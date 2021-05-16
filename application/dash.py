@@ -25,8 +25,9 @@ yea = datetime.strftime(yesterday, '%Y%m%d')
 ##############################################################
 
 # this is the data of the city
-data = pd.read_csv("https://raw.githubusercontent.com/fdealbam/0entrada/main/allzm2020.csv?raw=True")
+data = pd.read_csv("https://raw.githubusercontent.com/fdealbam/0entrada/main/allzm_wpercent.csv?raw=True")
 entidades_s= pd.read_csv("https://raw.githubusercontent.com/fdealbam/censo2020/main/entidades2020.csv", encoding= "Latin-1")
+
 
 
 
@@ -61,6 +62,145 @@ treezm.update_layout(paper_bgcolor='rgba(0,0,0,0)',
                   showlegend=False,
                   #width=100 
                     ),
+
+
+###########################################Grafica black
+
+
+#-------------------------------------------------------------------------------------------------------------------1
+df_c = data.sort_values(by= "POBTOT", ascending=False, ignore_index=True).iloc[36:]
+graph1 = px.bar_polar(df_c,
+                   r="POBTOT", theta="NOM_ZM",
+                   color="POBTOT", #template="none",
+                   #legend="off",
+                   #color_discrete_sequence= px.colors.sequential.Plasma_r
+                     )
+graph1.update_layout(#legend=dict(showscale=False),
+                  font=dict(family="Arial",
+                              size=9,
+                              color="black"),
+                     paper_bgcolor="rgba(0,0,0,0)",
+                     #plot_bgcolor="rgba(0,0,0,0)"
+                      )
+graph1.update(layout_coloraxis_showscale=False)  
+
+
+#-------------------------------------------------------------------------------------------------------------------2
+df_b = data.sort_values(by= "POBTOT", ascending=False, ignore_index=True).iloc[4:36] 
+
+graph2 = px.bar_polar(df_b, 
+                   r="POBTOT", theta="NOM_ZM",
+                   color="POBTOT", #template="none",
+                   #legend="off",
+                   color_discrete_sequence= px.colors.sequential.Plotly3
+                     )
+graph2.update_layout(font=dict(family="Arial",
+                              size=9,
+                              color="black"),
+                     #opacity=0.1,
+                     paper_bgcolor="rgba(0,0,0,0)",
+                     #plot_bgcolor="rgba(0,0,0,0)"
+                    )
+graph2.update(layout_coloraxis_showscale=False)   
+
+
+
+#-------------------------------------------------------------------------------------------------------------------3
+# SIN DERECHOHABIENCIA
+
+df_a = data.sort_values(by= "POBTOT", ascending=False)#.iloc[4:36]#.head(20)
+
+sinderechohabiencia_graf = px.bar_polar(df_a,
+                   r="PSINDER_%", theta="NOM_ZM",
+                   color="PSINDER_%", template="none",
+                   #legend="off",
+                   color_discrete_sequence= px.colors.sequential.OrRd)
+sinderechohabiencia_graf.update_layout(#legend=dict(showscale=False),
+                  font=dict(family="Arial",
+                              size=7,
+                              color="black"),
+                     paper_bgcolor="rgba(0,0,0,0)",
+                     plot_bgcolor="rgba(0,0,0,0)")
+sinderechohabiencia_graf.update(layout_coloraxis_showscale=False)  
+
+
+
+#-------------------------------------------------------------------------------------------------------------------3
+# con discapacidad
+
+df_a = data.sort_values(by= "POBTOT", ascending=False)#.head(10)
+
+discapacidad_graf = px.bar_polar(df_a,
+                   r="PCON_DISC_%", theta="NOM_ZM",
+                   color="PCON_DISC_%", template="none",
+                   #legend="off",
+                   color_discrete_sequence= px.colors.sequential.OrRd)
+discapacidad_graf.update_layout(#legend=dict(showscale=False),
+                  font=dict(family="Arial",
+                              size=7,
+                              color="black"),
+                     paper_bgcolor="rgba(0,0,0,0)",
+                     plot_bgcolor="rgba(0,0,0,0)")
+discapacidad_graf.update(layout_coloraxis_showscale=False)  
+
+
+
+#-------------------------------------------------------------------------------------------------------------------3
+# CON INTERNET
+df_a = data.sort_values(by= "POBTOT", ascending=False)#.head(10)
+
+internet_graf = px.bar_polar(df_a,
+                   r="VPH_INTER_%", theta="NOM_ZM",
+                   color="VPH_INTER_%", template="none",
+                   #legend="off",
+                   color_discrete_sequence= px.colors.sequential.OrRd)
+internet_graf.update_layout(#legend=dict(showscale=False),
+                  font=dict(family="Arial",
+                              size=7,
+                              color="black"),
+                    #heigth= "420px",
+
+                     paper_bgcolor="rgba(0,0,0,0)",
+                     plot_bgcolor="rgba(0,0,0,0)")
+internet_graf.update(layout_coloraxis_showscale=False) 
+
+
+#-------------------------------------------------------------------------------------------------------------------3
+# DESOCUPADOS
+
+df_a = data.sort_values(by= "POBTOT", ascending=False)#.head(10)
+
+desocupada12ymas_graf = px.bar_polar(df_a,
+                   r="PDESOCUP_%", theta="NOM_ZM",
+                   color="PDESOCUP_%", template="none",
+                   #legend="off",
+                   color_discrete_sequence= px.colors.sequential.OrRd)
+desocupada12ymas_graf.update_layout(#legend=dict(showscale=False),
+                  font=dict(family="Arial",
+                              size=7,
+                              color="black"),
+                     paper_bgcolor="rgba(0,0,0,0)",
+                     plot_bgcolor="rgba(0,0,0,0)")
+desocupada12ymas_graf.update(layout_coloraxis_showscale=False)
+
+
+#-------------------------------------------------------------------------------------------------------------------3
+#POBLACION NACIDA EN OTRA ENTIDAD
+
+df_a = data.sort_values(by= "POBTOT", ascending=False)#.head(10)
+
+nacidaenotraentidad_graf = px.bar_polar(df_a,
+                   r="PNACOE_%", theta="NOM_ZM",
+                   color="PNACOE_%", template="none",
+                   #legend="off",
+                   color_discrete_sequence= px.colors.sequential.OrRd)
+nacidaenotraentidad_graf.update_layout(#legend=dict(showscale=False),
+                  font=dict(family="Arial",
+                              size=7,
+                              color="black"),
+                     paper_bgcolor="rgba(0,0,0,0)",
+                     plot_bgcolor="rgba(0,0,0,0)")
+nacidaenotraentidad_graf.update(layout_coloraxis_showscale=False)
 
 
 ######################################
@@ -243,7 +383,8 @@ metropolis = dbc.Card(
                      style={'textAlign': 'center',
                            "color": "black",
                            'text-transform': "uppercase",
-                          "background-color": "light"}))]),                  
+                          "background-color": "light"}))
+             ]),                  
 
              dbc.Row([
                  dbc.Col(html.H6(f"{int(pobzmvmexico):,}",
@@ -300,10 +441,58 @@ metropolis = dbc.Card(
                     
                         }),
        
-  html.Br(),
+   html.Br(),
    html.Br(),
    html.Br(),
 
+###################################################            
+# Graphs Polar Bar                         
+###################################################            
+
+#black graph
+   html.H6("Clasificación según poblacion", 
+                    style={"color": "white", 
+                               "font-weight": 'bold',
+                               "font-size": "26px",
+                               "font-family": "Montserrat",        
+                               "font-weight": 'bold',
+                               "text-shadow": "10px 20px 30px gray",
+                        'margin-left': '90px',
+                          "background-color": "lightgray"}),
+   html.Br(),
+            
+   dbc.Row([
+         dbc.Col(dcc.Graph(figure=graph1),
+                style={#"width": "50px",
+                      'backgroundColor': 'lightgray'}),
+         dbc.Col(dcc.Graph(figure=graph2),
+                 style={#"width": "50px",
+                      'backgroundColor': 'lightgray'}),
+         dbc.Col(dcc.Graph(figure=graph2),
+                 style={#"width": "50px",
+                      'backgroundColor': 'lightgray'}),
+         dbc.Col(dcc.Graph(figure=graph2),
+                 style={#"width": "50px",
+                      'backgroundColor': 'lightgray'}),
+     ],
+             style={'backgroundColor': 'lightgray',
+                    'width': '1200px',
+                    'margin-top': '0px',
+                    'margin-left': '80px',
+                    #"width": "78rem", 
+                        }),
+       
+       
+
+      
+            
+            
+###################################################            
+# Numeralia metropolitana                         
+###################################################            
+
+            
+            
    html.Br(),
    html.H6("Numeralia metropolitana", 
                     style={"color": "white", 
@@ -319,10 +508,114 @@ metropolis = dbc.Card(
    html.Br(),
    html.Br(),
    html.Br(),
+   dbc.Row([
+         dbc.Col(dcc.Graph(figure=sinderechohabiencia_graf),
+                style={#"width": "px",
+                      'backgroundColor': 'lightgray'}),
+
+         dbc.Col(dcc.Graph(figure=discapacidad_graf),
+                 style={#"width": "50px",
+                      'backgroundColor': 'lightgray'}),
+
+         dbc.Col(dcc.Graph(figure=internet_graf),
+                 style={#"width": "50px",
+                      'backgroundColor': 'lightgray'}),
+      
+     ],
+             style={'backgroundColor': 'lightgray',
+                    'width': '1200px',
+                    'margin-top': '0px',
+                    'margin-left': '80px',
+                    #"width": "78rem", 
+                        }),
+
+             dbc.Row([
+                 dbc.Col(html.H6("Sin derechohabiencia", 
+                     style={'textAlign': 'center',
+                           "color": "black",
+                           "font-size": "16px",
+                           'text-transform': "uppercase",
+                          "background-color": "light"})),
+ 
+                 dbc.Col(html.H6("Con discapacidad", 
+                     style={'textAlign': 'center',
+                           "color": "black",
+                           "font-size": "16px",
+                           'text-transform': "uppercase",
+                          "background-color": "light"})),
+                 
+                 dbc.Col(html.H6("Con internet", 
+                     style={'textAlign': 'center',
+                           "color": "black",
+                           "font-size": "16px",
+                           'text-transform': "uppercase",
+                          "background-color": "light"})),
+                 
+     ],
+             style={'backgroundColor': 'lightgray',
+                    'width': '1200px',
+                    'margin-top': '-40px',
+                    'margin-left': '80px',
+                    #"width": "78rem", 
+                        }),
+            
+   html.Br(),
+
+   dbc.Row([
+       
+         dbc.Col(dcc.Graph(figure=desocupada12ymas_graf),
+                 style={#"width": "50px",
+                      'backgroundColor': 'lightgray'}),
+       
+         dbc.Col(dcc.Graph(figure=nacidaenotraentidad_graf),
+                 style={#"width": "50px",
+                      'backgroundColor': 'lightgray'}),
+       
+     ],
+             style={'backgroundColor': 'lightgray',
+                    'width': '1200px',
+                    'margin-top': '0px',
+                    'margin-left': '80px',
+                    #"width": "78rem", 
+                        }),
+    html.Br(),
+    dbc.Row([
+                 dbc.Col(html.H6("Desocupados", 
+                     style={'textAlign': 'center',
+                           "color": "black",
+                           "font-size": "16px",
+                           'text-transform': "uppercase",
+                          "background-color": "light"})),
+                 
+                  dbc.Col(html.H6("Nacidos en otra entidad", 
+                     style={'textAlign': 'center',
+                           "color": "black",
+                           "font-size": "16px",
+                           'text-transform': "uppercase",
+                          "background-color": "light"})),
+ 
+     ],
+             style={'backgroundColor': 'lightgray',
+                    'width': '1200px',
+                    'margin-top': '-40px',
+                    'margin-left': '80px',
+                    #"width": "78rem", 
+                        }),
+            
+            
    html.Br(),
    html.Br(),
    html.Br(),
    html.Br(),
+   html.Br(),
+   html.Br(),
+   html.Br(),
+   html.Br(),
+   html.Br(),
+   html.Br(),
+   html.Br(),
+            
+            
    html.Br(),
     
    dbc.Row([
@@ -348,8 +641,7 @@ metropolis = dbc.Card(
                 
             
         ]),
-    style={"width": "78rem", 
-          "border": "0",
+    style={"border": "0",
           "margin-left": "-4px",
           "background-color": "lightgray",
            "justify": "justify"
