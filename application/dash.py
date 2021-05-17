@@ -1,5 +1,3 @@
-# Script 0 Entrada
-
 import dash
 import dash_bootstrap_components as dbc
 import dash_core_components as dcc
@@ -69,6 +67,7 @@ treezm.update_layout(paper_bgcolor='rgba(0,0,0,0)',
 
 
 #-------------------------------------------------------------------------------------------------------------------1
+# POBLACION TOTAL 2
 df_c = data.sort_values(by= "POBTOT", ascending=False, ignore_index=True).iloc[36:]
 graph1 = px.bar_polar(df_c,
                    r="POBTOT", theta="NOM_ZM",
@@ -87,6 +86,7 @@ graph1.update(layout_coloraxis_showscale=False)
 
 
 #-------------------------------------------------------------------------------------------------------------------2
+# POBLACION TOTAL 1
 df_b = data.sort_values(by= "POBTOT", ascending=False, ignore_index=True).iloc[4:36] 
 
 graph2 = px.bar_polar(df_b, 
@@ -115,7 +115,7 @@ sinderechohabiencia_graf = px.bar_polar(df_a,
                    r="PSINDER_%", theta="NOM_ZM",
                    color="PSINDER_%", template="none",
                    #legend="off",
-                   color_discrete_sequence= px.colors.sequential.OrRd)
+                   color_continuous_scale=px.colors.sequential.Teal)
 sinderechohabiencia_graf.update_layout(#legend=dict(showscale=False),
                   font=dict(family="Arial",
                               size=7,
@@ -135,7 +135,7 @@ discapacidad_graf = px.bar_polar(df_a,
                    r="PCON_DISC_%", theta="NOM_ZM",
                    color="PCON_DISC_%", template="none",
                    #legend="off",
-                   color_discrete_sequence= px.colors.sequential.OrRd)
+                   color_continuous_scale=px.colors.sequential.Plotly3_r)
 discapacidad_graf.update_layout(#legend=dict(showscale=False),
                   font=dict(family="Arial",
                               size=7,
@@ -154,7 +154,7 @@ internet_graf = px.bar_polar(df_a,
                    r="VPH_INTER_%", theta="NOM_ZM",
                    color="VPH_INTER_%", template="none",
                    #legend="off",
-                   color_discrete_sequence= px.colors.sequential.OrRd)
+                   color_continuous_scale=px.colors.sequential.Peach)
 internet_graf.update_layout(#legend=dict(showscale=False),
                   font=dict(family="Arial",
                               size=7,
@@ -175,7 +175,7 @@ desocupada12ymas_graf = px.bar_polar(df_a,
                    r="PDESOCUP_%", theta="NOM_ZM",
                    color="PDESOCUP_%", template="none",
                    #legend="off",
-                   color_discrete_sequence= px.colors.sequential.OrRd)
+                   color_continuous_scale=px.colors.sequential.Mint)
 desocupada12ymas_graf.update_layout(#legend=dict(showscale=False),
                   font=dict(family="Arial",
                               size=7,
@@ -194,7 +194,7 @@ nacidaenotraentidad_graf = px.bar_polar(df_a,
                    r="PNACOE_%", theta="NOM_ZM",
                    color="PNACOE_%", template="none",
                    #legend="off",
-                   color_discrete_sequence= px.colors.sequential.OrRd)
+                   color_continuous_scale=px.colors.sequential.Teal)
 nacidaenotraentidad_graf.update_layout(#legend=dict(showscale=False),
                   font=dict(family="Arial",
                               size=7,
@@ -214,7 +214,7 @@ pobde60ymas_graf = px.bar_polar(df_a,
                    r="P_60YMAS_%", theta="NOM_ZM",
                    color="P_60YMAS_%", template="none",
                    #legend="off",
-                   color_discrete_sequence= px.colors.sequential.OrRd)
+                   color_continuous_scale=px.colors.sequential.Mint)
 pobde60ymas_graf.update_layout(#legend=dict(showscale=False),
                   font=dict(family="Arial",
                               size=7,
@@ -223,8 +223,114 @@ pobde60ymas_graf.update_layout(#legend=dict(showscale=False),
                      plot_bgcolor="rgba(0,0,0,0)")
 pobde60ymas_graf.update(layout_coloraxis_showscale=False)
 
+#-------------------------------------------------------------------------------------------------------------------3
+# AFILIADOS SerVICIOS De SALUD PRIVADOS
 
+df_a = data.sort_values(by= "POBTOT", ascending=False)#.head(10)
 
+servsaludpriv_graf = px.bar_polar(df_a,
+                   r="PAFIL_IPRIV_%", theta="NOM_ZM",
+                   color="PAFIL_IPRIV_%", template="none",
+                   #legend="off",
+                   color_continuous_scale=px.colors.sequential.Teal)
+servsaludpriv_graf.update_layout(#legend=dict(showscale=False),
+                  font=dict(family="Arial",
+                              size=7,
+                              color="black"),
+                     paper_bgcolor="rgba(0,0,0,0)",
+                     plot_bgcolor="rgba(0,0,0,0)")
+servsaludpriv_graf.update(layout_coloraxis_showscale=False)
+
+#-------------------------------------------------------------------------------------------------------------------3
+# PROMEDIOS HABITANTES/CUARTO (DORMITORIO)
+
+df_a = data.sort_values(by= "POBTOT", ascending=False)#.head(10)
+
+habitantesporcuarto_graf = px.bar_polar(df_a,
+                   r="PRO_OCUP_C", theta="NOM_ZM",
+                   color="PRO_OCUP_C", template="none",
+                   #legend="off",
+                   color_continuous_scale=px.colors.sequential.Pinkyl)
+habitantesporcuarto_graf.update_layout(#legend=dict(showscale=False),
+                  font=dict(family="Arial",
+                              size=7,
+                              color="black"),
+                     paper_bgcolor="rgba(0,0,0,0)",
+                     plot_bgcolor="rgba(0,0,0,0)")
+habitantesporcuarto_graf.update(layout_coloraxis_showscale=False)
+
+#-------------------------------------------------------------------------------------------------------------------3
+# Población con grupo religioso protestante/ cristiano evangélico  
+    
+
+df_a = data.sort_values(by= "POBTOT", ascending=False)#.head(10)
+
+relgprotevang_graf = px.bar_polar(df_a,
+                   r="PRO_CRIEVA_%", theta="NOM_ZM",
+                   color="PRO_CRIEVA_%", template="none",
+                   #legend="off",
+                   color_continuous_scale=px.colors.sequential.Mint)
+relgprotevang_graf.update_layout(#legend=dict(showscale=False),
+                  font=dict(family="Arial",
+                              size=7,
+                              color="black"),
+                     paper_bgcolor="rgba(0,0,0,0)",
+                     plot_bgcolor="rgba(0,0,0,0)")
+relgprotevang_graf.update(layout_coloraxis_showscale=False)
+
+#-------------------------------------------------------------------------------------------------------------------3
+# HOGARES CON JEF-A- DE FAMILIA
+
+df_a = data.sort_values(by= "POBTOT", ascending=False)#.head(10)
+
+hogconjfa_graf = px.bar_polar(df_a,
+                   r="HOGJEF_F_%", theta="NOM_ZM",
+                   color="HOGJEF_F_%", template="none",
+                   #legend="off",
+                   color_continuous_scale=px.colors.sequential.PuRd)
+hogconjfa_graf.update_layout(#legend=dict(showscale=False),
+                  font=dict(family="Arial",
+                              size=7,
+                              color="black"),
+                     paper_bgcolor="rgba(0,0,0,0)",
+                     plot_bgcolor="rgba(0,0,0,0)")
+hogconjfa_graf.update(layout_coloraxis_showscale=False)
+
+#-------------------------------------------------------------------------------------------------------------------3
+# HOGARES CON BICICLETA
+
+df_a = data.sort_values(by= "POBTOT", ascending=False)#.head(10)
+
+hogaresconbici_graf = px.bar_polar(df_a,
+                   r="VPH_BICI_%", theta="NOM_ZM",
+                   color="VPH_BICI_%", template="none",
+                   #legend="off",
+                   color_continuous_scale=px.colors.sequential.Peach)
+hogaresconbici_graf.update_layout(#legend=dict(showscale=False),
+                  font=dict(family="Arial",
+                              size=7,
+                              color="black"),
+                     paper_bgcolor="rgba(0,0,0,0)",
+                     plot_bgcolor="rgba(0,0,0,0)")
+hogaresconbici_graf.update(layout_coloraxis_showscale=False)
+
+#-------------------------------------------------------------------------------------------------------------------3
+# POBLACIÖN ANALFABETA
+
+df_a = data.sort_values(by= "POBTOT", ascending=False)#.head(10)
+
+pobanalfabeta_graf = px.bar_polar(df_a,
+                   r="P15YM_AN_%", theta="NOM_ZM",
+                   color="P15YM_AN_%", template="none",
+                   #legend="off",
+                   color_continuous_scale=px.colors.sequential.Teal)
+pobanalfabeta_graf.update_layout(#legend=dict(showscale=False),
+                  font=dict(family="Arial",
+                              size=7,
+                              color="black"),
+                     paper_bgcolor="rgba(0,0,0,0)",
+                     plot_bgcolor="rgba(0,0,0,0)")
+pobanalfabeta_graf.update(layout_coloraxis_showscale=False)
 
 
 
@@ -631,11 +737,115 @@ metropolis = dbc.Card(
                            "font-size": "16px",
                            'text-transform': "uppercase",
                           "background-color": "light"})),
-        
-        
-        
+    
+    ],style={'backgroundColor': 'lightgray',
+                    'width': '1200px',
+                    'margin-top': '-40px',
+                    'margin-left': '80px',
+                    #"width": "78rem", 
+                        }),
+    ############################################### winik <<<<<<<<<<<<<<<<<<<<<<
+   dbc.Row([
+       
+         dbc.Col(dcc.Graph(figure=servsaludpriv_graf),
+                 style={#"width": "50px",
+                      'backgroundColor': 'lightgray'}),
+       
+         dbc.Col(dcc.Graph(figure=habitantesporcuarto_graf),
+                 style={#"width": "50px",
+                      'backgroundColor': 'lightgray'}),
+       
+         dbc.Col(dcc.Graph(figure=relgprotevang_graf),
+                 style={#"width": "50px",
+                      'backgroundColor': 'lightgray'}),
+       
+       
+       
      ],
              style={'backgroundColor': 'lightgray',
+                    'width': '1200px',
+                    'margin-top': '0px',
+                    'margin-left': '80px',
+                    #"width": "78rem", 
+                        }),
+    html.Br(),
+    dbc.Row([
+                 dbc.Col(html.H6("Servicios de Salud privados", 
+                     style={'textAlign': 'center',
+                           "color": "black",
+                           "font-size": "16px",
+                           'text-transform': "uppercase",
+                          "background-color": "light"})),
+                 
+                  dbc.Col(html.H6("Habitntes por dormitorio", 
+                     style={'textAlign': 'center',
+                           "color": "black",
+                           "font-size": "16px",
+                           'text-transform': "uppercase",
+                          "background-color": "light"})),
+
+                  dbc.Col(html.H6("Protestantes y evangélicos", 
+                     style={'textAlign': 'center',
+                           "color": "black",
+                           "font-size": "16px",
+                           'text-transform': "uppercase",
+                          "background-color": "light"})),
+    
+    ],style={'backgroundColor': 'lightgray',
+                    'width': '1200px',
+                    'margin-top': '-40px',
+                    'margin-left': '80px',
+                    #"width": "78rem", 
+                        }),
+            
+
+   dbc.Row([
+       
+         dbc.Col(dcc.Graph(figure=hogconjfa_graf),
+                 style={#"width": "50px",
+                      'backgroundColor': 'lightgray'}),
+       
+         dbc.Col(dcc.Graph(figure=hogaresconbici_graf),
+                 style={#"width": "50px",
+                      'backgroundColor': 'lightgray'}),
+       
+         dbc.Col(dcc.Graph(figure=pobanalfabeta_graf),
+                 style={#"width": "50px",
+                      'backgroundColor': 'lightgray'}),
+       
+       
+       
+     ],
+             style={'backgroundColor': 'lightgray',
+                    'width': '1200px',
+                    'margin-top': '0px',
+                    'margin-left': '80px',
+                    #"width": "78rem", 
+                        }),
+    html.Br(),
+    dbc.Row([
+                 dbc.Col(html.H6("Jefatura femenina", 
+                     style={'textAlign': 'center',
+                           "color": "black",
+                           "font-size": "16px",
+                           'text-transform': "uppercase",
+                          "background-color": "light"})),
+                 
+                  dbc.Col(html.H6("Bicicleta", 
+                     style={'textAlign': 'center',
+                           "color": "black",
+                           "font-size": "16px",
+                           'text-transform': "uppercase",
+                          "background-color": "light"})),
+
+                  dbc.Col(html.H6("Analfabetas", 
+                     style={'textAlign': 'center',
+                           "color": "black",
+                           "font-size": "16px",
+                           'text-transform': "uppercase",
+                          "background-color": "light"})),
+    
+    ],style={'backgroundColor': 'lightgray',
                     'width': '1200px',
                     'margin-top': '-40px',
                     'margin-left': '80px',
@@ -643,6 +853,9 @@ metropolis = dbc.Card(
                         }),
             
             
+            
+    ############################################### winik <<<<<<<<<<<<<<<<<<<<<<
+           
    html.Br(),
    html.Br(),
    html.Br(),
