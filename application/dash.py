@@ -44,6 +44,7 @@ pobzmonterrey = data[data.NOM_ZM == "Monterrey"].POBTOT.sum()
 pobzmguadalajara = data[data.NOM_ZM == "Guadalajara"].POBTOT.sum()
 pobzmvpuetlax = data[data.NOM_ZM == "Puebla-Tlaxcala"].POBTOT.sum()
 
+zm4totpob= (pobzmvmexico + pobzmonterrey)
 
 ###########################################GRAFICA ÁRBOL 
 treezm = px.treemap(data, path=['NOM_ZM'],
@@ -201,6 +202,30 @@ nacidaenotraentidad_graf.update_layout(#legend=dict(showscale=False),
                      paper_bgcolor="rgba(0,0,0,0)",
                      plot_bgcolor="rgba(0,0,0,0)")
 nacidaenotraentidad_graf.update(layout_coloraxis_showscale=False)
+
+
+
+#-------------------------------------------------------------------------------------------------------------------3
+# 60 Y MAS
+
+df_a = data.sort_values(by= "POBTOT", ascending=False)#.head(10)
+
+pobde60ymas_graf = px.bar_polar(df_a,
+                   r="P_60YMAS_%", theta="NOM_ZM",
+                   color="P_60YMAS_%", template="none",
+                   #legend="off",
+                   color_discrete_sequence= px.colors.sequential.OrRd)
+pobde60ymas_graf.update_layout(#legend=dict(showscale=False),
+                  font=dict(family="Arial",
+                              size=7,
+                              color="black"),
+                     paper_bgcolor="rgba(0,0,0,0)",
+                     plot_bgcolor="rgba(0,0,0,0)")
+pobde60ymas_graf.update(layout_coloraxis_showscale=False)
+
+
+
+
 
 
 ######################################
@@ -571,6 +596,12 @@ metropolis = dbc.Card(
                  style={#"width": "50px",
                       'backgroundColor': 'lightgray'}),
        
+         dbc.Col(dcc.Graph(figure=pobde60ymas_graf),
+                 style={#"width": "50px",
+                      'backgroundColor': 'lightgray'}),
+       
+       
+       
      ],
              style={'backgroundColor': 'lightgray',
                     'width': '1200px',
@@ -593,7 +624,16 @@ metropolis = dbc.Card(
                            "font-size": "16px",
                            'text-transform': "uppercase",
                           "background-color": "light"})),
- 
+
+                  dbc.Col(html.H6("60 años y más", 
+                     style={'textAlign': 'center',
+                           "color": "black",
+                           "font-size": "16px",
+                           'text-transform': "uppercase",
+                          "background-color": "light"})),
+        
+        
+        
      ],
              style={'backgroundColor': 'lightgray',
                     'width': '1200px',
