@@ -668,7 +668,7 @@ metropolis = dbc.Card(
                            'text-transform': "uppercase",
                           "background-color": "light"})),
  
-                 dbc.Col(html.H6("Sin derechihabiencia", 
+                 dbc.Col(html.H6("Sin derechohabiencia", 
                      style={'textAlign': 'center',
                            "color": "black",
                            "font-size": "16px",
