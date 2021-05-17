@@ -640,15 +640,15 @@ metropolis = dbc.Card(
    html.Br(),
    html.Br(),
    dbc.Row([
-         dbc.Col(dcc.Graph(figure=sinderechohabiencia_graf),
+         dbc.Col(dcc.Graph(figure=pobde60ymas_graf),
                 style={#"width": "px",
                       'backgroundColor': 'lightgray'}),
 
-         dbc.Col(dcc.Graph(figure=discapacidad_graf),
+         dbc.Col(dcc.Graph(figure=sinderechohabiencia_graf),
                  style={#"width": "50px",
                       'backgroundColor': 'lightgray'}),
 
-         dbc.Col(dcc.Graph(figure=internet_graf),
+         dbc.Col(dcc.Graph(figure=discapacidad_graf),
                  style={#"width": "50px",
                       'backgroundColor': 'lightgray'}),
       
@@ -661,21 +661,21 @@ metropolis = dbc.Card(
                         }),
 
              dbc.Row([
-                 dbc.Col(html.H6("Sin derechohabiencia", 
+                 dbc.Col(html.H6("60 años y más", 
                      style={'textAlign': 'center',
                            "color": "black",
                            "font-size": "16px",
                            'text-transform': "uppercase",
                           "background-color": "light"})),
  
-                 dbc.Col(html.H6("Con discapacidad", 
+                 dbc.Col(html.H6("Sin derechihabiencia", 
                      style={'textAlign': 'center',
                            "color": "black",
                            "font-size": "16px",
                            'text-transform': "uppercase",
                           "background-color": "light"})),
                  
-                 dbc.Col(html.H6("Con internet", 
+                 dbc.Col(html.H6("Discapacidad", 
                      style={'textAlign': 'center',
                            "color": "black",
                            "font-size": "16px",
@@ -694,7 +694,11 @@ metropolis = dbc.Card(
 
    dbc.Row([
        
-         dbc.Col(dcc.Graph(figure=desocupada12ymas_graf),
+         dbc.Col(dcc.Graph(figure=servsaludpriv_graf),
+                 style={#"width": "50px",
+                      'backgroundColor': 'lightgray'}),
+       
+         dbc.Col(dcc.Graph(figure=pobanalfabeta_graf),
                  style={#"width": "50px",
                       'backgroundColor': 'lightgray'}),
        
@@ -702,7 +706,56 @@ metropolis = dbc.Card(
                  style={#"width": "50px",
                       'backgroundColor': 'lightgray'}),
        
-         dbc.Col(dcc.Graph(figure=pobde60ymas_graf),
+       
+       
+     ],
+             style={'backgroundColor': 'lightgray',
+                    'width': '1200px',
+                    'margin-top': '0px',
+                    'margin-left': '80px',
+                    #"width": "78rem", 
+                        }),
+    html.Br(),
+    dbc.Row([
+                 dbc.Col(html.H6("Servicios de Salud Privado", 
+                     style={'textAlign': 'center',
+                           "color": "black",
+                           "font-size": "16px",
+                           'text-transform': "uppercase",
+                          "background-color": "light"})),
+                 
+                  dbc.Col(html.H6("Analfabetas", 
+                     style={'textAlign': 'center',
+                           "color": "black",
+                           "font-size": "16px",
+                           'text-transform': "uppercase",
+                          "background-color": "light"})),
+
+                  dbc.Col(html.H6("Nacidos en otra entidad", 
+                     style={'textAlign': 'center',
+                           "color": "black",
+                           "font-size": "16px",
+                           'text-transform': "uppercase",
+                          "background-color": "light"})),
+    
+    ],style={'backgroundColor': 'lightgray',
+                    'width': '1200px',
+                    'margin-top': '-40px',
+                    'margin-left': '80px',
+                    #"width": "78rem", 
+                        }),
+    ############################################### winik <<<<<<<<<<<<<<<<<<<<<<
+   dbc.Row([
+       
+         dbc.Col(dcc.Graph(figure=desocupada12ymas_graf),
+                 style={#"width": "50px",
+                      'backgroundColor': 'lightgray'}),
+       
+         dbc.Col(dcc.Graph(figure=relgprotevang_graf),
+                 style={#"width": "50px",
+                      'backgroundColor': 'lightgray'}),
+       
+         dbc.Col(dcc.Graph(figure=habitantesporcuarto_graf),
                  style={#"width": "50px",
                       'backgroundColor': 'lightgray'}),
        
@@ -724,67 +777,14 @@ metropolis = dbc.Card(
                            'text-transform': "uppercase",
                           "background-color": "light"})),
                  
-                  dbc.Col(html.H6("Nacidos en otra entidad", 
-                     style={'textAlign': 'center',
-                           "color": "black",
-                           "font-size": "16px",
-                           'text-transform': "uppercase",
-                          "background-color": "light"})),
-
-                  dbc.Col(html.H6("60 años y más", 
-                     style={'textAlign': 'center',
-                           "color": "black",
-                           "font-size": "16px",
-                           'text-transform': "uppercase",
-                          "background-color": "light"})),
-    
-    ],style={'backgroundColor': 'lightgray',
-                    'width': '1200px',
-                    'margin-top': '-40px',
-                    'margin-left': '80px',
-                    #"width": "78rem", 
-                        }),
-    ############################################### winik <<<<<<<<<<<<<<<<<<<<<<
-   dbc.Row([
-       
-         dbc.Col(dcc.Graph(figure=servsaludpriv_graf),
-                 style={#"width": "50px",
-                      'backgroundColor': 'lightgray'}),
-       
-         dbc.Col(dcc.Graph(figure=habitantesporcuarto_graf),
-                 style={#"width": "50px",
-                      'backgroundColor': 'lightgray'}),
-       
-         dbc.Col(dcc.Graph(figure=relgprotevang_graf),
-                 style={#"width": "50px",
-                      'backgroundColor': 'lightgray'}),
-       
-       
-       
-     ],
-             style={'backgroundColor': 'lightgray',
-                    'width': '1200px',
-                    'margin-top': '0px',
-                    'margin-left': '80px',
-                    #"width": "78rem", 
-                        }),
-    html.Br(),
-    dbc.Row([
-                 dbc.Col(html.H6("Servicios de Salud privados", 
-                     style={'textAlign': 'center',
-                           "color": "black",
-                           "font-size": "16px",
-                           'text-transform': "uppercase",
-                          "background-color": "light"})),
-                 
-                  dbc.Col(html.H6("Habitntes por dormitorio", 
-                     style={'textAlign': 'center',
-                           "color": "black",
-                           "font-size": "16px",
-                           'text-transform': "uppercase",
-                          "background-color": "light"})),
-
                   dbc.Col(html.H6("Protestantes y evangélicos", 
+                     style={'textAlign': 'center',
+                           "color": "black",
+                           "font-size": "16px",
+                           'text-transform': "uppercase",
+                          "background-color": "light"})),
+
+                  dbc.Col(html.H6("Habitantes por dormitorio", 
                      style={'textAlign': 'center',
                            "color": "black",
                            "font-size": "16px",
@@ -805,11 +805,11 @@ metropolis = dbc.Card(
                  style={#"width": "50px",
                       'backgroundColor': 'lightgray'}),
        
-         dbc.Col(dcc.Graph(figure=hogaresconbici_graf),
+         dbc.Col(dcc.Graph(figure=internet_graf),
                  style={#"width": "50px",
                       'backgroundColor': 'lightgray'}),
        
-         dbc.Col(dcc.Graph(figure=pobanalfabeta_graf),
+         dbc.Col(dcc.Graph(figure=hogaresconbici_graf),
                  style={#"width": "50px",
                       'backgroundColor': 'lightgray'}),
        
@@ -831,14 +831,14 @@ metropolis = dbc.Card(
                            'text-transform': "uppercase",
                           "background-color": "light"})),
                  
-                  dbc.Col(html.H6("Bicicleta", 
+                  dbc.Col(html.H6("Internet", 
                      style={'textAlign': 'center',
                            "color": "black",
                            "font-size": "16px",
                            'text-transform': "uppercase",
                           "background-color": "light"})),
 
-                  dbc.Col(html.H6("Analfabetas", 
+                  dbc.Col(html.H6("Bicicleta", 
                      style={'textAlign': 'center',
                            "color": "black",
                            "font-size": "16px",
