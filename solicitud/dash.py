@@ -1251,10 +1251,10 @@ app = dash.Dash(__name__, external_stylesheets=[dbc.themes.
 app.layout = html.Div([ buttons, metropolis# layer2,
                        #collapse, fade
                       ],style={
-           # 'margin-top': '0px',
-            #'margin-left': '10px',
-            #'width': '1600px',
-            #'height': '1413px',
+            'margin-top': '0px',
+            'margin-left': '10px',
+            'width': '1600px',
+            'height': '1413px',
             'backgroundColor': 'lightgray'
             })
 
