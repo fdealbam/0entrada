@@ -136,7 +136,7 @@ sinderechohabiencia_graf = px.bar_polar(df_a,
                    color="PSINDER_%", template="none",
                    #legend="off",
                    color_continuous_scale=px.colors.sequential.Teal)
-sinderechohabiencia_graf.update_layout(title = 'SIN AFILIACIÓN A SERVICIOS DE SALUD',
+sinderechohabiencia_graf.update_layout(title = 'SIN DERECHOHABIENCIA',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
@@ -160,7 +160,7 @@ discapacidad_graf = px.bar_polar(df_a,
                    r="PCON_DISC_%", theta="NOM_ZM",
                    color="PCON_DISC_%", template="none",
                    #legend="off",
-                   color_continuous_scale=px.colors.sequential.Plotly3_r)
+                   color_continuous_scale=px.colors.sequential.Teal)
 discapacidad_graf.update_layout(title = 'DISCAPACIDAD ',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
@@ -213,7 +213,7 @@ desocupada12ymas_graf = px.bar_polar(df_a,
                    color="PDESOCUP_%", template="none",
                    #legend="off",
                    color_continuous_scale=px.colors.sequential.Mint)
-desocupada12ymas_graf.update_layout(title = 'POBLACIÓN DESOCUPADA',
+desocupada12ymas_graf.update_layout(title = 'DESOCUPADOS',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
@@ -238,7 +238,7 @@ nacidaenotraentidad_graf = px.bar_polar(df_a,
                    color="PNACOE_%", template="none",
                    #legend="off",
                    color_continuous_scale=px.colors.sequential.Teal)
-nacidaenotraentidad_graf.update_layout(title = 'POBLACIÓN NACIDA EN OTRA ENTIDAD',
+nacidaenotraentidad_graf.update_layout(title = 'NACIDOS EN OTRA ENTIDAD',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
@@ -285,7 +285,7 @@ servsaludpriv_graf = px.bar_polar(df_a,
                    color="PAFIL_IPRIV_%", template="none",
                    #legend="off",
                    color_continuous_scale=px.colors.sequential.Teal)
-servsaludpriv_graf.update_layout(title = 'AFILIACIÓN A SERVICIOS DE SALUD PRIVADOS',#'CON AFILIACIÓN A SERVICIOS DE SALUD PRIVADOS',
+servsaludpriv_graf.update_layout(title = 'SALUD PRIVADA',#'CON AFILIACIÓN A SERVICIOS DE SALUD PRIVADOS',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
@@ -308,8 +308,8 @@ habitantesporcuarto_graf = px.bar_polar(df_a,
                    r="PRO_OCUP_C", theta="NOM_ZM",
                    color="PRO_OCUP_C", template="none",
                    #legend="off",
-                   color_continuous_scale=px.colors.sequential.Pinkyl)
-habitantesporcuarto_graf.update_layout(title = 'PROMEDIO DE HABITANTES POR CUARTO',
+                   color_continuous_scale=px.colors.sequential.Teal)
+habitantesporcuarto_graf.update_layout(title = 'PERSONAS POR CUARTO',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
@@ -334,7 +334,7 @@ relgprotevang_graf = px.bar_polar(df_a,
                    color="PRO_CRIEVA_%", template="none",
                    #legend="off",
                    color_continuous_scale=px.colors.sequential.Mint)
-relgprotevang_graf.update_layout(title = 'RELIGIÓN PROTESTANTE/CRISTIANO EVANGÉLICO',#'GRUPO RELIGIOSO PROTESTANTE/CRISTIANO EVANGÉLICO',
+relgprotevang_graf.update_layout(title = 'PROTESTANTES O EVANGÉLICOS',#'GRUPO RELIGIOSO PROTESTANTE/CRISTIANO EVANGÉLICO',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
@@ -357,10 +357,10 @@ hogconjfa_graf = px.bar_polar(df_a,
                    r="HOGJEF_F_%", theta="NOM_ZM",
                    color="HOGJEF_F_%", template="none",
                    #legend="off",
-                   color_continuous_scale=px.colors.sequential.PuRd)
-hogconjfa_graf.update_layout(title = 'HOGARES CON JEFATURA FEMENINA',#'HOGARES CENSALES CON PERSONA DE REFERENCIA MUJER',
-                                       title_font_family="Montserrat",
-                                       title_font_color="black",
+                   color_continuous_scale=px.colors.sequential.Purp)
+hogconjfa_graf.update_layout(title = 'JEFAS DE FAMILIA',#'HOGARES CENSALES CON PERSONA DE REFERENCIA MUJER',
+                                       title_font_family="Montserrat ExtraBold",
+                                       title_font_color="Purple",
                                        
                                        title_font_size= 20,
                              
@@ -405,8 +405,8 @@ pobanalfabeta_graf = px.bar_polar(df_a,
                    r="P15YM_AN_%", theta="NOM_ZM",
                    color="P15YM_AN_%", template="none",
                    #legend="off",
-                   color_continuous_scale=px.colors.sequential.Teal)
-pobanalfabeta_graf.update_layout(title = 'POBLACIÓN ANALFABETA',
+                   color_continuous_scale=px.colors.sequential.Peach)
+pobanalfabeta_graf.update_layout(title = 'ANALFABETAS',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
@@ -502,7 +502,7 @@ secundaria_graf = px.bar_polar(df_a,
                    color="P15SEC_CO_%", template="none",
                    #legend="off",
                    color_continuous_scale=px.colors.sequential.Peach)
-secundaria_graf.update_layout(title = 'POBLACIÓN SON SECUNDARIA COMPLETA',
+secundaria_graf.update_layout(title = 'SECUNDARIA COMPLETA',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
@@ -527,7 +527,7 @@ posbasica_graf = px.bar_polar(df_a,
                    color="P18YM_PB_%", template="none",
                    #legend="off",
                    color_continuous_scale=px.colors.sequential.Peach)
-posbasica_graf.update_layout(title = '18 Y MAS CON EDUCACIÓN POSBÁSICA',
+posbasica_graf.update_layout(title = '+18 CON POSBÁSICA',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
@@ -572,17 +572,15 @@ buttons = html.Div([
      html.Br(),
      html.Br(),
      html.Br(),
-        dbc.Row(
+     dbc.Row(
            [
                dbc.Col(html.H1(["Metrópolis, 2020 " ],
                       style={'textAlign': 'start',
+                             "font-size": "45px",
                            "color": "white", 
                           "text-shadow": "10px 20px 30px gray",}),
-                       width={'size': 40, "offset":1 },
-                      ),],justify="start",),
-      dbc.Row(
-           [      dbc.Col(html.H6(["Fuente: Censo de Población y Vivienda 2020, INEGI"],
-                                  style={"margin-left": "100px"}))]),
+                       width={'size': 20, "offset":1 },
+                      )],justify="start",),
     html.Br(),
     html.Br(),
  
@@ -1006,15 +1004,18 @@ metropolis = dbc.Card(
                     #"width": "78rem", 
                         }),
             
-html.Br(),         
+
    html.Br(),
+            
+
    ################################  RELIGION            
+   
    html.H1("Religión", 
             style={'backgroundColor': 'lightgray',
                    'margin-left': '90px',
                   "margin-bottom": "-8px"}),
-   html.Br(),
-            html.Br(),
+
+
             
             dbc.Row([
                 dbc.Col(dcc.Graph(figure=relgprotevang_graf),
@@ -1211,3 +1212,5 @@ app.layout = html.Div([ #head,
 
 if __name__ == '__main__':
     app.run_server()
+
+    
