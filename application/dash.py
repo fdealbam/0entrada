@@ -1009,7 +1009,11 @@ metropolis = dbc.Card(
             
 
    ################################  RELIGION            
-   
+   ################################  RELIGION            
+   html.H1("Religión", 
+            style={'backgroundColor': 'lightgray',
+                   'margin-left': '90px',
+                  "margin-bottom": "-8px"}),
    html.H1("Religión", 
             style={'backgroundColor': 'lightgray',
                    'margin-left': '90px',
@@ -1017,7 +1021,7 @@ metropolis = dbc.Card(
 
 
             
-            dbc.Row([
+   dbc.Row([
                 dbc.Col(dcc.Graph(figure=relgprotevang_graf),
                  style={#"width": "50px",
                       'backgroundColor': 'lightgray'}),
@@ -1114,23 +1118,34 @@ metropolis = dbc.Card(
    html.Br(),
    html.Br(),
    dbc.Row([
-         dbc.Col(([html.H4(("¿Qué hace “moderna” a una metrópolis?"),
+         dbc.Col(([html.H4("¿Qué se define una metrópolis en 2020?",
                    style={"color": "white", 
                                "font-weight": 'bold',
                                "font-size": "26px",
                                "font-family": "Montserrat",        
                                "font-weight": 'bold',
                                "text-shadow": "10px 20px 30px gray",
-                            "background-color": "lightgray"})])),
-         dbc.Col(html.P("La diversidad es uno de los signos propios de una metrópolis, muestra la aunque no implica necesariamente igualdad si no, en ciertos contextos específicamente mexicanos, esa diversidad es reflejo de desigualdad. Como expresión de desigualdad, la diversidad es una representación de la diferencia, aquélla que se expresa como la concentración en un territorio de población con características sociodemográficas o de condiciones familiares no similares, o de variedad en la disponibilidad de servicios urbanos, por ejemplo. "
-                    "La metrópolis es entonces un espacio de concentración territorial de las diferencias, tanto en su monto o extensión; tanto en su número como en su proporcionalidad. Esta concentración territorial es estadísticamente variada y diversa, porque en los múltiples territorios urbanos del país, se encuentran tanto regularidades como irregularidades, que aquí identificaremos con algunas variables de análisis específicas. "
-                    "En esta ocasión, presentamos un ejercicio de visualización de algunos resultados del Censo de Población y Vivienda 2020 (Inegi, 2020) en función de los territorios metropolitanos, en sus particularidades estadísticas. "
-                    "El objetivo es destacar tanto regularidades como irregularidades como elementos que pueden ayudarnos a definir un “modelo de la vida” de la población en territorios metropolitanos en México con datos recientes. "), 
+                            "background-color": "lightgray"}),
+   html.Br(),
+                   
+   html.P("La diversidad es uno de los signos propios de una metrópolis, aunque no implica necesariamente igualdad, "  
+          "en ciertos contextos específicamente mexicanos, esa diversidad es reflejo de la desigualdad. Como expresión de "
+          "desigualdad, la diversidad es una representación de la diferencia, aquélla que se expresa como la concentración en "
+          "un territorio de población con características sociales o individuales no similares; o de la "
+          "variedad en la disponibilidad de servicios urbanos, por ejemplo. "
+          "La metrópolis es entonces un espacio de concentración territorial de las diferencias, tanto en su monto o extensión; "
+          "tanto en su número como en su proporcionalidad. Esta concentración  es estadísticamente variada y diversa, "
+          "porque en los múltiples territorios urbanos del país, se encuentran tanto regularidades como irregularidades, que aquí"
+          "identificamos con algunas variables específicas. "
+          "En esta ocasión, presentamos un ejercicio de visualización del Censo de Población y Vivienda 2020 "
+          " (Inegi, 2020) en función de las particularidades estadísticasos de territorios metropolitanos. "
+          "El objetivo es destacar elementos para definir "
+          " “modelos de la vida metropolitana” en México, con los datos recientes. ", 
                      style={"color": "black", 
                             "font-size": "14px",
                             "font-family": "Arial",   
-                            "background-color": "lightgray"}),
-           ],style={"background-color": "lightgray",
+                            "background-color": "lightgray"})])),
+   ], style={"background-color": "lightgray",
                           "box-shadow": "10px 20px 30px gray",
                            'width': '1100px',
                            'margin-left': '100px',
@@ -1213,4 +1228,5 @@ app.layout = html.Div([ #head,
 if __name__ == '__main__':
     app.run_server()
 
-    
+
+
