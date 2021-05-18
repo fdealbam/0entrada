@@ -136,7 +136,7 @@ sinderechohabiencia_graf = px.bar_polar(df_a,
                    color="PSINDER_%", template="none",
                    #legend="off",
                    color_continuous_scale=px.colors.sequential.Teal)
-sinderechohabiencia_graf.update_layout(title = 'sin afiliación a servicios de salud ',
+sinderechohabiencia_graf.update_layout(title = 'SIN AFILIACIÓN A SERVICIOS DE SALUD',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
@@ -161,7 +161,7 @@ discapacidad_graf = px.bar_polar(df_a,
                    color="PCON_DISC_%", template="none",
                    #legend="off",
                    color_continuous_scale=px.colors.sequential.Plotly3_r)
-discapacidad_graf.update_layout(title = 'discapacidad ',
+discapacidad_graf.update_layout(title = 'DISCAPACIDAD ',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
@@ -186,7 +186,7 @@ internet_graf = px.bar_polar(df_a,
                    color="VPH_INTER_%", template="none",
                    #legend="off",
                    color_continuous_scale=px.colors.sequential.Peach)
-internet_graf.update_layout(title = 'internet ',
+internet_graf.update_layout(title = 'INTERNET',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
@@ -213,7 +213,7 @@ desocupada12ymas_graf = px.bar_polar(df_a,
                    color="PDESOCUP_%", template="none",
                    #legend="off",
                    color_continuous_scale=px.colors.sequential.Mint)
-desocupada12ymas_graf.update_layout(title = 'población desocupada ',
+desocupada12ymas_graf.update_layout(title = 'POBLACIÓN DESOCUPADA',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
@@ -238,7 +238,7 @@ nacidaenotraentidad_graf = px.bar_polar(df_a,
                    color="PNACOE_%", template="none",
                    #legend="off",
                    color_continuous_scale=px.colors.sequential.Teal)
-nacidaenotraentidad_graf.update_layout(title = 'población nacida en otra entidad ',
+nacidaenotraentidad_graf.update_layout(title = 'POBLACIÓN NACIDA EN OTRA ENTIDAD',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
@@ -264,7 +264,7 @@ pobde60ymas_graf = px.bar_polar(df_a,
                    color="P_60YMAS_%", template="none",
                    #legend="off",
                    color_continuous_scale=px.colors.sequential.Mint)
-pobde60ymas_graf.update_layout(title = '60 años y más ',
+pobde60ymas_graf.update_layout(title = '60 AÑOS Y MÁS',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        title_font_size= 20,
@@ -285,7 +285,7 @@ servsaludpriv_graf = px.bar_polar(df_a,
                    color="PAFIL_IPRIV_%", template="none",
                    #legend="off",
                    color_continuous_scale=px.colors.sequential.Teal)
-servsaludpriv_graf.update_layout(title = 'con afiliación a servicios de salud privados',
+servsaludpriv_graf.update_layout(title = 'AFILIACIÓN A SERVICIOS DE SALUD PRIVADOS',#'CON AFILIACIÓN A SERVICIOS DE SALUD PRIVADOS',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
@@ -309,7 +309,7 @@ habitantesporcuarto_graf = px.bar_polar(df_a,
                    color="PRO_OCUP_C", template="none",
                    #legend="off",
                    color_continuous_scale=px.colors.sequential.Pinkyl)
-habitantesporcuarto_graf.update_layout(title = 'promedio de habitantes por cuarto',
+habitantesporcuarto_graf.update_layout(title = 'PROMEDIO DE HABITANTES POR CUARTO',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
@@ -334,7 +334,7 @@ relgprotevang_graf = px.bar_polar(df_a,
                    color="PRO_CRIEVA_%", template="none",
                    #legend="off",
                    color_continuous_scale=px.colors.sequential.Mint)
-relgprotevang_graf.update_layout(title = 'grupo religioso protestante/ cristiano evangélico  ',
+relgprotevang_graf.update_layout(title = 'RELIGIÓN PROTESTANTE/CRISTIANO EVANGÉLICO',#'GRUPO RELIGIOSO PROTESTANTE/CRISTIANO EVANGÉLICO',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
@@ -358,7 +358,7 @@ hogconjfa_graf = px.bar_polar(df_a,
                    color="HOGJEF_F_%", template="none",
                    #legend="off",
                    color_continuous_scale=px.colors.sequential.PuRd)
-hogconjfa_graf.update_layout(title = 'hogares censales con persona de referencia mujer  ',
+hogconjfa_graf.update_layout(title = 'HOGARES CON JEFATURA FEMENINA',#'HOGARES CENSALES CON PERSONA DE REFERENCIA MUJER',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
@@ -382,7 +382,7 @@ hogaresconbici_graf = px.bar_polar(df_a,
                    color="VPH_BICI_%", template="none",
                    #legend="off",
                    color_continuous_scale=px.colors.sequential.Peach)
-hogaresconbici_graf.update_layout(title = 'bicicleta',
+hogaresconbici_graf.update_layout(title = 'BICICLETA',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
@@ -406,7 +406,7 @@ pobanalfabeta_graf = px.bar_polar(df_a,
                    color="P15YM_AN_%", template="none",
                    #legend="off",
                    color_continuous_scale=px.colors.sequential.Teal)
-pobanalfabeta_graf.update_layout(title = 'población analfabeta  ',
+pobanalfabeta_graf.update_layout(title = 'POBLACIÓN ANALFABETA',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
@@ -430,7 +430,7 @@ pob18ymas_graf = px.bar_polar(df_a,
                    color="P_18YMAS_%", template="none",
                    #legend="off",
                    color_continuous_scale=px.colors.sequential.Mint)
-pob18ymas_graf.update_layout(title = '18 años y más ',
+pob18ymas_graf.update_layout(title = '18 AÑOS Y MÁS',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
@@ -453,7 +453,7 @@ sinrelig_graf = px.bar_polar(df_a,
                    color="PSIN_RELIG_%", template="none",
                    #legend="off",
                    color_continuous_scale=px.colors.sequential.Teal)
-sinrelig_graf.update_layout(title = 'población sin religión  ',
+sinrelig_graf.update_layout(title = 'SIN RELIGIÓN',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
@@ -477,7 +477,7 @@ conpc_graf = px.bar_polar(df_a,
                    color="VPH_PC_%", template="none",
                    #legend="off",
                    color_continuous_scale=px.colors.sequential.Peach)
-conpc_graf.update_layout(title = 'computadora  ',
+conpc_graf.update_layout(title = 'COMPUTADORA',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
@@ -492,6 +492,54 @@ conpc_graf.update_layout(title = 'computadora  ',
 conpc_graf.update(layout_coloraxis_showscale=False)
 
 
+#-------------------------------------------------------------------------------------------------------------------3
+# secundaria terminada
+
+df_a = data.sort_values(by= "POBTOT", ascending=False)#.head(10)
+
+secundaria_graf = px.bar_polar(df_a,
+                   r="P15SEC_CO_%", theta="NOM_ZM",
+                   color="P15SEC_CO_%", template="none",
+                   #legend="off",
+                   color_continuous_scale=px.colors.sequential.Peach)
+secundaria_graf.update_layout(title = 'POBLACIÓN SON SECUNDARIA COMPLETA',
+                                       title_font_family="Montserrat",
+                                       title_font_color="black",
+                                       
+                                       title_font_size= 20,
+                         
+                         #legend=dict(showscale=False),
+                  font=dict(family="Arial",
+                              size=7,
+                              color="black"),
+                     paper_bgcolor="rgba(0,0,0,0)",
+                     plot_bgcolor="rgba(0,0,0,0)")
+secundaria_graf.update(layout_coloraxis_showscale=False)
+
+
+#vars-------------------------------------------------------------------------------------------------------------------3
+# 18 y mas posbasica
+
+df_a = data.sort_values(by= "POBTOT", ascending=False)#.head(10)
+
+posbasica_graf = px.bar_polar(df_a,
+                   r="P18YM_PB_%", theta="NOM_ZM",
+                   color="P18YM_PB_%", template="none",
+                   #legend="off",
+                   color_continuous_scale=px.colors.sequential.Peach)
+posbasica_graf.update_layout(title = '18 Y MAS CON EDUCACIÓN POSBÁSICA',
+                                       title_font_family="Montserrat",
+                                       title_font_color="black",
+                                       
+                                       title_font_size= 20,
+                         
+                         #legend=dict(showscale=False),
+                  font=dict(family="Arial",
+                              size=7,
+                              color="black"),
+                     paper_bgcolor="rgba(0,0,0,0)",
+                     plot_bgcolor="rgba(0,0,0,0)")
+posbasica_graf.update(layout_coloraxis_showscale=False)
 
 ######################################
 # Apartado "head"
@@ -524,15 +572,17 @@ buttons = html.Div([
      html.Br(),
      html.Br(),
      html.Br(),
-     dbc.Row(
+        dbc.Row(
            [
                dbc.Col(html.H1(["Metrópolis, 2020 " ],
                       style={'textAlign': 'start',
-                             "font-size": "45px",
                            "color": "white", 
                           "text-shadow": "10px 20px 30px gray",}),
-                       width={'size': 20, "offset":1 },
-                      )],justify="start",),
+                       width={'size': 40, "offset":1 },
+                      ),],justify="start",),
+      dbc.Row(
+           [      dbc.Col(html.H6(["Fuente: Censo de Población y Vivienda 2020, INEGI"],
+                                  style={"margin-left": "100px"}))]),
     html.Br(),
     html.Br(),
  
@@ -901,30 +951,7 @@ metropolis = dbc.Card(
                     'margin-left': '80px',
                     #"width": "78rem", 
                         }),
-
- #   dbc.Row([
- #                dbc.Col(html.H6("60 años y más eliminar", 
- #                    style={'textAlign': 'center',
- #                          "color": "black",
- #                          "font-size": "16px",
- #                          'text-transform': "uppercase",
- #                         "background-color": "light"})),
- #
- #                dbc.Col(html.H6("18 años y más", 
- #                    style={'textAlign': 'center',
- #                          "color": "black",
- #                          "font-size": "16px",
- #                          'text-transform': "uppercase",
- #                         "background-color": "light"})),
- #              
- #    ],
- #            style={'backgroundColor': 'lightgray',
- #                   'width': '1200px',
- #                   'margin-top': '-40px',
- #                   'margin-left': '80px',
- #                   #"width": "78rem", 
- #                       }),
- #           
+      
    html.Br(),
 
    ################################  SALUD            
@@ -953,36 +980,7 @@ metropolis = dbc.Card(
                     'margin-left': '80px',
                     #"width": "78rem", 
                         }),
-    
- # #  dbc.Row([
-#
-  #               dbc.Col(html.H6("Discapacidad", 
-  #                   style={'textAlign': 'center',
-  #                         "color": "black",
-  #                         "font-size": "16px",
-  #                         'text-transform': "uppercase",
-  #                        "background-color": "light"})),
-  #      
-  #               dbc.Col(html.H6("Sin derechohabiencia", 
-  #                   style={'textAlign': 'center',
-  #                         "color": "black",
-  #                         "font-size": "16px",
-  #                         'text-transform': "uppercase",
-  #                        "background-color": "light"})),
-  #      
-  #               dbc.Col(html.H6("Servicios de Salud Privado", 
-  #                   style={'textAlign': 'center',
-  #                         "color": "black",
-  #                         "font-size": "16px",
-  #                         'text-transform': "uppercase",
-  #                        "background-color": "light"})),
-  #               
-  #      ],style={'backgroundColor': 'lightgray',
-  #                  'width': '1200px',
-  #                  'margin-top': '-40px',
-  #                  'margin-left': '80px',
-  #                  #"width": "78rem", 
-  #                      }),
+
    html.Br(),
             
    ################################  EDUCACION            
@@ -995,7 +993,12 @@ metropolis = dbc.Card(
          dbc.Col(dcc.Graph(figure=pobanalfabeta_graf),
                  style={#"width": "50px",
                       'backgroundColor': 'lightgray'}),
-           ],
+       dbc.Col(dcc.Graph(figure=secundaria_graf),
+                 style={#"width": "50px",
+                      'backgroundColor': 'lightgray'}),
+   dbc.Col(dcc.Graph(figure=posbasica_graf),
+                 style={#"width": "50px",
+                      'backgroundColor': 'lightgray'}),],
              style={'backgroundColor': 'lightgray',
                     'width': '1200px',
                     'margin-top': '0px',
@@ -1003,69 +1006,30 @@ metropolis = dbc.Card(
                     #"width": "78rem", 
                         }),
             
- #  dbc.Row([
- #       dbc.Col(html.H6("Analfabetas", 
- #                   style={'textAlign': 'center',
- #                         "color": "black",
- #                         "font-size": "16px",
- #                         'text-transform': "uppercase",
- #                        "background-color": "light"})),
- #  
- #          ],style={'backgroundColor': 'lightgray',
- #                  'width': '1200px',
- #                  'margin-top': '-40px',
- #                  'margin-left': '80px',
- #                  #"width": "78rem", 
- #                      }),
-   html.Br(),         
-
+html.Br(),         
+   html.Br(),
    ################################  RELIGION            
    html.H1("Religión", 
             style={'backgroundColor': 'lightgray',
                    'margin-left': '90px',
                   "margin-bottom": "-8px"}),
+   html.Br(),
+            html.Br(),
             
-   dbc.Row([
-         dbc.Col(dcc.Graph(figure=relgprotevang_graf),
+            dbc.Row([
+                dbc.Col(dcc.Graph(figure=relgprotevang_graf),
                  style={#"width": "50px",
                       'backgroundColor': 'lightgray'}),
-       
-         dbc.Col(dcc.Graph(figure=sinrelig_graf),
+                dbc.Col(dcc.Graph(figure=sinrelig_graf),
                  style={#"width": "50px",
                       'backgroundColor': 'lightgray'}),
-
-        
-         ],style={'backgroundColor': 'lightgray',
+            ],style={'backgroundColor': 'lightgray',
                     'width': '1200px',
                     'margin-top': '-40px',
                     'margin-left': '80px',
                     #"width": "78rem", 
                         }),
-
-
-    
- #  dbc.Row([
- #               dbc.Col(html.H6("Protestantes y evangélicos", 
- #                   style={'textAlign': 'center',
- #                         "color": "black",
- #                         "font-size": "16px",
- #                         'text-transform': "uppercase",
- #                        "background-color": "light"})),
- #               
- #                dbc.Col(html.H6("Sin religión", 
- #                   style={'textAlign': 'center',
- #                         "color": "black",
- #                         "font-size": "16px",
- #                         'text-transform': "uppercase",
- #                        "background-color": "light"})),
- #      ],style={'backgroundColor': 'lightgray',
- #                  'width': '1200px',
- #                  'margin-top': '-40px',
- #                  'margin-left': '80px',
- #                  #"width": "78rem", 
- #                      }),
- #          
- #     
+            
        
    html.Br(),    
    ################################  MIGRACION            
@@ -1088,29 +1052,6 @@ metropolis = dbc.Card(
                     'margin-left': '80px',
                     #"width": "78rem", 
                         }),
-
-
- # dbc.Row([
- #                dbc.Col(html.H6("Nacidos en otra entidad", 
- #                   style={'textAlign': 'center',
- #                         "color": "black",
- #                         "font-size": "16px",
- #                         'text-transform': "uppercase",
- #                        "background-color": "light"})),   
- #     
- #                dbc.Col(html.H6("Población desocupada", 
- #                   style={'textAlign': 'center',
- #                         "color": "black",
- #                         "font-size": "16px",
- #                         'text-transform': "uppercase",
- #                        "background-color": "light"})),
- #     
- #       ],style={'backgroundColor': 'lightgray',
- #                  'width': '1200px',
- #                  'margin-top': '0px',
- #                  'margin-left': '80px',
- #                  #"width": "78rem", 
- #                      }),
 
    html.Br(),    
        
@@ -1135,29 +1076,6 @@ metropolis = dbc.Card(
                     'margin-left': '80px',
                     #"width": "78rem", 
                         }),
-
- # dbc.Row([
- #                dbc.Col(html.H6("Habitantes por cuarto", 
- #                   style={'textAlign': 'center',
- #                         "color": "black",
- #                         "font-size": "16px",
- #                         'text-transform': "uppercase",
- #                        "background-color": "light"})),
-
- #                dbc.Col(html.H6("Jefatura femenina", 
- #                   style={'textAlign': 'center',
- #                         "color": "black",
- #                         "font-size": "16px",
- #                         'text-transform': "uppercase",
- #                        "background-color": "light"})),
- #     
- #       ],style={'backgroundColor': 'lightgray',
- #                  'width': '1200px',
- #                  'margin-top': '0px',
- #                  'margin-left': '80px',
- #                  #"width": "78rem", 
- #                      }),
- #          
 
        
    html.Br(),    
@@ -1186,35 +1104,7 @@ metropolis = dbc.Card(
                     'margin-left': '80px',
                     #"width": "78rem", 
                         }),
-
- #   dbc.Row([
- #       dbc.Col(html.H6("Computadora", 
- #                    style={'textAlign': 'center',
- #                          "color": "black",
- #                          "font-size": "16px",
- #                          'text-transform': "uppercase",
- #                         "background-color": "light"})),
- #       dbc.Col(html.H6("Internet", 
- #                    style={'textAlign': 'center',
- #                          "color": "black",
- #                          "font-size": "16px",
- #                          'text-transform': "uppercase",
- #                         "background-color": "light"})),
- #       dbc.Col(html.H6("Bicicleta", 
- #                    style={'textAlign': 'center',
- #                          "color": "black",
- #                          "font-size": "16px",
- #                          'text-transform': "uppercase",
- #                         "background-color": "light"})),
- #                
- #        ],style={'backgroundColor': 'lightgray',
- #                   'width': '1200px',
- #                   'margin-top': '-40px',
- #                   'margin-left': '80px',
- #                   #"width": "78rem", 
- #                       }),
-#
-       
+   
        
     ############################################### winik <<<<<<<<<<<<<<<<<<<<<<
            
@@ -1321,6 +1211,3 @@ app.layout = html.Div([ #head,
 
 if __name__ == '__main__':
     app.run_server()
-
-
-    
