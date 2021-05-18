@@ -1225,6 +1225,7 @@ html.Br(),
           "margin-left": "-4px",
           "background-color": "lightgray",
            "justify": "justify"
+           
           }))
     
     
@@ -1252,7 +1253,7 @@ app.layout = html.Div([ buttons, metropolis# layer2,
                       ],style={
            # 'margin-top': '0px',
             #'margin-left': '10px',
-            #'width': '1400px',
+            #'width': '1600px',
             #'height': '1413px',
             'backgroundColor': 'lightgray'
             })
