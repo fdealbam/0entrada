@@ -1,5 +1,3 @@
-
-
 import dash
 import dash_bootstrap_components as dbc
 import dash_core_components as dcc
@@ -1069,9 +1067,9 @@ metropolis = dbc.Card(
                   "margin-bottom": "-8px"}),
        
    dbc.Row([
-         dbc.Col(dcc.Graph(figure=habitantesporcuarto_graf),
-                 style={#"width": "50px",
-                      'backgroundColor': 'lightgray'}),
+#         dbc.Col(dcc.Graph(figure=habitantesporcuarto_graf),
+#                 style={#"width": "50px",
+#                      'backgroundColor': 'lightgray'}),
        
          dbc.Col(dcc.Graph(figure=hogconjfa_graf),
                  style={#"width": "50px",
@@ -1230,3 +1228,4 @@ app.layout = html.Div([ #head,
 if __name__ == '__main__':
     app.run_server()
 
+    
