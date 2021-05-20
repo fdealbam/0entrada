@@ -1,3 +1,4 @@
+
 import dash
 import dash_bootstrap_components as dbc
 import dash_core_components as dcc
@@ -574,15 +575,71 @@ buttons = html.Div([
      html.Br(),
      dbc.Row(
            [
-               dbc.Col(html.H1(["Metrópolis, 2020 " ],
+               dbc.Col(html.H1(["Las metrópolis mexicanas en 2020 " ],
                       style={'textAlign': 'start',
                              "font-size": "45px",
                            "color": "white", 
-                          "text-shadow": "10px 20px 30px gray",}),
+                          "text-shadow": "10px 20px 30px black",}),
                        width={'size': 20, "offset":1 },
                       )],justify="start",),
-    html.Br(),
-    html.Br(),
+   html.Br(),
+   html.Br(),
+   html.Br(),
+    
+   dbc.Row([
+         dbc.Col(([html.H6("Analisis de un fenómeno de alto dinamismo ",
+                   style={"color": "black", 
+                               "font-weight": 'bold',
+                               "font-size": "16px",
+                               "font-family": "Montserrat",        
+                               "font-weight": 'bold',
+                               "text-shadow": "10px 20px 30px gray",
+                            "background-color": "lightgray"}),
+   html.Br(),
+                   
+   html.P("Las zonas metropolitanas o metrópolis son los enclaves con el mayor dinamismo en la vida nacional. " 
+          "Según el Censo Nacional de Población y Vivienda de 2020, existen en México 74 zonas  "
+          " metropolitanas que incluyen 417 municipios. Reúnen más de 80 millones de habitantes "
+          " (63% del total nacional). "
+          "Son territorios de la mayor diversidad, uno de sus signos propios, aunque ello no implica necesariamente igualdad, "  
+          "dado que en ciertos casos, esa diversidad es reflejo de pobreza o marginación; "
+          " donde se afirman las principales difererencias nacionales, por su población disimilar; son conglomerados de la "
+          "variedad tanto como de la falta de servicios urbanos; entre muchas otras problemáticas. "
+          "Las  metrópolis son espacios de concentración de diferencias tanto en su monto como en su extensión; "
+          "tanto en su número como en su proporcionalidad; son territorios estadísticamente diversos; "
+          " son reflejo de las múltiples urbanidades del país; donde se localizan fuertes irregularidades de todo orden. " 
+          "A continuación presentamos un procesamiento analítico de la población que vive en metrópolis, según el "
+          "Censo de 2020 (INEGI, 2021). "
+          " Identificamos las particularidades sociodemográficas más relevantes con el objetivo de destacar "
+          "en tanto eso sea posible, los “modelos de la vida metropolitana” en México, con los datos más recientes. ", 
+                     style={"color": "black", 
+                            "font-size": "16px",
+                            "font-family": "Arial",   
+                            "background-color": "lightgray"})])),
+   ], style={"background-color": "lightgray",
+                          #"box-shadow": "10px 20px 30px gray",
+                           'width': '1200px',
+                           'margin-left': '100px',
+                           'margin-right': '0px'}),
+            
+
+  html.Br(),
+  html.Br(),
+  html.Br(),
+  html.Br(),
+
+  html.H6("Cifras generales", 
+                    style={"color": "white", 
+                               "font-weight": 'bold',
+                               "font-size": "26px",
+                               "font-family": "Montserrat",        
+                               "font-weight": 'bold',
+                               "text-shadow": "10px 20px 30px black",
+                        'margin-left': '90px',
+                          "background-color": "lightgray"}),
+
+    
+  html.Br(),
  
     
     
@@ -614,7 +671,7 @@ buttons = html.Div([
                                "font-weight": 'bold'}),                      
        ]),style={ "background-color": "light",
                   "box-shadow": "10px 20px 30px gray",
-                  'margin-left': '50px',
+                  'margin-left': '110px',
                  } ,disabled=True),
     
 
@@ -631,7 +688,7 @@ buttons = html.Div([
                                'backgroundColor': 'white',}),                      
        ]),style={ 'backgroundColor': 'white',
                   "box-shadow": "10px 20px 30px gray",
-                  'margin-left': '50px',
+                  'margin-left': '110px',
                  
                  } ,disabled=True),
 
@@ -647,7 +704,7 @@ buttons = html.Div([
                                "font-weight": 'bold'}),                      
        ]),style={ "background-color": "light",
                   "box-shadow": "10px 20px 30px gray",
-                  'margin-left': '50px',
+                  'margin-left': '110px',
                  } ,disabled=True),
     
     html.Br(),
@@ -665,8 +722,6 @@ metropolis = dbc.Card(
         [
     html.Br(),
     html.Br(),
-    html.Br(),
-    html.Br(),
    
 
   html.H6("¿Cuánta población tienen?", 
@@ -675,15 +730,50 @@ metropolis = dbc.Card(
                                "font-size": "26px",
                                "font-family": "Montserrat",        
                                "font-weight": 'bold',
-                               "text-shadow": "10px 20px 30px gray",
+                               "text-shadow": "10px 20px 30px black",
                         'margin-left': '90px',
                           "background-color": "lightgray"}),
+            
+            
+            
+            
+   html.Br(),
+    
+   dbc.Row([
+         dbc.Col(([html.H6("Extrema concentración poblacional ",
+                   style={"color": "black", 
+                               "font-weight": 'bold',
+                               "font-size": "16px",
+                               "font-family": "Montserrat",        
+                               "font-weight": 'bold',
+                               "text-shadow": "10px 20px 30px gray",
+                            "background-color": "lightgray"}),
+   html.Br(),
+                   
+   html.P("Tal como se observa en la gráfica, de las 74 zonas metropolitanas, la del Valle de México y la "
+          "de Puebla Tlaxcala, reunen el 19% de la población del país. "
+          "Entre las cuatro más pobladas reúnen 27% de los habitantes "
+          "en México. La Región Centro registra una concentración poblacional extrema. ",
+                     style={"color": "black", 
+                            "font-size": "16px",
+                            "font-family": "Arial",   
+                            "background-color": "lightgray"})])),
+   ], style={"background-color": "lightgray",
+                          #"box-shadow": "10px 20px 30px gray",
+                           'width': '1200px',
+                           'margin-bottom': '-20px',
+                           'margin-left': '100px',
+                           'margin-right': '0px'}),
+            
+
+  html.Br(),
+            
 
      # Graph Tree
-    dbc.Row([dbc.Col(dcc.Graph(figure=treezm))],
+  dbc.Row([dbc.Col(dcc.Graph(figure=treezm))],
              style={'backgroundColor': 'lightgray',
                     'width': '1380px',
-                    'margin-top': '0px',
+                    'margin-top': '-20px',
                     'margin-left': '0px',
                     
                         }),
@@ -696,23 +786,33 @@ metropolis = dbc.Card(
                                "font-size": "26px",
                                "font-family": "Montserrat",        
                                "font-weight": 'bold',
-                               "text-shadow": "10px 20px 30px gray",
+                               "text-shadow": "10px 20px 30px black",
                         'margin-left': '90px',
                           "background-color": "lightgray"}),
 
   html.Br(),  
   html.Br(),
-#           dbc.Row([
-#                   html.P("Cuatro metrópolis reúnen "  f"{int(pobde4zm):,}"     
-#                          "habitantes, es decir, " f"{int(percentpobde4zm):,}" "%" 
-#                          "de la población del país (INEGI,2020)", 
-#                   style={'textAlign': 'left',
-#                          "color": "black",
-#                          "font-size": "16px",
-#                          "font-family": "Montserrat Medium",        
-#                          'margin-left': '100px',
-#                         "background-color": "lightgray"}),
-#                  ]),  
+  html.Br(),
+  dbc.Row([
+      html.P("Enseguida, presentamos un reporte con variables "
+          " seleccionadas de cada una de las cuatro metrópolis "
+          "más pobladas. Haz click en el mapa para acceder. NOTA: Si estás "
+          "interesado en reportes del resto de las 70 metrópolis, "
+          "pronto aparecerá aquí un libro con el análisis completo. "   ,
+                     style={"color": "black", 
+                            "font-size": "16px",
+                            "font-family": "Arial",   
+                            "background-color": "lightgray"})
+       
+       ], style={"background-color": "lightgray",
+                          #"box-shadow": "10px 20px 30px gray",
+                           'width': '1200px',
+                           'margin-bottom': '-40px',
+                           'margin-left': '100px',
+                           'margin-right': '0px'}),
+            
+
+  html.Br(),
 
                 
             dbc.Row([
@@ -781,7 +881,7 @@ metropolis = dbc.Card(
                      style={'textAlign': 'center',
                            "color": "red",
                             "font-weight": 'bold',
-                            "font-size": "20px",
+                            "font-size": "16px",
                            'text-transform': "uppercase",
                           "background-color": "light"})),
                  dbc.Col(html.H6(f"{int(pobzmonterrey):,}",
@@ -813,7 +913,7 @@ metropolis = dbc.Card(
                            "color": "red",
                             "font-weight": 'bold',
                             "font-family": "Montserrat ExtraBold",        
-                            "font-size": "25px",
+                            "font-size": "35px",
                            'text-transform': "uppercase",
                           "background-color": "light"})),
                  dbc.Col(html.H6(f"{int(perpob_mty):,}" "%",
@@ -821,7 +921,7 @@ metropolis = dbc.Card(
                            "color": "black",
                             "font-weight": 'bold',
                             "font-family": "Montserrat ExtraBold",        
-                            "font-size": "20px",
+                            "font-size": "35px",
                            'text-transform': "uppercase",
                           "background-color": "light"})),
                  dbc.Col(html.H6(f"{int(perpob_gdl):,}" "%",
@@ -829,7 +929,7 @@ metropolis = dbc.Card(
                            "color": "black",
                             "font-weight": 'bold',
                             "font-family": "Montserrat ExtraBold",        
-                            "font-size": "20px",
+                            "font-size": "35px",
                            'text-transform': "uppercase",
                           "background-color": "light"})),
                  dbc.Col(html.H6(f"{int(perpob_ptl):,}" "%",
@@ -837,7 +937,7 @@ metropolis = dbc.Card(
                            "color": "black",
                             "font-weight": 'bold',
                             "font-family": "Montserrat ExtraBold",        
-                            "font-size": "20px",
+                            "font-size": "35px",
                            'text-transform': "uppercase",
                           "background-color": "light"}))]), 
             
@@ -861,25 +961,12 @@ metropolis = dbc.Card(
                                "font-size": "26px",
                                "font-family": "Montserrat",        
                                "font-weight": 'bold',
-                               "text-shadow": "10px 20px 30px gray",
+                               "text-shadow": "10px 20px 30px black",
                         'margin-left': '90px',
                            'margin-bottom': '20px',
                           "background-color": "lightgray"}),
             html.Br(),
-#           dbc.Row([
-#                   html.P("Se identifican cuatro grupos, primero; 4 zonas metropolitanas con más de cuatro millones de habitantes, " 
-#                          "segundo; 13 zonas metropolitanas entre cuatro y un millón de habitantes ,tercero; 19 zonas metropolitanas "
-#                          " de un millón a medio millón de habitantes, y finalmente el cuarto grupo; 34 zonas metropolitanas con "
-#                          " menos de medio millón de habitantes.",#" (INEGI,2020)", 
-#                   style={'textAlign': 'left',
-#                          "color": "black",
-#                          "font-size": "16px",
-#                          "font-family": "Montserrat Medium",        
-#                          'margin-left': '90px',
-#                         "background-color": "lightgray"}),],
-#               style={#'margin-buttom': '-50px'
-#                      'width': '1200px'}),
-   #html.Br(),
+
             
    dbc.Row([
 #         dbc.Col(dcc.Graph(figure=graph1),
@@ -917,13 +1004,41 @@ metropolis = dbc.Card(
                                "font-size": "26px",
                                "font-family": "Montserrat",        
                                "font-weight": 'bold',
-                               "text-shadow": "10px 20px 30px gray",
+                               "text-shadow": "10px 20px 30px black",
                         'margin-left': '90px',
                           "background-color": "lightgray"}),
             
             
    html.Br(),
+   dbc.Row([
+         dbc.Col(([html.H6("Analisis de 16 variables de la población metropolitana ",
+                   style={"color": "black", 
+                               "font-weight": 'bold',
+                               "font-size": "16px",
+                               "font-family": "Montserrat",        
+                               "font-weight": 'bold',
+                               "text-shadow": "10px 20px 30px gray",
+                            "background-color": "lightgray"}),
    html.Br(),
+                   
+   html.P("Enseguida visualizamos los rankings metropolitanos según una "
+          "selección de 16 variables, que permiten dar una imagen precisa "
+          " de qué zona metropolitana registra qué característica subrayada. "
+          ". Las gráficas están "
+          " ordenadas de más a menos pobladas. ",
+                     style={"color": "black", 
+                            "font-size": "16px",
+                            "font-family": "Arial",   
+                            "background-color": "lightgray"})])),
+   ], style={"background-color": "lightgray",
+                          #"box-shadow": "10px 20px 30px gray",
+                           'width': '1200px',
+                           'margin-bottom': '-20px',
+                           'margin-left': '100px',
+                           'margin-right': '0px'}),
+            
+
+  html.Br(),
    html.Br(),
 
             
@@ -931,6 +1046,8 @@ metropolis = dbc.Card(
    html.H1("Edad", 
             style={'backgroundColor': 'lightgray',
                    'margin-left': '90px',
+                   "text-shadow": "10px 20px 30px white",
+                   
                   "margin-bottom": "-8px"}),
             
    dbc.Row([
@@ -1116,42 +1233,6 @@ metropolis = dbc.Card(
    html.Br(),
    html.Br(),
    html.Br(),
-   html.Br(),
-   dbc.Row([
-         dbc.Col(([html.H4("¿Cómo se define una metrópolis en 2020?",
-                   style={"color": "white", 
-                               "font-weight": 'bold',
-                               "font-size": "26px",
-                               "font-family": "Montserrat",        
-                               "font-weight": 'bold',
-                               "text-shadow": "10px 20px 30px gray",
-                            "background-color": "lightgray"}),
-   html.Br(),
-                   
-   html.P("La diversidad es uno de los signos propios de una metrópolis, aunque no implica necesariamente igualdad, "  
-          "en ciertos contextos específicamente mexicanos, esa diversidad es reflejo de la desigualdad. Como expresión de "
-          "desigualdad, la diversidad es una representación de la diferencia, aquélla que se expresa como la concentración en "
-          "un territorio de población con características sociales o individuales no similares; o de la "
-          "variedad en la disponibilidad de servicios urbanos, por ejemplo. "
-          "La metrópolis es entonces un espacio de concentración territorial de las diferencias, tanto en su monto o extensión; "
-          "tanto en su número como en su proporcionalidad. Esta concentración  es estadísticamente variada y diversa, "
-          "porque en los múltiples territorios urbanos del país, se encuentran tanto regularidades como irregularidades, que aquí"
-          "identificamos con algunas variables específicas. "
-          "En esta ocasión, presentamos un ejercicio de visualización del Censo de Población y Vivienda 2020 "
-          " (Inegi, 2020) en función de las particularidades estadísticasos de territorios metropolitanos. "
-          "El objetivo es destacar elementos para definir "
-          " “modelos de la vida metropolitana” en México, con los datos recientes. ", 
-                     style={"color": "black", 
-                            "font-size": "14px",
-                            "font-family": "Arial",   
-                            "background-color": "lightgray"})])),
-   ], style={"background-color": "lightgray",
-                          "box-shadow": "10px 20px 30px gray",
-                           'width': '1100px',
-                           'margin-left': '100px',
-                           'margin-right': '0px'}),
-            
-
    html.Br(),
    html.Br(),
    html.Br(),
