@@ -1,3 +1,5 @@
+#0Entrada
+
 
 import dash
 import dash_bootstrap_components as dbc
@@ -130,18 +132,18 @@ graph4.update(layout_coloraxis_showscale=False)
 #-------------------------------------------------------------------------------------------------------------------3
 # SIN DERECHOHABIENCIA
 
-df_a = data.sort_values(by= "POBTOT", ascending=False)#.iloc[4:36]#.head(20)
+df_a = data.sort_values(by= "POBTOT", ascending=False).iloc[4:36]#.head(20)
 
 sinderechohabiencia_graf = px.bar_polar(df_a,
                    r="PSINDER_%", theta="NOM_ZM",
                    color="PSINDER_%", template="none",
                    #legend="off",
-                   color_continuous_scale=px.colors.sequential.Teal)
+                   color_continuous_scale=px.colors.sequential.Peach)
 sinderechohabiencia_graf.update_layout(title = 'SIN DERECHOHABIENCIA',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
-                                       title_font_size= 20,
+                                       title_font_size= 18,
                                         #legend=dict(showscale=False),
                   font=dict(family="Arial",
                               size=7,
@@ -155,18 +157,18 @@ sinderechohabiencia_graf.update(layout_coloraxis_showscale=False)
 #-------------------------------------------------------------------------------------------------------------------3
 # con discapacidad
 
-df_a = data.sort_values(by= "POBTOT", ascending=False)#.head(10)
+df_a = data.sort_values(by= "POBTOT", ascending=False).iloc[4:36]#.head(10)
 
 discapacidad_graf = px.bar_polar(df_a,
                    r="PCON_DISC_%", theta="NOM_ZM",
                    color="PCON_DISC_%", template="none",
                    #legend="off",
-                   color_continuous_scale=px.colors.sequential.Teal)
+                   color_continuous_scale=px.colors.sequential.Peach)
 discapacidad_graf.update_layout(title = 'DISCAPACIDAD ',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
-                                       title_font_size= 20,
+                                       title_font_size= 18,
                                 
                                 #legend=dict(showscale=False),
                   font=dict(family="Arial",
@@ -180,18 +182,18 @@ discapacidad_graf.update(layout_coloraxis_showscale=False)
 
 #-------------------------------------------------------------------------------------------------------------------3
 # CON INTERNET
-df_a = data.sort_values(by= "POBTOT", ascending=False)#.head(10)
+df_a = data.sort_values(by= "POBTOT", ascending=False).iloc[4:36]#.head(10)
 
 internet_graf = px.bar_polar(df_a,
                    r="VPH_INTER_%", theta="NOM_ZM",
                    color="VPH_INTER_%", template="none",
                    #legend="off",
                    color_continuous_scale=px.colors.sequential.Peach)
-internet_graf.update_layout(title = 'INTERNET',
+internet_graf.update_layout(title = 'CON INTERNET',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
-                                       title_font_size= 20,
+                                       title_font_size= 18,
                             
                             #legend=dict(showscale=False),
                   font=dict(family="Arial",
@@ -207,18 +209,18 @@ internet_graf.update(layout_coloraxis_showscale=False)
 #-------------------------------------------------------------------------------------------------------------------3
 # DESOCUPADOS
 
-df_a = data.sort_values(by= "POBTOT", ascending=False)#.head(10)
+df_a = data.sort_values(by= "POBTOT", ascending=False).iloc[4:36]#.head(10)
 
 desocupada12ymas_graf = px.bar_polar(df_a,
                    r="PDESOCUP_%", theta="NOM_ZM",
                    color="PDESOCUP_%", template="none",
                    #legend="off",
-                   color_continuous_scale=px.colors.sequential.Mint)
+                   color_continuous_scale=px.colors.sequential.Teal)
 desocupada12ymas_graf.update_layout(title = 'DESOCUPADOS',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
-                                       title_font_size= 20,
+                                       title_font_size= 18,
                                     
                                     #legend=dict(showscale=False),
                   font=dict(family="Arial",
@@ -232,7 +234,7 @@ desocupada12ymas_graf.update(layout_coloraxis_showscale=False)
 #-------------------------------------------------------------------------------------------------------------------3
 #POBLACION NACIDA EN OTRA ENTIDAD
 
-df_a = data.sort_values(by= "POBTOT", ascending=False)#.head(10)
+df_a = data.sort_values(by= "POBTOT", ascending=False).iloc[4:36]#.head(10)
 
 nacidaenotraentidad_graf = px.bar_polar(df_a,
                    r="PNACOE_%", theta="NOM_ZM",
@@ -243,7 +245,7 @@ nacidaenotraentidad_graf.update_layout(title = 'NACIDOS EN OTRA ENTIDAD',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
-                                       title_font_size= 20,
+                                       title_font_size= 18,
                                        
                                        #legend=dict(showscale=False),
                   font=dict(family="Arial",
@@ -258,17 +260,17 @@ nacidaenotraentidad_graf.update(layout_coloraxis_showscale=False)
 #-------------------------------------------------------------------------------------------------------------------3
 # 60 Y MAS
 
-df_a = data.sort_values(by= "POBTOT", ascending=False)#.head(10)
+df_a = data.sort_values(by= "POBTOT", ascending=False).iloc[4:36]#.head(10)
 
 pobde60ymas_graf = px.bar_polar(df_a,
                    r="P_60YMAS_%", theta="NOM_ZM",
                    color="P_60YMAS_%", template="none",
                    #legend="off",
-                   color_continuous_scale=px.colors.sequential.Mint)
+                   color_continuous_scale=px.colors.sequential.Teal)
 pobde60ymas_graf.update_layout(title = '60 AÑOS Y MÁS',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
-                                       title_font_size= 20,
+                                       title_font_size= 18,
                   font=dict(family="Arial",
                               size=7,
                               color="black"),
@@ -279,18 +281,18 @@ pobde60ymas_graf.update(layout_coloraxis_showscale=False)
 #-------------------------------------------------------------------------------------------------------------------3
 # AFILIADOS SerVICIOS De SALUD PRIVADOS
 
-df_a = data.sort_values(by= "POBTOT", ascending=False)#.head(10)
+df_a = data.sort_values(by= "POBTOT", ascending=False).iloc[4:36]#.head(10)
 
 servsaludpriv_graf = px.bar_polar(df_a,
                    r="PAFIL_IPRIV_%", theta="NOM_ZM",
                    color="PAFIL_IPRIV_%", template="none",
                    #legend="off",
-                   color_continuous_scale=px.colors.sequential.Teal)
+                   color_continuous_scale=px.colors.sequential.Peach)
 servsaludpriv_graf.update_layout(title = 'SALUD PRIVADA',#'CON AFILIACIÓN A SERVICIOS DE SALUD PRIVADOS',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
-                                       title_font_size= 20,
+                                       title_font_size= 18,
                                  
                                  #legend=dict(showscale=False),
                   font=dict(family="Arial",
@@ -303,7 +305,7 @@ servsaludpriv_graf.update(layout_coloraxis_showscale=False)
 #-------------------------------------------------------------------------------------------------------------------3
 # PROMEDIOS HABITANTES/CUARTO (DORMITORIO)
 
-df_a = data.sort_values(by= "POBTOT", ascending=False)#.head(10)
+df_a = data.sort_values(by= "POBTOT", ascending=False).iloc[4:36]#.head(10)
 
 habitantesporcuarto_graf = px.bar_polar(df_a,
                    r="PRO_OCUP_C", theta="NOM_ZM",
@@ -314,7 +316,7 @@ habitantesporcuarto_graf.update_layout(title = 'PERSONAS POR CUARTO',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
-                                       title_font_size= 20,
+                                       title_font_size= 18,
                                        
                                        #legend=dict(showscale=False),
                   font=dict(family="Arial",
@@ -328,7 +330,7 @@ habitantesporcuarto_graf.update(layout_coloraxis_showscale=False)
 # Población con grupo religioso protestante/ cristiano evangélico  
     
 
-df_a = data.sort_values(by= "POBTOT", ascending=False)#.head(10)
+df_a = data.sort_values(by= "POBTOT", ascending=False).iloc[4:36]#.head(10)
 
 relgprotevang_graf = px.bar_polar(df_a,
                    r="PRO_CRIEVA_%", theta="NOM_ZM",
@@ -339,7 +341,7 @@ relgprotevang_graf.update_layout(title = 'PROTESTANTES O EVANGÉLICOS',#'GRUPO R
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
-                                       title_font_size= 20,
+                                       title_font_size= 18,
                                  
                                  #legend=dict(showscale=False),
                   font=dict(family="Arial",
@@ -352,7 +354,7 @@ relgprotevang_graf.update(layout_coloraxis_showscale=False)
 #-------------------------------------------------------------------------------------------------------------------3
 # HOGARES CON JEF-A- DE FAMILIA
 
-df_a = data.sort_values(by= "POBTOT", ascending=False)#.head(10)
+df_a = data.sort_values(by= "POBTOT", ascending=False).iloc[4:36]#.head(10)
 
 hogconjfa_graf = px.bar_polar(df_a,
                    r="HOGJEF_F_%", theta="NOM_ZM",
@@ -363,7 +365,7 @@ hogconjfa_graf.update_layout(title = 'JEFAS DE FAMILIA',#'HOGARES CENSALES CON P
                                        title_font_family="Montserrat ExtraBold",
                                        title_font_color="Purple",
                                        
-                                       title_font_size= 20,
+                                       title_font_size= 18,
                              
                              #legend=dict(showscale=False),
                   font=dict(family="Arial",
@@ -376,18 +378,18 @@ hogconjfa_graf.update(layout_coloraxis_showscale=False)
 #-------------------------------------------------------------------------------------------------------------------3
 # HOGARES CON BICICLETA
 
-df_a = data.sort_values(by= "POBTOT", ascending=False)#.head(10)
+df_a = data.sort_values(by= "POBTOT", ascending=False).iloc[4:36]#.head(10)
 
 hogaresconbici_graf = px.bar_polar(df_a,
                    r="VPH_BICI_%", theta="NOM_ZM",
                    color="VPH_BICI_%", template="none",
                    #legend="off",
-                   color_continuous_scale=px.colors.sequential.Peach)
-hogaresconbici_graf.update_layout(title = 'BICICLETA',
+                   color_continuous_scale=px.colors.sequential.Teal)
+hogaresconbici_graf.update_layout(title = ' CON BICICLETA',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
-                                       title_font_size= 20,
+                                       title_font_size= 18,
                                   
                                   #legend=dict(showscale=False),
                   font=dict(family="Arial",
@@ -400,18 +402,18 @@ hogaresconbici_graf.update(layout_coloraxis_showscale=False)
 #-------------------------------------------------------------------------------------------------------------------3
 # POBLACIÖN ANALFABETA
 
-df_a = data.sort_values(by= "POBTOT", ascending=False)#.head(10)
+df_a = data.sort_values(by= "POBTOT", ascending=False).iloc[4:36]#.head(10)
 
 pobanalfabeta_graf = px.bar_polar(df_a,
                    r="P15YM_AN_%", theta="NOM_ZM",
                    color="P15YM_AN_%", template="none",
                    #legend="off",
-                   color_continuous_scale=px.colors.sequential.Peach)
+                   color_continuous_scale=px.colors.sequential.Teal)
 pobanalfabeta_graf.update_layout(title = 'ANALFABETAS',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
-                                       title_font_size= 20,
+                                       title_font_size= 18,
                                  
                                  #legend=dict(showscale=False),
                   font=dict(family="Arial",
@@ -424,7 +426,7 @@ pobanalfabeta_graf.update(layout_coloraxis_showscale=False)
 #-------------------------------------------------------------------------------------------------------------------3
 # POBLACIÖN 18 Y MÄS
 
-df_a = data.sort_values(by= "POBTOT", ascending=False)#.head(10)
+df_a = data.sort_values(by= "POBTOT", ascending=False).iloc[4:36]#.head(10)
 
 pob18ymas_graf = px.bar_polar(df_a,
                    r="P_18YMAS_%", theta="NOM_ZM",
@@ -435,7 +437,7 @@ pob18ymas_graf.update_layout(title = '18 AÑOS Y MÁS',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
-                                       title_font_size= 20,
+                                       title_font_size= 18,
                              #legend=dict(showscale=False),
                   font=dict(family="Arial",
                               size=7,
@@ -447,18 +449,18 @@ pob18ymas_graf.update(layout_coloraxis_showscale=False)
 #-------------------------------------------------------------------------------------------------------------------3
 # SIN RELIGION
 
-df_a = data.sort_values(by= "POBTOT", ascending=False)#.head(10)
+df_a = data.sort_values(by= "POBTOT", ascending=False).iloc[4:36]#.head(10)
 
 sinrelig_graf = px.bar_polar(df_a,
                    r="PSIN_RELIG_%", theta="NOM_ZM",
                    color="PSIN_RELIG_%", template="none",
                    #legend="off",
-                   color_continuous_scale=px.colors.sequential.Teal)
+                   color_continuous_scale=px.colors.sequential.Mint)
 sinrelig_graf.update_layout(title = 'SIN RELIGIÓN',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
-                                       title_font_size= 20,
+                                       title_font_size= 18,
                             
                             #legend=dict(showscale=False),
                   font=dict(family="Arial",
@@ -471,18 +473,18 @@ sinrelig_graf.update(layout_coloraxis_showscale=False)
 #-------------------------------------------------------------------------------------------------------------------3
 # CON COMPUTADORA
 
-df_a = data.sort_values(by= "POBTOT", ascending=False)#.head(10)
+df_a = data.sort_values(by= "POBTOT", ascending=False).iloc[4:36]#.head(10)
 
 conpc_graf = px.bar_polar(df_a,
                    r="VPH_PC_%", theta="NOM_ZM",
                    color="VPH_PC_%", template="none",
                    #legend="off",
                    color_continuous_scale=px.colors.sequential.Peach)
-conpc_graf.update_layout(title = 'COMPUTADORA',
+conpc_graf.update_layout(title = 'CON COMPUTADORA',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
-                                       title_font_size= 20,
+                                       title_font_size= 18,
                          
                          #legend=dict(showscale=False),
                   font=dict(family="Arial",
@@ -496,18 +498,18 @@ conpc_graf.update(layout_coloraxis_showscale=False)
 #-------------------------------------------------------------------------------------------------------------------3
 # secundaria terminada
 
-df_a = data.sort_values(by= "POBTOT", ascending=False)#.head(10)
+df_a = data.sort_values(by= "POBTOT", ascending=False).iloc[4:36]#.head(10)
 
 secundaria_graf = px.bar_polar(df_a,
                    r="P15SEC_CO_%", theta="NOM_ZM",
                    color="P15SEC_CO_%", template="none",
                    #legend="off",
-                   color_continuous_scale=px.colors.sequential.Peach)
+                   color_continuous_scale=px.colors.sequential.Teal)
 secundaria_graf.update_layout(title = 'SECUNDARIA COMPLETA',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
-                                       title_font_size= 20,
+                                       title_font_size= 18,
                          
                          #legend=dict(showscale=False),
                   font=dict(family="Arial",
@@ -521,18 +523,18 @@ secundaria_graf.update(layout_coloraxis_showscale=False)
 #vars-------------------------------------------------------------------------------------------------------------------3
 # 18 y mas posbasica
 
-df_a = data.sort_values(by= "POBTOT", ascending=False)#.head(10)
+df_a = data.sort_values(by= "POBTOT", ascending=False).iloc[4:36]#.head(10)
 
 posbasica_graf = px.bar_polar(df_a,
                    r="P18YM_PB_%", theta="NOM_ZM",
                    color="P18YM_PB_%", template="none",
                    #legend="off",
-                   color_continuous_scale=px.colors.sequential.Peach)
+                   color_continuous_scale=px.colors.sequential.Teal)
 posbasica_graf.update_layout(title = '+18 CON POSBÁSICA',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
-                                       title_font_size= 20,
+                                       title_font_size= 18,
                          
                          #legend=dict(showscale=False),
                   font=dict(family="Arial",
@@ -541,6 +543,75 @@ posbasica_graf.update_layout(title = '+18 CON POSBÁSICA',
                      paper_bgcolor="rgba(0,0,0,0)",
                      plot_bgcolor="rgba(0,0,0,0)")
 posbasica_graf.update(layout_coloraxis_showscale=False)
+
+#vars-------------------------------------------------------------------------------------------------------------------3
+# POBLACION FEMENINA NACIDA EN OTRA ENtIDAD
+
+df_a = data.sort_values(by= "POBTOT", ascending=False).iloc[4:36]#.head(10)
+
+nacidaenotraentidadmujer_graf = px.bar_polar(df_a,
+                   r="PNACOE_F_%", theta="NOM_ZM",
+                   color="PNACOE_F_%", template="none",
+                   #legend="off",
+                   color_continuous_scale=px.colors.sequential.Purp)
+nacidaenotraentidadmujer_graf.update_layout(title = 'MUJERES NACIDAS EN OTRA ENTIDAD',
+                                       title_font_family="Montserrat",
+                                       title_font_color="black",
+                                       
+                                       title_font_size= 18,
+                         
+                         #legend=dict(showscale=False),
+                  font=dict(family="Arial",
+                              size=7,
+                              color="black"),
+                     paper_bgcolor="rgba(0,0,0,0)",
+                     plot_bgcolor="rgba(0,0,0,0)")
+nacidaenotraentidadmujer_graf.update(layout_coloraxis_showscale=False)
+
+#vars-------------------------------------------------------------------------------------------------------------------3
+# POBLACION DE 15 A 64
+
+df_a = data.sort_values(by= "POBTOT", ascending=False).iloc[4:36]#.head(10)
+
+pob15a64_graf = px.bar_polar(df_a,
+                   r="P_6A11_%", theta="NOM_ZM",
+                   color="P_6A11_%", template="none",
+                   #legend="off",
+                   color_continuous_scale=px.colors.sequential.Teal)
+pob15a64_graf.update_layout(title = '6 A 11 AÑOS',
+                                       title_font_family="Montserrat",
+                                       title_font_color="black",
+                            title_font_size= 20,
+                         #legend=dict(showscale=False),
+                  font=dict(family="Arial",
+                              size=7,
+                              color="black"),
+                     paper_bgcolor="rgba(0,0,0,0)",
+                     plot_bgcolor="rgba(0,0,0,0)")
+pob15a64_graf.update(layout_coloraxis_showscale=False)
+
+#vars-------------------------------------------------------------------------------------------------------------------3
+# STREAMING
+
+df_a = data.sort_values(by= "POBTOT", ascending=False).iloc[4:36]#.head(10)
+
+hogaresconstreaming_graf = px.bar_polar(df_a,
+                   r="VPH_SPMVPI_%", theta="NOM_ZM",
+                   color="VPH_SPMVPI_%", template="none",
+                   #legend="off",
+                   color_continuous_scale=px.colors.sequential.Peach)
+hogaresconstreaming_graf.update_layout(title = 'CON STREAMING',
+                                       title_font_family="Montserrat",
+                                       title_font_color="black",
+                            title_font_size= 18,
+                         #legend=dict(showscale=False),
+                  font=dict(family="Arial",
+                              size=7,
+                              color="black"),
+                     paper_bgcolor="rgba(0,0,0,0)",
+                     plot_bgcolor="rgba(0,0,0,0)")
+hogaresconstreaming_graf.update(layout_coloraxis_showscale=False)
+
 
 ######################################
 # Apartado "head"
@@ -780,7 +851,7 @@ metropolis = dbc.Card(
        
 
    html.Br(),            
-   html.H6("Las cuatro más pobladas", 
+   html.H6("Las cuatro más pobladas (Reportes básicos)", 
                     style={"color": "white", 
                                "font-weight": 'bold',
                                "font-size": "26px",
@@ -794,11 +865,12 @@ metropolis = dbc.Card(
   html.Br(),
   html.Br(),
   dbc.Row([
-      html.P("Enseguida, presentamos un reporte con variables "
-          " seleccionadas de cada una de las cuatro metrópolis "
-          "más pobladas. Haz click en el mapa para acceder. NOTA: Si estás "
-          "interesado en reportes del resto de las 70 metrópolis, "
-          "pronto aparecerá aquí un libro con el análisis completo. "   ,
+      html.P("Enseguida, presentamos cuatro reportes básicos de "
+          "cada una de las cuatro metrópolis más pobladas. "
+          "Haz click en el mapa. NOTA: Proximamente contaremos aquí"
+          "con reportes de las 70 metrópolis restantes. Igualmente "
+          "pronto aparecerá aquí un libro con análisis exhaustivo de"
+          " todas las metrópolis mexicanas. " ,
                      style={"color": "black", 
                             "font-size": "16px",
                             "font-family": "Arial",   
@@ -998,7 +1070,7 @@ metropolis = dbc.Card(
             
             
    html.Br(),
-   html.H6("Numeralia metropolitana", 
+   html.H6("Numeralia metropolitana (variables seleccionadas)", 
                     style={"color": "white", 
                                "font-weight": 'bold',
                                "font-size": "26px",
@@ -1009,9 +1081,9 @@ metropolis = dbc.Card(
                           "background-color": "lightgray"}),
             
             
-   html.Br(),
+     html.Br(),
    dbc.Row([
-         dbc.Col(([html.H6("Analisis de 16 variables de la población metropolitana ",
+         dbc.Col(([html.H6(#"Las metropolis según 19 variables seleccionadas ",
                    style={"color": "black", 
                                "font-weight": 'bold',
                                "font-size": "16px",
@@ -1021,11 +1093,10 @@ metropolis = dbc.Card(
                             "background-color": "lightgray"}),
    html.Br(),
                    
-   html.P("Enseguida visualizamos los rankings metropolitanos según una "
-          "selección de 16 variables, que permiten dar una imagen precisa "
-          " de qué zona metropolitana registra qué característica subrayada. "
-          ". Las gráficas están "
-          " ordenadas de más a menos pobladas. ",
+   html.P("Enseguida seleccionamos 36 metrópolis (con igual o menos de 4 millones "
+          "hasta +500 mil habitantes) y seleccionamos 19 variables "
+          "para mostrar las variedad de la vida metropolitana. "
+          " Lo gráficas muestran cada variable según la metrópoli de la más a la menos pobladas, según intervalo anteriormente mencionado. ",
                      style={"color": "black", 
                             "font-size": "16px",
                             "font-family": "Arial",   
@@ -1039,7 +1110,9 @@ metropolis = dbc.Card(
             
 
   html.Br(),
-   html.Br(),
+  html.Br(),
+  html.Br(),
+  html.Br(),
 
             
    ################################  EDAD            
@@ -1051,11 +1124,13 @@ metropolis = dbc.Card(
                   "margin-bottom": "-8px"}),
             
    dbc.Row([
-         dbc.Col(dcc.Graph(figure=pobde60ymas_graf),
+         dbc.Col(dcc.Graph(figure=pob15a64_graf),
                 style={#"width": "px",
                       'backgroundColor': 'lightgray'}),
-
          dbc.Col(dcc.Graph(figure=pob18ymas_graf),
+                style={#"width": "px",
+                      'backgroundColor': 'lightgray'}),
+         dbc.Col(dcc.Graph(figure=pobde60ymas_graf),
                  style={#"width": "50px",
                       'backgroundColor': 'lightgray'}),
       
@@ -1164,7 +1239,9 @@ metropolis = dbc.Card(
          dbc.Col(dcc.Graph(figure=nacidaenotraentidad_graf),
                  style={#"width": "50px",
                       'backgroundColor': 'lightgray'}),
-       
+        dbc.Col(dcc.Graph(figure=nacidaenotraentidadmujer_graf),
+                 style={#"width": "50px",
+                      'backgroundColor': 'lightgray'}),
          dbc.Col(dcc.Graph(figure=desocupada12ymas_graf),
                  style={#"width": "50px",
                       'backgroundColor': 'lightgray'}),
@@ -1184,11 +1261,10 @@ metropolis = dbc.Card(
                   "margin-bottom": "-8px"}),
        
    dbc.Row([
-#         dbc.Col(dcc.Graph(figure=habitantesporcuarto_graf),
-#                 style={#"width": "50px",
-#                      'backgroundColor': 'lightgray'}),
-       
-         dbc.Col(dcc.Graph(figure=hogconjfa_graf),
+       dbc.Col(dcc.Graph(figure=hogconjfa_graf),
+                 style={#"width": "50px",
+                      'backgroundColor': 'lightgray'}),
+       dbc.Col(dcc.Graph(figure=hogaresconbici_graf),
                  style={#"width": "50px",
                       'backgroundColor': 'lightgray'}),
        
@@ -1211,15 +1287,13 @@ metropolis = dbc.Card(
          dbc.Col(dcc.Graph(figure=conpc_graf),
                 style={#"width": "px",
                       'backgroundColor': 'lightgray'}),
-
          dbc.Col(dcc.Graph(figure=internet_graf),
                  style={#"width": "50px",
                       'backgroundColor': 'lightgray'}),
-
-         dbc.Col(dcc.Graph(figure=hogaresconbici_graf),
+        dbc.Col(dcc.Graph(figure=hogaresconstreaming_graf),
                  style={#"width": "50px",
                       'backgroundColor': 'lightgray'}),
-      
+        
          ],style={'backgroundColor': 'lightgray',
                     'width': '1200px',
                     'margin-top': '0px',
@@ -1290,7 +1364,6 @@ app = dash.Dash(__name__, external_stylesheets=[dbc.themes.
                                                 FONT_AWESOMEpro1,
                                                 FONT_AWESOME, 
                                                 FONT_AWESOMEpro], server=server)
-
 
 
 
