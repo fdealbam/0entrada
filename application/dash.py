@@ -1,5 +1,6 @@
 #0Entrada
 
+impor
 import dash
 import dash_bootstrap_components as dbc
 import dash_core_components as dcc
@@ -667,27 +668,28 @@ buttons = html.Div([
                             "background-color": "lightgray"}),
    html.Br(),
                    
-   html.P("Las zonas metropolitanas son los enclaves con el mayor dinamismo en la vida nacional. " 
-          "Según el Censo Nacional de Población y Vivienda de 2020, existen en México 74 zonas  "
-          " metropolitanas que incluyen 417 municipios. Reúnen más de 80 millones de habitantes "
-          " (63% del total nacional). ", 
+   html.P("Las zonas metropolitanas son enclaves con el mayor dinamismo en la vida nacional. " 
+          "En este documento interativo analizamos el Censo Nacional de Población " 
+          "y Vivienda de 2020, según el cual existen en el territorio nacional 74 zonas  "
+          " metropolitanas que comprenden 417 municipios. Ellas reúnen más de 80 millones de habitantes "
+          " (63% del total nacional). " 
+          " La importancia de estudiar las zonas metropolitanas se debe a que son territorios de alta diversidad, "
+          " uno de sus signos principales, aunque ello implica también fuertes desigualdades, "  
+          "dado que esa diversidad es reflejo también de marginación o "
+          "de la falta de recursos para el desarrollo. Entonces, las metrópolis son conglomerados  "
+          "de la gran variedad poblacional tanto como de la falta de servicios en las viviendas, de la falta "
+          " de recursos materiales; en fin, son espacios de concentración de diferencias tanto en su número "
+          "como en su proporcion; son territorios estadísticamente diversos, reflejo de las múltiples "
+          "urbanidades que caracterizan al territorio nacional. Aquí presentamos elementos analíticos "
+          "de las particularidades sociodemográficas más relevantes, con el objetivo de destacar "
+          "los “modelos de la vida metropolitana” en México, con los datos más recientes. ", 
                      style={"color": "black", 
-                            "font-size": "16px",
-                            "font-family": "Arial",   
-                            "background-color": "lightgray"}),
-   html.P("Las zonas metropolitanas son territorios de alta diversidad, uno de sus signos principales, aunque ello implica también fuertes desigualdades, "  
-          "dado que en ciertos casos, esa diversidad es reflejo de marginación y falta de acceso o de recursos para el desarrollo. "
-          "Las metrópolis son conglomerados de la variedad tanto como de la falta de servicios urbanos; entre muchas otras problemáticas. "
-          "Son espacios de concentración de diferencias tanto en su número como en su proporcionalidad; "
-          "son territorios estadísticamente diversos, reflejo de las múltiples urbanidades del país. " 
-          "Aquí presentamos un procesamiento analítico de la población que vive en metrópolis, " 
-          "identificando las particularidades sociodemográficas más relevantes con el objetivo de destacar "
-          "en tanto eso sea posible, los “modelos de la vida metropolitana” en México, con los datos más recientes. ", 
-                     style={"color": "black", 
+                            
                             "font-size": "16px",
                             "font-family": "Arial",   
                             "background-color": "lightgray"})])),
    ], style={"background-color": "lightgray",
+             "align": "justify",
                           #"box-shadow": "10px 20px 30px gray",
                            'width': '1200px',
                            'margin-left': '100px',
@@ -823,15 +825,15 @@ metropolis = dbc.Card(
                    
    html.P("Tal como se observa en la gráfica siguiente, hay cuatro zonas metropolitanas "
           "de muy alta concentración poblacional, de mayor a menor: Valle de México, Monterrey, "
-          " Guadalajara y Puebla Tlaxcala, que reunen 27%. ", 
+          " Guadalajara y Puebla Tlaxcala, que reúnen 27% de la población total del país. ", 
                     style={"color": "black", 
                             "font-size": "16px",
                             "font-family": "Arial",   
                             "background-color": "lightgray"}),  
-      html.P("Hay que resaltar aquí otro fenómeno de alto dinamismo poblacional: la Megalópolis de la Region Centro. "
+   html.P("Hay que resaltar aquí otro fenómeno de alto dinamismo poblacional: la Megalópolis de la Region Centro. "
           "Esta MRC es la interconexión funcional de siete zonas metropolitanas: ZM Valle de México, ZM Puebla-Tlaxcala, "
           " ZM Pachuca, ZM Tula, ZM Cuernavaca-Cuautla, ZM Toluca y ZM de Querétaro. "
-          "Se trata de un fenómeno de concentración poblacional extrema. ",
+          "Se trata de un fenómeno de concentración poblacional extrema en el área central del país. ",
                      style={"color": "black", 
                             "font-size": "16px",
                             "font-family": "Arial",   
@@ -848,7 +850,7 @@ metropolis = dbc.Card(
             
 
      # Graph Tree
-  dbc.Row([dbc.Col(dcc.Graph(figure=treezm))],
+  dbc.Row([dbc.Col(dcc.Graph(figure=treezm),)],
              style={'backgroundColor': 'lightgray',
                     'width': '1380px',
                     'margin-top': '-20px',
@@ -874,7 +876,7 @@ metropolis = dbc.Card(
   dbc.Row([
       html.P("Enseguida, presentamos cuatro reportes básicos de "
           "cada una de las cuatro metrópolis más pobladas. "
-          "Haz click en el mapa. NOTA: Proximamente contaremos aquí "
+          "Para acceder a ellos, haz click en el mapa. NOTA: Proximamente contaremos aquí "
           "con reportes de las 70 metrópolis restantes. Igualmente "
           "pronto aparecerá aquí un libro con análisis exhaustivo de"
           " todas las metrópolis mexicanas. " ,
@@ -1100,10 +1102,11 @@ metropolis = dbc.Card(
                             "background-color": "lightgray"}),
    html.Br(),
                    
-   html.P("Enseguida seleccionamos 36 metrópolis (con igual o menos de 4 millones "
-          "hasta +500 mil habitantes) y seleccionamos 19 variables "
+   html.P("Enseguida seleccionamos 36 metrópolis (situadas en el intervalo poblacional de 4 millones "
+          "hasta 500 mil habitantes) y seleccionamos 19 variables "
           "para mostrar las variedad de la vida metropolitana. "
-          " Lo gráficas muestran cada variable según la metrópoli de la más a la menos pobladas, según intervalo anteriormente mencionado. ",
+          " Lo gráficas muestran cada variable seleccionada según la metrópoli de la más a la "
+          "menos pobladas, según el intervalo anteriormente mencionado. ",
                      style={"color": "black", 
                             "font-size": "16px",
                             "font-family": "Arial",   
