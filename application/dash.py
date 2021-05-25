@@ -1,6 +1,9 @@
 #0Entrada
 
 
+#0Entrada
+
+
 import dash
 import dash_bootstrap_components as dbc
 import dash_core_components as dcc
@@ -618,30 +621,32 @@ hogaresconstreaming_graf.update(layout_coloraxis_showscale=False)
 ######################################
 head = html.Div([
     html.Br(),
-    dbc.Row([#https://github.com/fdealbam/CamaraDiputados/blob/b11ef31e8e0f73e1a4a06ce60402563e1bd0122e/application/static/logocamara.jfif
-           dbc.Col(dbc.CardImg(src="https://github.com/fdealbam/CamaraDiputados/blob/main/application/static/logocamara.jfif?raw=true"),
-                        width=45, md={'size': 1,  "offset": 1, }),
+   dbc.Row([
+                                    #https://github.com/fdealbam/CamaraDiputados/blob/b11ef31e8e0f73e1a4a06ce60402563e1bd0122e/application/static/logocamara.jfif
+           dbc.Col(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/ce2cda9ccf7732861b8494b36562ebe9c8c642a6/application/static/logo%20cesopycamara.jpeg?raw=true"),
+                        width=5, md={'size': 2,  "offset": 6, }),
             
-           dbc.Col(html.H6(" S e c r e t a r í a   G e n e r a l," 
-                           " Secretaría de Servicios Parlamentarios, "
+           dbc.Col(html.H6(" Centro de Estudios Sociales y de Opinión Pública," 
+                           " Cámara de Diputados"
                            " México, 2021 "),
-                  width={'size': 6, 'offset': 0}),
-               ], justify="start",),])
+                  width={'size': 3, 'offset': 0}),
+               ], justify="start",),
+            
+     dbc.Row([    
+           dbc.Col(html.H5([dbc.Badge("Equipo responsable", 
+                          href="https://innovation-learning.herokuapp.com/",
+                                     )]),
+                  width={'size': 2,  "offset": 8}),
+                       ], justify="start",),
+   
+
+        ])
 ######################################
 # Apartado "buttons"
 ######################################
 
 buttons = html.Div([
     
-     html.Br(),
-     html.Br(),
-     html.Br(),
-     html.Br(),
-     html.Br(),
-     html.Br(),
-     html.Br(),
-     html.Br(),
-     html.Br(),
      html.Br(),
      html.Br(),
      dbc.Row(
@@ -1330,13 +1335,13 @@ metropolis = dbc.Card(
     
    dbc.Row([
                                     #https://github.com/fdealbam/CamaraDiputados/blob/b11ef31e8e0f73e1a4a06ce60402563e1bd0122e/application/static/logocamara.jfif
-           dbc.Col(dbc.CardImg(src="https://github.com/fdealbam/CamaraDiputados/blob/main/application/static/logocamara.jfif?raw=true"),
-                        width=5, md={'size': 1,  "offset": 3, }),
+           dbc.Col(dbc.CardImg(src="https://github.com/fdealbam/0entrada/blob/ce2cda9ccf7732861b8494b36562ebe9c8c642a6/application/static/logo%20cesopycamara.jpeg?raw=true"),
+                        width=5, md={'size': 2,  "offset": 2, }),
             
-           dbc.Col(html.H6(" S e c r e t a r í a   G e n e r a l," 
-                           " Secretaría de Servicios Parlamentarios, "
+           dbc.Col(html.H6(" Centro de Estudios Sociales y de Opinión Pública," 
+                           " Cámara de Diputados"
                            " México, 2021 "),
-                  width={'size': 5, 'offset': 0}),
+                  width={'size': 3, 'offset': 0}),
                ], justify="start",),
             
      dbc.Row([    
@@ -1377,7 +1382,7 @@ app = dash.Dash(__name__, external_stylesheets=[dbc.themes.
 
 
 
-app.layout = html.Div([ #head, 
+app.layout = html.Div([head, 
                        buttons, metropolis# layer2,
                        #collapse, fade
                       ],style={
@@ -1392,4 +1397,3 @@ app.layout = html.Div([ #head,
 if __name__ == '__main__':
     app.run_server()
 
-    
