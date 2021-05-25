@@ -1,6 +1,4 @@
 #0Entrada
-
-
 #0Entrada
 
 
@@ -632,13 +630,13 @@ head = html.Div([
                   width={'size': 3, 'offset': 0}),
                ], justify="start",),
             
-     dbc.Row([    
-           dbc.Col(html.H5([dbc.Badge("Equipo responsable", 
-                          href="https://innovation-learning.herokuapp.com/",
-                                     )]),
-                  width={'size': 2,  "offset": 8}),
-                       ], justify="start",),
-   
+#    dbc.Row([    
+#          dbc.Col(html.H5([dbc.Badge("Equipo responsable", 
+#                         href="https://innovation-learning.herokuapp.com/",
+#                                    )]),
+#                 width={'size': 2,  "offset": 8}),
+#                      ], justify="start",),
+#  
 
         ])
 ######################################
