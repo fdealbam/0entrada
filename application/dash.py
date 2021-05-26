@@ -1,6 +1,4 @@
 #0Entrada
-#0Entrada
-
 
 import dash
 import dash_bootstrap_components as dbc
@@ -446,6 +444,36 @@ pob18ymas_graf.update_layout(title = '18 AÑOS Y MÁS',
                      paper_bgcolor="rgba(0,0,0,0)",
                      plot_bgcolor="rgba(0,0,0,0)")
 pob18ymas_graf.update(layout_coloraxis_showscale=False)
+
+
+#-------------------------------------------------------------------------------------------------------------------3
+# CATOLICA
+
+df_a = data.sort_values(by= "POBTOT", ascending=False).iloc[4:36]#.head(10)
+
+catolica_graf = px.bar_polar(df_a,
+                   r="PCATOLICA_%", theta="NOM_ZM",
+                   color="PCATOLICA_%", template="none",
+                   #legend="off",
+                   color_continuous_scale=px.colors.sequential.Mint)
+catolica_graf.update_layout(title = 'CATOLICOS',
+                                       title_font_family="Montserrat",
+                                       title_font_color="black",
+                                       
+                                       title_font_size= 18,
+                            
+                            #legend=dict(showscale=False),
+                  font=dict(family="Arial",
+                              size=7,
+                              color="black"),
+                     paper_bgcolor="rgba(0,0,0,0)",
+                     plot_bgcolor="rgba(0,0,0,0)")
+catolica_graf.update(layout_coloraxis_showscale=False)
+
+
+
+
+
 
 #-------------------------------------------------------------------------------------------------------------------3
 # SIN RELIGION
@@ -1227,6 +1255,9 @@ metropolis = dbc.Card(
 
             
    dbc.Row([
+                dbc.Col(dcc.Graph(figure=catolica_graf),
+                 style={#"width": "50px",
+                      'backgroundColor': 'lightgray'}),
                 dbc.Col(dcc.Graph(figure=relgprotevang_graf),
                  style={#"width": "50px",
                       'backgroundColor': 'lightgray'}),
