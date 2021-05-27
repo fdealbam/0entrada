@@ -47,10 +47,11 @@ VPH_REFRI,Viviendas,Viviendas particulares habitadas que disponen de refrigerado
 VPH_LAVAD,Viviendas,Viviendas particulares habitadas que disponen de lavadora  
 VPH_BICI,Viviendas,Viviendas particulares habitadas que disponen de bicicleta como medio de transporte 
 VPH_TV,Viviendas,Viviendas particulares habitadas que disponen de televisor 
-VPH_PC,Viviendas,"Viviendas particulares habitadas que disponen de computadora, laptop o tablet"
+VPH_PC,Viviendas,Viviendas particulares habitadas que disponen de computadora, laptop o tablet
 VPH_CEL,Viviendas,Viviendas particulares habitadas que disponen de teléfono celular 
 VPH_INTER,Viviendas,Viviendas particulares habitadas que disponen de Internet 
-VPH_SPMVPI,Viviendas,"Viviendas particulares habitadas que disponen de servicio de películas, música o videos de paga por Internet"
+VPH_SPMVPI,Viviendas,Viviendas particulares habitadas que disponen de servicio de películas, música o videos de paga por Internet
+VPH_1CUART,Viviendas,Viviendas particulares habitadas con solo un cuarto
 PCON_DISC,Discapacidad,Población con discapacidad 
 PCDISC_MOT,Discapacidad,Población con discapacidad para caminar subir o bajar
 PCDISC_VIS,Discapacidad,Población con discapacidad para ver aun con lentes
@@ -60,3 +61,4 @@ P3YM_HLI,Etnicidad,Población de 3 años y más que habla alguna lengua indígen
 P3HLINHE,Etnicidad,Población de 3 años y más que habla alguna lengua indígena y no habla español
 P3HLI_HE,Etnicidad,Población de 3 años y más que habla alguna lengua indígena y si habla español
 POB_AFRO,Etnicidad,Población que se considera afromexicana o afrodescendiente
+PHOG_IND,Etnicidad,Poblacion en hoares censales indígenas
