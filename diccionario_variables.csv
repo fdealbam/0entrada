@@ -1,44 +1,44 @@
 MNEMONICO,TEMATICA,DESCRIPCION
-P_0A2,Poblaci髇,Poblaci髇 de 0 a 2 a駉s
-P_3A5,Poblaci髇,Poblaci髇 de 3 a 5 a駉s 
-P_6A11,Poblaci髇,Poblaci髇 de 6 a 11 a駉s 
-P_12A14,Poblaci髇,Poblaci髇 de 12 a 14 a駉s 
-P_15A17,Poblaci髇,Poblaci髇 de 15 a 17 a駉s 
-POB15_64,Poblaci髇,Poblaci髇 de 15 a 64 a駉s 
-P_60YMAS,Poblaci髇,Poblaci髇 de 60 y m醩
-P_15YMAS,Poblaci髇,Poblaci髇 de 15 y m醩
-P_18YMAS,Poblaci髇,Poblaci髇 de 18 y m醩
-PNACOE,Migraci髇,Poblaci髇 nacida en otra entidad 
-PNACOE_F,Migraci髇,Poblaci髇 femenina nacida en otra entidad 
-PRESOE15,Migraci髇,Poblaci髇 de 5 a駉s y m醩 residente en otra entidad en marzo de 2015
-P15YM_AN,Educaci髇,Poblaci髇 de 15 a駉s y m醩 analfabeta 
-P15SEC_CO,Educaci髇,Poblaci髇 de 15 a駉s y m醩 con secundaria completa
-P18YM_PB,Educaci髇,Poblaci髇 de 18 y m醩 con educaci髇 posb醩ica
-PE_INAC,Econom韆,Poblaci髇 de 12 a駉s y m醩 no econ髆icamente activa 
-POCUPADA,Econom韆,Poblaci髇 ocupada 
-POCUPADA_F,Econom韆,Poblaci髇 femenina de 12 a駉s y m醩 desocupada 
-POCUPADA_M,Econom韆,Poblaci髇 masculina de 12 a駉s y m醩 ocupada 
-PDESOCUP,Econom韆,Poblaci髇 de 12 a駉s y m醩 desocupada 
-PSINDER,Derehohabiencia,Poblaci髇 sin afiliaci髇 a servicios de salud  
-PDER_IMSS,Derehohabiencia,Poblaci髇 afiliada a servicios de salud en el IMSS  
-PDER_SEGP,Derehohabiencia,Poblaci髇 afiliada a servicios de salud en el Instituto de Salud para el Bienestar  
-PAFIL_IPRIV,Derehohabiencia,Poblaci髇 afiliada a servicios de salud en una instituci髇 privada 
-PCATOLICA,Religi髇,Poblaci髇 con religi髇 cat髄ica 
-PRO_CRIEVA,Religi髇,Poblaci髇 con grupo religioso protestante/ cristiano evang閘ico  
-POTRAS_REL,Religi髇,Poblaci髇 con otras religiones diferentes a las anteriores  
-PSIN_RELIG,Religi髇,Poblaci髇 sin religi髇 o sin adscripci髇 religiosa 
+P_0A2,Poblaci贸n,Poblaci贸n de 0 a 2 a帽os
+P_3A5,Poblaci贸n,Poblaci贸n de 3 a 5 a帽os 
+P_6A11,Poblaci贸n,Poblaci贸n de 6 a 11 a帽os 
+P_12A14,Poblaci贸n,Poblaci贸n de 12 a 14 a帽os 
+P_15A17,Poblaci贸n,Poblaci贸n de 15 a 17 a帽os 
+POB15_64,Poblaci贸n,Poblaci贸n de 15 a 64 a帽os 
+P_60YMAS,Poblaci贸n,Poblaci贸n de 60 y m谩s
+P_15YMAS,Poblaci贸n,Poblaci贸n de 15 y m谩s
+P_18YMAS,Poblaci贸n,Poblaci贸n de 18 y m谩s
+PNACOE,Migraci贸n,Poblaci贸n nacida en otra entidad 
+PNACOE_F,Migraci贸n,Poblaci贸n femenina nacida en otra entidad 
+PRESOE15,Migraci贸n,Poblaci贸n de 5 a帽os y m谩s residente en otra entidad en marzo de 2015
+P15YM_AN,Educaci贸n,Poblaci贸n de 15 a帽os y m谩s analfabeta 
+P15SEC_CO,Educaci贸n,Poblaci贸n de 15 a帽os y m谩s con secundaria completa
+P18YM_PB,Educaci贸n,Poblaci贸n de 18 y m谩s con educaci贸n posb谩sica
+PE_INAC,Econom铆a,Poblaci贸n de 12 a帽os y m谩s no econ贸micamente activa 
+POCUPADA,Econom铆a,Poblaci贸n ocupada 
+POCUPADA_F,Econom铆a,Poblaci贸n femenina de 12 a帽os y m谩s desocupada 
+POCUPADA_M,Econom铆a,Poblaci贸n masculina de 12 a帽os y m谩s ocupada 
+PDESOCUP,Econom铆a,Poblaci贸n de 12 a帽os y m谩s desocupada 
+PSINDER,Derehohabiencia,Poblaci贸n sin afiliaci贸n a servicios de salud  
+PDER_IMSS,Derehohabiencia,Poblaci贸n afiliada a servicios de salud en el IMSS  
+PDER_SEGP,Derehohabiencia,Poblaci贸n afiliada a servicios de salud en el Instituto de Salud para el Bienestar  
+PAFIL_IPRIV,Derehohabiencia,Poblaci贸n afiliada a servicios de salud en una instituci贸n privada 
+PCATOLICA,Religi贸n,Poblaci贸n con religi贸n cat贸lica 
+PRO_CRIEVA,Religi贸n,Poblaci贸n con grupo religioso protestante/ cristiano evang茅lico  
+POTRAS_REL,Religi贸n,Poblaci贸n con otras religiones diferentes a las anteriores  
+PSIN_RELIG,Religi贸n,Poblaci贸n sin religi贸n o sin adscripci贸n religiosa 
 TOTHOG,Hogares,Total de hogares censales 
 HOGJEF_F,Hogares,Hogares censales con persona de referencia mujer 
-POBHOG,Hogares,Poblaci髇 en hogares censales 
-PHOGJEF_F,Hogares,Poblaci髇 en hogares censales con persona de referencia mujer 
-PHOGJEF_M,Hogares,Poblaci髇 en hogares censales con persona de referencia hombre 
+POBHOG,Hogares,Poblaci贸n en hogares censales 
+PHOGJEF_F,Hogares,Poblaci贸n en hogares censales con persona de referencia mujer 
+PHOGJEF_M,Hogares,Poblaci贸n en hogares censales con persona de referencia hombre 
 VIVTOT,Viviendas,Total de viviendas
 TVIVHAB,Viviendas,Total de viviendas habitadas
 PROM_OCUP,Viviendas,Promedio de  ocupantes en viviendas particulares habitadas 
 PRO_OCUP_C,Viviendas,Promedio de ocupantes por cuarto en viviendas particulares habitadas 
 VPH_1DOR,Viviendas,Viviendas particulares habitadas con un dormitorio 
-VPH_C_ELEC,Viviendas,Viviendas particulares habitadas que disponen de energ韆 el閏trica  
-VPH_AGUADV,Viviendas,Viviendas particulares habitadas que disponen de agua entubada en el 醡bito de la viviendas 
+VPH_C_ELEC,Viviendas,Viviendas particulares habitadas que disponen de energ铆a el茅ctrica  
+VPH_AGUADV,Viviendas,Viviendas particulares habitadas que disponen de agua entubada en el 谩mbito de la viviendas 
 VPH_TINACO,Viviendas,Viviendas particulares habitadas que disponen de tinaco 
 VPH_CISTER,Viviendas,Viviendas particulares habitadas que disponen de cisterna o aljibe 
 VPH_EXCSA,Viviendas,Viviendas particulares habitadas que disponen de excusado o sanitario 
@@ -48,11 +48,15 @@ VPH_LAVAD,Viviendas,Viviendas particulares habitadas que disponen de lavadora
 VPH_BICI,Viviendas,Viviendas particulares habitadas que disponen de bicicleta como medio de transporte 
 VPH_TV,Viviendas,Viviendas particulares habitadas que disponen de televisor 
 VPH_PC,Viviendas,"Viviendas particulares habitadas que disponen de computadora, laptop o tablet"
-VPH_CEL,Viviendas,Viviendas particulares habitadas que disponen de tel閒ono celular 
+VPH_CEL,Viviendas,Viviendas particulares habitadas que disponen de tel茅fono celular 
 VPH_INTER,Viviendas,Viviendas particulares habitadas que disponen de Internet 
-VPH_SPMVPI,Viviendas,"Viviendas particulares habitadas que disponen de servicio de pel韈ulas, m鷖ica o videos de paga por Internet"
-PCDISC_MOT,Discapacidad,Poblaci髇 con discapacidad 
-PCDISC_MOT,Discapacidad,Poblaci髇 con discapacidad para caminar subir o bajar
-PCDIvaSC_VIS,Discapacidad,Poblaci髇 con discapacidad para ver aun con lentes
-PCDISC_LENG,Discapacidad,Poblaci髇 con discapacidadpara hablar 
-PCDISC_AUD,Discapacidad,Poblaci髇 con discapacidad para oir
+VPH_SPMVPI,Viviendas,"Viviendas particulares habitadas que disponen de servicio de pel铆culas, m煤sica o videos de paga por Internet"
+PCDISC_MOT,Discapacidad,Poblaci贸n con discapacidad 
+PCDISC_MOT,Discapacidad,Poblaci贸n con discapacidad para caminar subir o bajar
+PCDIvaSC_VIS,Discapacidad,Poblaci贸n con discapacidad para ver aun con lentes
+PCDISC_LENG,Discapacidad,Poblaci贸n con discapacidadpara hablar 
+PCDISC_AUD,Discapacidad,Poblaci贸n con discapacidad para oir
+P3YM_HLI,Etnicidad,Poblaci贸n de 3 a帽os y m谩s que habla alguna lengua ind铆gena
+P3HLINHE,Etnicidad,Poblaci贸n de 3 a帽os y m谩s que habla alguna lengua ind铆gena y no habla espa帽ol
+P3HLI_HE,Etnicidad,Poblaci贸n de 3 a帽os y m谩s que habla alguna lengua ind铆gena y si habla espa帽ol
+POB_AFRO,Etnicidad,Poblaci贸n que se considera afromexicana o afrodescendiente
