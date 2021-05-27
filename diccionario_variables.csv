@@ -51,9 +51,9 @@ VPH_PC,Viviendas,"Viviendas particulares habitadas que disponen de computadora, 
 VPH_CEL,Viviendas,Viviendas particulares habitadas que disponen de teléfono celular 
 VPH_INTER,Viviendas,Viviendas particulares habitadas que disponen de Internet 
 VPH_SPMVPI,Viviendas,"Viviendas particulares habitadas que disponen de servicio de películas, música o videos de paga por Internet"
-PCDISC_MOT,Discapacidad,Población con discapacidad 
+PCON_DISC,Discapacidad,Población con discapacidad 
 PCDISC_MOT,Discapacidad,Población con discapacidad para caminar subir o bajar
-PCDIvaSC_VIS,Discapacidad,Población con discapacidad para ver aun con lentes
+PCDISC_VIS,Discapacidad,Población con discapacidad para ver aun con lentes
 PCDISC_LENG,Discapacidad,Población con discapacidadpara hablar 
 PCDISC_AUD,Discapacidad,Población con discapacidad para oir
 P3YM_HLI,Etnicidad,Población de 3 años y más que habla alguna lengua indígena
