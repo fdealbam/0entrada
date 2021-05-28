@@ -25,7 +25,7 @@ yea = datetime.strftime(yesterday, '%Y%m%d')
 ##############################################################
 
 # this is the data of the city
-data = pd.read_csv("https://raw.githubusercontent.com/fdealbam/0entrada/main/allzm_wpercent.csv?raw=True")
+data = pd.read_csv("https://raw.githubusercontent.com/fdealbam/0entrada/main/zmall2020.csv?raw=True")
 entidades_s= pd.read_csv("https://raw.githubusercontent.com/fdealbam/censo2020/main/entidades2020.csv", encoding= "Latin-1")
 
 
@@ -640,6 +640,97 @@ hogaresconstreaming_graf.update_layout(title = 'CON STREAMING',
                      paper_bgcolor="rgba(0,0,0,0)",
                      plot_bgcolor="rgba(0,0,0,0)")
 hogaresconstreaming_graf.update(layout_coloraxis_showscale=False)
+
+#vars-------------------------------------------------------------------------------------------------------------------3
+# HLI
+
+df_a = data.sort_values(by= "POBTOT", ascending=False).iloc[4:36]#.head(10)
+
+hli_graf = px.bar_polar(df_a,
+                   r="P3YM_HLI_%", theta="NOM_ZM",
+                   color="P3YM_HLI_%", template="none",
+                   #legend="off",
+                   color_continuous_scale=px.colors.sequential.Purp)
+hli_graf.update_layout(title = 'HABLAN LENGUA INDÍGENA',
+                                       title_font_family="Montserrat",
+                                       title_font_color="black",
+                            title_font_size= 18,
+                         #legend=dict(showscale=False),
+                  font=dict(family="Arial",
+                              size=7,
+                              color="black"),
+                     paper_bgcolor="rgba(0,0,0,0)",
+                     plot_bgcolor="rgba(0,0,0,0)")
+hli_graf.update(layout_coloraxis_showscale=False)
+
+
+#vars-------------------------------------------------------------------------------------------------------------------3
+# pob en hoagares HLI
+
+df_a = data.sort_values(by= "POBTOT", ascending=False).iloc[4:36]#.head(10)
+
+pobhoghli_graf = px.bar_polar(df_a,
+                   r="PHOG_IND_%", theta="NOM_ZM",
+                   color="PHOG_IND_%", template="none",
+                   #legend="off",
+                   color_continuous_scale=px.colors.sequential.Purp)
+pobhoghli_graf.update_layout(title = 'HOGARES INDIGENAS',
+                                       title_font_family="Montserrat",
+                                       title_font_color="black",
+                            title_font_size= 18,
+                         #legend=dict(showscale=False),
+                  font=dict(family="Arial",
+                              size=7,
+                              color="black"),
+                     paper_bgcolor="rgba(0,0,0,0)",
+                     plot_bgcolor="rgba(0,0,0,0)")
+pobhoghli_graf.update(layout_coloraxis_showscale=False)
+
+
+#vars-------------------------------------------------------------------------------------------------------------------3
+# pob afro
+
+df_a = data.sort_values(by= "POBTOT", ascending=False).iloc[4:36]#.head(10)
+
+afro_graf = px.bar_polar(df_a,
+                   r="POB_AFRO_%", theta="NOM_ZM",
+                   color="POB_AFRO_%", template="none",
+                   #legend="off",
+                   color_continuous_scale=px.colors.sequential.Purp)
+afro_graf.update_layout(title = 'AFRODESCENDIENTES',
+                                       title_font_family="Montserrat",
+                                       title_font_color="black",
+                            title_font_size= 18,
+                         #legend=dict(showscale=False),
+                  font=dict(family="Arial",
+                              size=7,
+                              color="black"),
+                     paper_bgcolor="rgba(0,0,0,0)",
+                     plot_bgcolor="rgba(0,0,0,0)")
+afro_graf.update(layout_coloraxis_showscale=False)
+
+
+#vars-------------------------------------------------------------------------------------------------------------------3
+# 1 cuarto
+
+df_a = data.sort_values(by= "POBTOT", ascending=False).iloc[4:36]#.head(10)
+
+viviendascon1cuarto = px.bar_polar(df_a,
+                   r="VPH_1CUART_%", theta="NOM_ZM",
+                   color="VPH_1CUART_%", template="none",
+                   #legend="off",
+                   color_continuous_scale=px.colors.sequential.Peach)
+viviendascon1cuarto.update_layout(title = 'VIVIENDAS CON 1 CUARTO',
+                                       title_font_family="Montserrat",
+                                       title_font_color="black",
+                            title_font_size= 18,
+                         #legend=dict(showscale=False),
+                  font=dict(family="Arial",
+                              size=7,
+                              color="black"),
+                     paper_bgcolor="rgba(0,0,0,0)",
+                     plot_bgcolor="rgba(0,0,0,0)")
+viviendascon1cuarto.update(layout_coloraxis_showscale=False)
 
 
 ######################################
@@ -1297,7 +1388,32 @@ metropolis = dbc.Card(
                         }),
 
    html.Br(),    
+
+   ################################  MIGRACION            
+   html.H1("Etnicidad", 
+            style={'backgroundColor': 'lightgray',
+                   'margin-left': '90px',
+                  "margin-bottom": "-8px"}),
        
+   dbc.Row([
+         dbc.Col(dcc.Graph(figure=hli_graf),
+                 style={#"width": "50px",
+                      'backgroundColor': 'lightgray'}),
+        dbc.Col(dcc.Graph(figure=pobhoghli_graf),
+                 style={#"width": "50px",
+                      'backgroundColor': 'lightgray'}),
+         dbc.Col(dcc.Graph(figure=afro_graf),
+                 style={#"width": "50px",
+                      'backgroundColor': 'lightgray'}),
+         ],style={'backgroundColor': 'lightgray',
+                    'width': '1200px',
+                    'margin-top': '0px',
+                    'margin-left': '80px',
+                    #"width": "78rem", 
+                        }),
+
+   html.Br(),    
+
    ################################  VIVIENDA            
    html.H1("Vivienda", 
             style={'backgroundColor': 'lightgray',
@@ -1308,9 +1424,22 @@ metropolis = dbc.Card(
        dbc.Col(dcc.Graph(figure=hogconjfa_graf),
                  style={#"width": "50px",
                       'backgroundColor': 'lightgray'}),
+       dbc.Col(dcc.Graph(figure=viviendascon1cuarto),
+                 style={#"width": "50px",
+                      'backgroundColor': 'lightgray'}),
+
        dbc.Col(dcc.Graph(figure=hogaresconbici_graf),
                  style={#"width": "50px",
                       'backgroundColor': 'lightgray'}),
+       
+         ],style={'backgroundColor': 'lightgray',
+                    'width': '1200px',
+                    'margin-top': '0px',
+                    'margin-left': '80px',
+                    #"width": "78rem", 
+                        }),
+            
+            dbc.Row([
        
          ],style={'backgroundColor': 'lightgray',
                     'width': '1200px',
