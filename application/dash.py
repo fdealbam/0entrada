@@ -1,5 +1,4 @@
 
-
 # feminicidios
 
 import dash
@@ -1040,7 +1039,7 @@ body = html.Div([
    
     dbc.Row(
         [
-            dbc.Col(dcc.Graph(figure=graf_meses, config= "autosize")),
+            dbc.Col(dcc.Graph(figure=graf_meses, config= "autosize", style={"margin-left":"50px"})),
         ]),
        html.Br(),
        html.Br(),
@@ -1173,7 +1172,7 @@ html.Br(),
    
     dbc.Row(
         [
-            dbc.Col(dcc.Graph(figure=graf_totfem , config= "autosize")),
+            dbc.Col(dcc.Graph(figure=graf_totfem , config= "autosize", style={"margin-left":"50px"})),
                    #lg={'size': 5,  "offset": 0,}),
             
             dbc.Col(dcc.Graph(figure= graf_tasafem, config= "autosize")),
@@ -1511,7 +1510,7 @@ html.Br(),
                         ]
     ),
     style={"width": "16rem"},
-),]),]),
+),]),], style={"margin-left": "10px"}),
        html.Br(),
        html.Br(),
        html.Br(),
@@ -1559,7 +1558,7 @@ html.Br(),
                     
             ], fluid=True,
         )
-    ], style= {"margin-left":"100px"},
+    ], style= {"margin-left":"50px"},
     fluid=True,
     ),    
     
@@ -1613,5 +1612,4 @@ app.layout = html.Div([body],
 
 if __name__ == "__main__":
     app.run_server()
-    
     
