@@ -454,7 +454,7 @@ catolica_graf = px.bar_polar(df_a,
                    color="PCATOLICA_%", template="none",
                    #legend="off",
                    color_continuous_scale=px.colors.sequential.Mint)
-catolica_graf.update_layout(title = 'CATOLICOS',
+catolica_graf.update_layout(title = 'CATÓLICOS',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                                        
@@ -672,7 +672,7 @@ pobhoghli_graf = px.bar_polar(df_a,
                    color="PHOG_IND_%", template="none",
                    #legend="off",
                    color_continuous_scale=px.colors.sequential.Purp)
-pobhoghli_graf.update_layout(title = 'HOGARES INDIGENAS',
+pobhoghli_graf.update_layout(title = 'HOGARES INDÍGENAS',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                             title_font_size= 18,
@@ -718,7 +718,7 @@ viviendascon1cuarto = px.bar_polar(df_a,
                    color="VPH_1CUART_%", template="none",
                    #legend="off",
                    color_continuous_scale=px.colors.sequential.Peach)
-viviendascon1cuarto.update_layout(title = 'VIVIENDAS CON 1 CUARTO',
+viviendascon1cuarto.update_layout(title = 'VIVIENDAS CON UN CUARTO',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
                             title_font_size= 18,
@@ -779,7 +779,7 @@ buttons = html.Div([
    html.Br(),
     
    dbc.Row([
-         dbc.Col(([html.H6("Analisis de un fenómeno con alto dinamismo ",
+         dbc.Col(([html.H6("Análisis de un fenómeno con alto dinamismo ",
                    style={"color": "black", 
                                "font-weight": 'bold',
                                "font-size": "16px",
@@ -790,22 +790,22 @@ buttons = html.Div([
    html.Br(),
                    
    html.P("Las zonas metropolitanas son enclaves con el mayor dinamismo en la vida nacional. " 
-          "En este documento interativo analizamos el Censo Nacional de Población " 
-          "y Vivienda de 2020, según el cual existen en el territorio nacional 74 zonas  "
-          " metropolitanas que comprenden 417 municipios. Ellas reúnen más de 80 millones de habitantes "
+          "En este documento interactivo analizamos el Censo Nacional de Población " 
+          "y Vivienda de 2020, según el cual en el territorio nacional hay 74 zonas  "
+          " metropolitanas que comprenden 417 municipios. Éstas reúnen más de 80 millones de habitantes "
           " (63% del total nacional). " 
-          " La importancia de estudiar las zonas metropolitanas se debe a que son territorios de alta diversidad, "
+          " La importancia de estudiar las zonas metropolitanas radica en que son territorios de alta diversidad, "
           " uno de sus signos principales, aunque ello implica también fuertes desigualdades, "  
-          "dado que esa diversidad es reflejo también de marginación o "
+          "dado que esa diversidad es reflejo de marginación o "
           "de la falta de recursos para el desarrollo. Entonces, las metrópolis son conglomerados  "
-          "de la gran variedad poblacional tanto como de la falta de servicios en las viviendas, de la falta "
+          "tanto de la gran variedad poblacional como de la falta de servicios en las viviendas y de la falta "
           " de recursos materiales; en fin, son espacios de concentración de diferencias tanto en su número "
-          "como en su proporcion; son territorios estadísticamente diversos, reflejo de las múltiples "
+          "como en su proporción; son territorios estadísticamente diversos, reflejo de las múltiples "
           "urbanidades que caracterizan al territorio nacional. Aquí presentamos elementos analíticos "
           "de las particularidades sociodemográficas más relevantes, con el objetivo de destacar "
           "los “modelos de la vida metropolitana” en México, con los datos más recientes. ", 
                      style={"color": "black", 
-                            
+                            "text-align": "justify",
                             "font-size": "16px",
                             "font-family": "Arial",   
                             "background-color": "lightgray"})])),
@@ -946,8 +946,9 @@ metropolis = dbc.Card(
                    
    html.P("Tal como se observa en la gráfica siguiente, hay cuatro zonas metropolitanas "
           "de muy alta concentración poblacional, de mayor a menor: Valle de México, Monterrey, "
-          " Guadalajara y Puebla Tlaxcala, que reúnen 27% de la población total del país. ", 
-                    style={"color": "black", 
+          " Guadalajara y Puebla-Tlaxcala, que reúnen 27% de la población total del país. ", 
+                    style={ "text-align": "justify",
+                           "color": "black", 
                             "font-size": "16px",
                             "font-family": "Arial",   
                             "background-color": "lightgray"}),  
@@ -955,7 +956,8 @@ metropolis = dbc.Card(
           "Esta MRC es la interconexión funcional de siete zonas metropolitanas: ZM Valle de México, ZM Puebla-Tlaxcala, "
           " ZM Pachuca, ZM Tula, ZM Cuernavaca-Cuautla, ZM Toluca y ZM de Querétaro. "
           "Se trata de un fenómeno de concentración poblacional extrema en el área central del país. ",
-                     style={"color": "black", 
+                     style={ "text-align": "justify",
+                            "color": "black", 
                             "font-size": "16px",
                             "font-family": "Arial",   
                             "background-color": "lightgray"})])),
@@ -995,13 +997,14 @@ metropolis = dbc.Card(
   html.Br(),
   html.Br(),
   dbc.Row([
-      html.P("Enseguida, presentamos cuatro reportes básicos de "
+      html.P("Enseguida presentamos cuatro reportes básicos de "
           "cada una de las cuatro metrópolis más pobladas. "
-          "Para acceder a ellos, haz click en el mapa. NOTA: Proximamente contaremos aquí "
-          "con reportes de las 70 metrópolis restantes. Igualmente "
-          "pronto aparecerá aquí un libro con análisis exhaustivo de"
+          "Para acceder a ellos, haz clic en el mapa. NOTA: Próximamente contaremos en este sitio "
+          "con reportes de las 70 metrópolis restantes. Igualmente, "
+          "pronto aparecerá aquí un libro con análisis exhaustivos de"
           " todas las metrópolis mexicanas. " ,
-                     style={"color": "black", 
+                     style={ "text-align": "justify",
+                            "color": "black", 
                             "font-size": "16px",
                             "font-family": "Arial",   
                             "background-color": "lightgray"})
@@ -1231,11 +1234,12 @@ metropolis = dbc.Card(
    html.Br(),
                    
    html.P("Enseguida seleccionamos 36 metrópolis (situadas en el intervalo poblacional de 4 millones "
-          "hasta 500 mil habitantes) y seleccionamos 19 variables "
-          "para mostrar las variedad de la vida metropolitana. "
-          " Lo gráficas muestran cada variable seleccionada según la metrópoli de la más a la "
-          "menos pobladas, según el intervalo anteriormente mencionado. ",
-                     style={"color": "black", 
+          "hasta 500 mil habitantes) y 19 variables "
+          "para mostrar la variedad de la vida metropolitana. "
+          " Las gráficas muestran cada variable seleccionada según la metrópoli, de la más a la "
+          "menos poblada, conforme al intervalo anteriormente mencionado. ",
+                     style={ "text-align": "justify",
+                            "color": "black", 
                             "font-size": "16px",
                             "font-family": "Arial",   
                             "background-color": "lightgray"})])),
@@ -1341,13 +1345,16 @@ metropolis = dbc.Card(
    ################################  RELIGION            
    ################################  RELIGION            
    html.H1("Religión", 
-            style={'backgroundColor': 'lightgray',
+            style={
+                   'backgroundColor': 'lightgray',
                    'margin-left': '90px',
                   "margin-bottom": "-8px"}),
    html.H1("Religión", 
-            style={'backgroundColor': 'lightgray',
-                   'margin-left': '90px',
-                  "margin-bottom": "-8px"}),
+           style={"color": "lightgray",
+                  'backgroundColor': 'lightgray',
+                  'margin-left': '90px',
+                 "margin-bottom": "-8px"}),
+            html.Br(),
 
 
             
