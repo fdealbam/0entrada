@@ -90,6 +90,7 @@ graph2.update_layout(font=dict(family="Arial",size=9,
                                paper_bgcolor="rgba(0,0,0,0)",)#plot_bgcolor="rgba(0,0,0,0)"
 graph2.update(layout_coloraxis_showscale=False)
 
+
 #-------------------------------------------------------------------------------------------------------------------2
 # POBLACION TOTAL 3
 
@@ -150,6 +151,22 @@ sinderechohabiencia_graf.update_layout(title = 'SIN DERECHOHABIENCIA',
 sinderechohabiencia_graf.update(layout_coloraxis_showscale=False)  
 
 
+df_b = df_a.sort_values('PSINDER', ascending=False, ignore_index=True)
+
+d1n = df_b.iloc[0]['NOM_ZM']
+d2n = df_b.iloc[1]['NOM_ZM']
+d3n = df_b.iloc[2]['NOM_ZM']
+d4n = df_b.iloc[3]['NOM_ZM']
+d5n = df_b.iloc[4]['NOM_ZM']
+
+d1v = df_b.iloc[0]['PSINDER_%']
+d2v = df_b.iloc[1]['PSINDER_%']
+d3v = df_b.iloc[2]['PSINDER_%']
+d4v = df_b.iloc[3]['PSINDER_%']
+d5v = df_b.iloc[4]['PSINDER_%']
+
+bullPSINDER = ("las 5 zonas metropolitanas con más población sin derechohabiencia son "+ d1n +" ("+ str(d1v) +"%), "+ d2n +" ("+ str(d2v) +"%), "+ d3n +" ("+ str(d3v) +"%), "+ d4n +" ("+ str(d4v) +"%) y "+ d5n +" ("+ str(d5v) +"%).")
+
 
 #-------------------------------------------------------------------------------------------------------------------3
 # con discapacidad
@@ -175,6 +192,22 @@ discapacidad_graf.update_layout(title = 'DISCAPACIDAD ',
                      plot_bgcolor="rgba(0,0,0,0)")
 discapacidad_graf.update(layout_coloraxis_showscale=False)  
 
+df_b = df_a.sort_values('PCON_DISC', ascending=False, ignore_index=True)
+
+d1n = df_b.iloc[0]['NOM_ZM']
+d2n = df_b.iloc[1]['NOM_ZM']
+d3n = df_b.iloc[2]['NOM_ZM']
+d4n = df_b.iloc[3]['NOM_ZM']
+d5n = df_b.iloc[4]['NOM_ZM']
+
+d1v = df_b.iloc[0]['PCON_DISC_%']
+d2v = df_b.iloc[1]['PCON_DISC_%']
+d3v = df_b.iloc[2]['PCON_DISC_%']
+d4v = df_b.iloc[3]['PCON_DISC_%']
+d5v = df_b.iloc[4]['PCON_DISC_%']
+
+bullPCON_DISC = ("las 5 zonas metropolitanas con más discapacitados son "+ d1n +" ("+ str(d1v) +"%), "+ d2n +" ("+ str(d2v) +"%), "+ d3n +" ("+ str(d3v) +"%), "+ d4n +" ("+ str(d4v) +"%) y "+ d5n +" ("+ str(d5v) +"%).")
+
 
 
 #-------------------------------------------------------------------------------------------------------------------3
@@ -189,18 +222,29 @@ internet_graf = px.bar_polar(df_a,
 internet_graf.update_layout(title = 'CON INTERNET',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
-                                       
                                        title_font_size= 18,
-                            
-                            #legend=dict(showscale=False),
                   font=dict(family="Arial",
                               size=7,
                               color="black"),
-                    #heigth= "420px",
-
-                     paper_bgcolor="rgba(0,0,0,0)",
+                            paper_bgcolor="rgba(0,0,0,0)",
                      plot_bgcolor="rgba(0,0,0,0)")
 internet_graf.update(layout_coloraxis_showscale=False) 
+
+df_b = df_a.sort_values('VPH_INTER', ascending=False, ignore_index=True)
+
+d1n = df_b.iloc[0]['NOM_ZM']
+d2n = df_b.iloc[1]['NOM_ZM']
+d3n = df_b.iloc[2]['NOM_ZM']
+d4n = df_b.iloc[3]['NOM_ZM']
+d5n = df_b.iloc[4]['NOM_ZM']
+
+d1v = df_b.iloc[0]['VPH_INTER_%']
+d2v = df_b.iloc[1]['VPH_INTER_%']
+d3v = df_b.iloc[2]['VPH_INTER_%']
+d4v = df_b.iloc[3]['VPH_INTER_%']
+d5v = df_b.iloc[4]['VPH_INTER_%']
+
+bullVPH_INTER = ("las 5 zonas metropolitanas con más servicio de internet son "+ d1n +" ("+ str(d1v) +"%), "+ d2n +" ("+ str(d2v) +"%), "+ d3n +" ("+ str(d3v) +"%), "+ d4n +" ("+ str(d4v) +"%) y "+ d5n +" ("+ str(d5v) +"%).")
 
 
 #-------------------------------------------------------------------------------------------------------------------3
@@ -226,6 +270,22 @@ desocupada12ymas_graf.update_layout(title = 'DESOCUPADOS',
                      paper_bgcolor="rgba(0,0,0,0)",
                      plot_bgcolor="rgba(0,0,0,0)")
 desocupada12ymas_graf.update(layout_coloraxis_showscale=False)
+
+df_b = df_a.sort_values('PDESOCUP', ascending=False, ignore_index=True)
+
+d1n = df_b.iloc[0]['NOM_ZM']
+d2n = df_b.iloc[1]['NOM_ZM']
+d3n = df_b.iloc[2]['NOM_ZM']
+d4n = df_b.iloc[3]['NOM_ZM']
+d5n = df_b.iloc[4]['NOM_ZM']
+
+d1v = df_b.iloc[0]['PDESOCUP_%']
+d2v = df_b.iloc[1]['PDESOCUP_%']
+d3v = df_b.iloc[2]['PDESOCUP_%']
+d4v = df_b.iloc[3]['PDESOCUP_%']
+d5v = df_b.iloc[4]['PDESOCUP_%']
+
+bullPDESOCUP = ("las 5 zonas metropolitanas con más población desocupada son "+ d1n +" ("+ str(d1v) +"%), "+ d2n +" ("+ str(d2v) +"%), "+ d3n +" ("+ str(d3v) +"%), "+ d4n +" ("+ str(d4v) +"%) y "+ d5n +" ("+ str(d5v) +"%).")
 
 
 #-------------------------------------------------------------------------------------------------------------------3
@@ -253,6 +313,22 @@ nacidaenotraentidad_graf.update_layout(title = 'NACIDOS EN OTRA ENTIDAD',
 nacidaenotraentidad_graf.update(layout_coloraxis_showscale=False)
 
 
+df_b = df_a.sort_values('PNACOE', ascending=False, ignore_index=True)
+
+d1n = df_b.iloc[0]['NOM_ZM']
+d2n = df_b.iloc[1]['NOM_ZM']
+d3n = df_b.iloc[2]['NOM_ZM']
+d4n = df_b.iloc[3]['NOM_ZM']
+d5n = df_b.iloc[4]['NOM_ZM']
+
+d1v = df_b.iloc[0]['PNACOE_%']
+d2v = df_b.iloc[1]['PNACOE_%']
+d3v = df_b.iloc[2]['PNACOE_%']
+d4v = df_b.iloc[3]['PNACOE_%']
+d5v = df_b.iloc[4]['PNACOE_%']
+
+bullPNACOE = ("las 5 zonas metropolitanas con más población nacida en otra entidad son "+ d1n +" ("+ str(d1v) +"%), "+ d2n +" ("+ str(d2v) +"%), "+ d3n +" ("+ str(d3v) +"%), "+ d4n +" ("+ str(d4v) +"%) y "+ d5n +" ("+ str(d5v) +"%).")
+
 
 #-------------------------------------------------------------------------------------------------------------------3
 # 60 Y MAS
@@ -274,6 +350,23 @@ pobde60ymas_graf.update_layout(title = '60 AÑOS Y MÁS',
                      paper_bgcolor="rgba(0,0,0,0)",
                      plot_bgcolor="rgba(0,0,0,0)")
 pobde60ymas_graf.update(layout_coloraxis_showscale=False)
+
+df_b = df_a.sort_values('P_60YMAS', ascending=False, ignore_index=True)
+
+d1n = df_b.iloc[0]['NOM_ZM']
+d2n = df_b.iloc[1]['NOM_ZM']
+d3n = df_b.iloc[2]['NOM_ZM']
+d4n = df_b.iloc[3]['NOM_ZM']
+d5n = df_b.iloc[4]['NOM_ZM']
+
+d1v = df_b.iloc[0]['P_60YMAS_%']
+d2v = df_b.iloc[1]['P_60YMAS_%']
+d3v = df_b.iloc[2]['P_60YMAS_%']
+d4v = df_b.iloc[3]['P_60YMAS_%']
+d5v = df_b.iloc[4]['P_60YMAS_%']
+
+bullP_60YMAS = ("las 5 zonas metropolitanas con más población de 60 años y más son "+ d1n +" ("+ str(d1v) +"%), "+ d2n +" ("+ str(d2v) +"%), "+ d3n +" ("+ str(d3v) +"%), "+ d4n +" ("+ str(d4v) +"%) y "+ d5n +" ("+ str(d5v) +"%).")
+
 
 #-------------------------------------------------------------------------------------------------------------------3
 # AFILIADOS SerVICIOS De SALUD PRIVADOS
@@ -298,6 +391,22 @@ servsaludpriv_graf.update_layout(title = 'SALUD PRIVADA',#'CON AFILIACIÓN A SER
                      paper_bgcolor="rgba(0,0,0,0)",
                      plot_bgcolor="rgba(0,0,0,0)")
 servsaludpriv_graf.update(layout_coloraxis_showscale=False)
+
+df_b = df_a.sort_values('PAFIL_IPRIV', ascending=False, ignore_index=True)
+
+d1n = df_b.iloc[0]['NOM_ZM']
+d2n = df_b.iloc[1]['NOM_ZM']
+d3n = df_b.iloc[2]['NOM_ZM']
+d4n = df_b.iloc[3]['NOM_ZM']
+d5n = df_b.iloc[4]['NOM_ZM']
+
+d1v = df_b.iloc[0]['PAFIL_IPRIV_%']
+d2v = df_b.iloc[1]['PAFIL_IPRIV_%']
+d3v = df_b.iloc[2]['PAFIL_IPRIV_%']
+d4v = df_b.iloc[3]['PAFIL_IPRIV_%']
+d5v = df_b.iloc[4]['PAFIL_IPRIV_%']
+
+bullPAFIL_IPRIV = ("las 5 zonas metropolitanas con más servicios de salud privados son "+ d1n +" ("+ str(d1v) +"%), "+ d2n +" ("+ str(d2v) +"%), "+ d3n +" ("+ str(d3v) +"%), "+ d4n +" ("+ str(d4v) +"%) y "+ d5n +" ("+ str(d5v) +"%).")
 
 #-------------------------------------------------------------------------------------------------------------------3
 # PROMEDIOS HABITANTES/CUARTO (DORMITORIO)
@@ -337,16 +446,29 @@ relgprotevang_graf = px.bar_polar(df_a,
 relgprotevang_graf.update_layout(title = 'PROTESTANTES O EVANGÉLICOS',#'GRUPO RELIGIOSO PROTESTANTE/CRISTIANO EVANGÉLICO',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
-                                       
                                        title_font_size= 18,
-                                 
-                                 #legend=dict(showscale=False),
-                  font=dict(family="Arial",
+                                 font=dict(family="Arial",
                               size=7,
                               color="black"),
                      paper_bgcolor="rgba(0,0,0,0)",
                      plot_bgcolor="rgba(0,0,0,0)")
 relgprotevang_graf.update(layout_coloraxis_showscale=False)
+
+df_b = df_a.sort_values('PRO_CRIEVA', ascending=False, ignore_index=True)
+
+d1n = df_b.iloc[0]['NOM_ZM']
+d2n = df_b.iloc[1]['NOM_ZM']
+d3n = df_b.iloc[2]['NOM_ZM']
+d4n = df_b.iloc[3]['NOM_ZM']
+d5n = df_b.iloc[4]['NOM_ZM']
+
+d1v = df_b.iloc[0]['PRO_CRIEVA_%']
+d2v = df_b.iloc[1]['PRO_CRIEVA_%']
+d3v = df_b.iloc[2]['PRO_CRIEVA_%']
+d4v = df_b.iloc[3]['PRO_CRIEVA_%']
+d5v = df_b.iloc[4]['PRO_CRIEVA_%']
+
+bullPRO_CRIEVA = ("las 5 zonas metropolitanas con más población protestante y evangélica son "+ d1n +" ("+ str(d1v) +"%), "+ d2n +" ("+ str(d2v) +"%), "+ d3n +" ("+ str(d3v) +"%), "+ d4n +" ("+ str(d4v) +"%) y "+ d5n +" ("+ str(d5v) +"%).")
 
 #-------------------------------------------------------------------------------------------------------------------3
 # HOGARES CON JEF-A- DE FAMILIA
@@ -372,6 +494,22 @@ hogconjfa_graf.update_layout(title = 'JEFAS DE FAMILIA',#'HOGARES CENSALES CON P
                      plot_bgcolor="rgba(0,0,0,0)")
 hogconjfa_graf.update(layout_coloraxis_showscale=False)
 
+df_b = df_a.sort_values('HOGJEF_F', ascending=False, ignore_index=True)
+
+d1n = df_b.iloc[0]['NOM_ZM']
+d2n = df_b.iloc[1]['NOM_ZM']
+d3n = df_b.iloc[2]['NOM_ZM']
+d4n = df_b.iloc[3]['NOM_ZM']
+d5n = df_b.iloc[4]['NOM_ZM']
+
+d1v = df_b.iloc[0]['HOGJEF_F_%']
+d2v = df_b.iloc[1]['HOGJEF_F_%']
+d3v = df_b.iloc[2]['HOGJEF_F_%']
+d4v = df_b.iloc[3]['HOGJEF_F_%']
+d5v = df_b.iloc[4]['HOGJEF_F_%']
+
+bullHOGJEF_F = ("las 5 zonas metropolitanas con más jefas de familia son "+ d1n +" ("+ str(d1v) +"%), "+ d2n +" ("+ str(d2v) +"%), "+ d3n +" ("+ str(d3v) +"%), "+ d4n +" ("+ str(d4v) +"%) y "+ d5n +" ("+ str(d5v) +"%).")
+
 #-------------------------------------------------------------------------------------------------------------------3
 # HOGARES CON BICICLETA
 
@@ -395,6 +533,22 @@ hogaresconbici_graf.update_layout(title = ' CON BICICLETA',
                      paper_bgcolor="rgba(0,0,0,0)",
                      plot_bgcolor="rgba(0,0,0,0)")
 hogaresconbici_graf.update(layout_coloraxis_showscale=False)
+
+df_b = df_a.sort_values('VPH_BICI', ascending=False, ignore_index=True)
+
+d1n = df_b.iloc[0]['NOM_ZM']
+d2n = df_b.iloc[1]['NOM_ZM']
+d3n = df_b.iloc[2]['NOM_ZM']
+d4n = df_b.iloc[3]['NOM_ZM']
+d5n = df_b.iloc[4]['NOM_ZM']
+
+d1v = df_b.iloc[0]['VPH_BICI_%']
+d2v = df_b.iloc[1]['VPH_BICI_%']
+d3v = df_b.iloc[2]['VPH_BICI_%']
+d4v = df_b.iloc[3]['VPH_BICI_%']
+d5v = df_b.iloc[4]['VPH_BICI_%']
+
+bullVPH_BICI = ("las 5 zonas metropolitanas con más uso de bicicletas son "+ d1n +" ("+ str(d1v) +"%), "+ d2n +" ("+ str(d2v) +"%), "+ d3n +" ("+ str(d3v) +"%), "+ d4n +" ("+ str(d4v) +"%) y "+ d5n +" ("+ str(d5v) +"%).")
 
 #-------------------------------------------------------------------------------------------------------------------3
 # POBLACIÖN ANALFABETA
@@ -420,6 +574,22 @@ pobanalfabeta_graf.update_layout(title = 'ANALFABETAS',
                      plot_bgcolor="rgba(0,0,0,0)")
 pobanalfabeta_graf.update(layout_coloraxis_showscale=False)
 
+df_b = df_a.sort_values('P15YM_AN', ascending=False, ignore_index=True)
+
+d1n = df_b.iloc[0]['NOM_ZM']
+d2n = df_b.iloc[1]['NOM_ZM']
+d3n = df_b.iloc[2]['NOM_ZM']
+d4n = df_b.iloc[3]['NOM_ZM']
+d5n = df_b.iloc[4]['NOM_ZM']
+
+d1v = df_b.iloc[0]['P15YM_AN_%']
+d2v = df_b.iloc[1]['P15YM_AN_%']
+d3v = df_b.iloc[2]['P15YM_AN_%']
+d4v = df_b.iloc[3]['P15YM_AN_%']
+d5v = df_b.iloc[4]['P15YM_AN_%']
+
+bullP15YM_AN = ("las 5 zonas metropolitanas con más analfabetas son "+ d1n +" ("+ str(d1v) +"%), "+ d2n +" ("+ str(d2v) +"%), "+ d3n +" ("+ str(d3v) +"%), "+ d4n +" ("+ str(d4v) +"%) y "+ d5n +" ("+ str(d5v) +"%).")
+
 #-------------------------------------------------------------------------------------------------------------------3
 # POBLACIÖN 18 Y MÄS
 
@@ -443,6 +613,22 @@ pob18ymas_graf.update_layout(title = '18 AÑOS Y MÁS',
                      plot_bgcolor="rgba(0,0,0,0)")
 pob18ymas_graf.update(layout_coloraxis_showscale=False)
 
+df_b = df_a.sort_values('P_18YMAS', ascending=False, ignore_index=True)
+
+d1n = df_b.iloc[0]['NOM_ZM']
+d2n = df_b.iloc[1]['NOM_ZM']
+d3n = df_b.iloc[2]['NOM_ZM']
+d4n = df_b.iloc[3]['NOM_ZM']
+d5n = df_b.iloc[4]['NOM_ZM']
+
+d1v = df_b.iloc[0]['P_18YMAS_%']
+d2v = df_b.iloc[1]['P_18YMAS_%']
+d3v = df_b.iloc[2]['P_18YMAS_%']
+d4v = df_b.iloc[3]['P_18YMAS_%']
+d5v = df_b.iloc[4]['P_18YMAS_%']
+
+bullP_18YMAS = ("las 5 zonas metropolitanas con más población de 18 años y más son "+ d1n +" ("+ str(d1v) +"%), "+ d2n +" ("+ str(d2v) +"%), "+ d3n +" ("+ str(d3v) +"%), "+ d4n +" ("+ str(d4v) +"%) y "+ d5n +" ("+ str(d5v) +"%).")
+
 
 #-------------------------------------------------------------------------------------------------------------------3
 # CATOLICA
@@ -457,20 +643,29 @@ catolica_graf = px.bar_polar(df_a,
 catolica_graf.update_layout(title = 'CATÓLICOS',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
-                                       
                                        title_font_size= 18,
-                            
-                            #legend=dict(showscale=False),
-                  font=dict(family="Arial",
+                            font=dict(family="Arial",
                               size=7,
                               color="black"),
                      paper_bgcolor="rgba(0,0,0,0)",
                      plot_bgcolor="rgba(0,0,0,0)")
 catolica_graf.update(layout_coloraxis_showscale=False)
 
+df_b = df_a.sort_values('PCATOLICA', ascending=False, ignore_index=True)
 
+d1n = df_b.iloc[0]['NOM_ZM']
+d2n = df_b.iloc[1]['NOM_ZM']
+d3n = df_b.iloc[2]['NOM_ZM']
+d4n = df_b.iloc[3]['NOM_ZM']
+d5n = df_b.iloc[4]['NOM_ZM']
 
+d1v = df_b.iloc[0]['PCATOLICA_%']
+d2v = df_b.iloc[1]['PCATOLICA_%']
+d3v = df_b.iloc[2]['PCATOLICA_%']
+d4v = df_b.iloc[3]['PCATOLICA_%']
+d5v = df_b.iloc[4]['PCATOLICA_%']
 
+bullPCATOLICA = ("las 5 zonas metropolitanas con más población católica son "+ d1n +" ("+ str(d1v) +"%), "+ d2n +" ("+ str(d2v) +"%), "+ d3n +" ("+ str(d3v) +"%), "+ d4n +" ("+ str(d4v) +"%) y "+ d5n +" ("+ str(d5v) +"%).")
 
 
 #-------------------------------------------------------------------------------------------------------------------3
@@ -497,6 +692,22 @@ sinrelig_graf.update_layout(title = 'SIN RELIGIÓN',
                      plot_bgcolor="rgba(0,0,0,0)")
 sinrelig_graf.update(layout_coloraxis_showscale=False)
 
+df_b = df_a.sort_values('PSIN_RELIG', ascending=False, ignore_index=True)
+
+d1n = df_b.iloc[0]['NOM_ZM']
+d2n = df_b.iloc[1]['NOM_ZM']
+d3n = df_b.iloc[2]['NOM_ZM']
+d4n = df_b.iloc[3]['NOM_ZM']
+d5n = df_b.iloc[4]['NOM_ZM']
+
+d1v = df_b.iloc[0]['PSIN_RELIG_%']
+d2v = df_b.iloc[1]['PSIN_RELIG_%']
+d3v = df_b.iloc[2]['PSIN_RELIG_%']
+d4v = df_b.iloc[3]['PSIN_RELIG_%']
+d5v = df_b.iloc[4]['PSIN_RELIG_%']
+
+bullPSIN_RELIG = ("las 5 zonas metropolitanas con más población sin religión son "+ d1n +" ("+ str(d1v) +"%), "+ d2n +" ("+ str(d2v) +"%), "+ d3n +" ("+ str(d3v) +"%), "+ d4n +" ("+ str(d4v) +"%) y "+ d5n +" ("+ str(d5v) +"%).")
+
 #-------------------------------------------------------------------------------------------------------------------3
 # CON COMPUTADORA
 
@@ -520,6 +731,22 @@ conpc_graf.update_layout(title = 'CON COMPUTADORA',
                      paper_bgcolor="rgba(0,0,0,0)",
                      plot_bgcolor="rgba(0,0,0,0)")
 conpc_graf.update(layout_coloraxis_showscale=False)
+
+df_b = df_a.sort_values('VPH_PC', ascending=False, ignore_index=True)
+
+d1n = df_b.iloc[0]['NOM_ZM']
+d2n = df_b.iloc[1]['NOM_ZM']
+d3n = df_b.iloc[2]['NOM_ZM']
+d4n = df_b.iloc[3]['NOM_ZM']
+d5n = df_b.iloc[4]['NOM_ZM']
+
+d1v = df_b.iloc[0]['VPH_PC_%']
+d2v = df_b.iloc[1]['VPH_PC_%']
+d3v = df_b.iloc[2]['VPH_PC_%']
+d4v = df_b.iloc[3]['VPH_PC_%']
+d5v = df_b.iloc[4]['VPH_PC_%']
+
+bullVPH_PC = ("las 5 zonas metropolitanas con más viviendas con compuadora son "+ d1n +" ("+ str(d1v) +"%), "+ d2n +" ("+ str(d2v) +"%), "+ d3n +" ("+ str(d3v) +"%), "+ d4n +" ("+ str(d4v) +"%) y "+ d5n +" ("+ str(d5v) +"%).")
 
 
 #-------------------------------------------------------------------------------------------------------------------3
@@ -546,6 +773,22 @@ secundaria_graf.update_layout(title = 'SECUNDARIA COMPLETA',
                      plot_bgcolor="rgba(0,0,0,0)")
 secundaria_graf.update(layout_coloraxis_showscale=False)
 
+df_b = df_a.sort_values('P15SEC_CO', ascending=False, ignore_index=True)
+
+d1n = df_b.iloc[0]['NOM_ZM']
+d2n = df_b.iloc[1]['NOM_ZM']
+d3n = df_b.iloc[2]['NOM_ZM']
+d4n = df_b.iloc[3]['NOM_ZM']
+d5n = df_b.iloc[4]['NOM_ZM']
+
+d1v = df_b.iloc[0]['P15SEC_CO_%']
+d2v = df_b.iloc[1]['P15SEC_CO_%']
+d3v = df_b.iloc[2]['P15SEC_CO_%']
+d4v = df_b.iloc[3]['P15SEC_CO_%']
+d5v = df_b.iloc[4]['P15SEC_CO_%']
+
+bullP15SEC_CO = ("las 5 zonas metropolitanas con más población con secundaria completa son "+ d1n +" ("+ str(d1v) +"%), "+ d2n +" ("+ str(d2v) +"%), "+ d3n +" ("+ str(d3v) +"%), "+ d4n +" ("+ str(d4v) +"%) y "+ d5n +" ("+ str(d5v) +"%).")
+
 
 #vars-------------------------------------------------------------------------------------------------------------------3
 # 18 y mas posbasica
@@ -571,6 +814,22 @@ posbasica_graf.update_layout(title = '+18 CON POSBÁSICA',
                      plot_bgcolor="rgba(0,0,0,0)")
 posbasica_graf.update(layout_coloraxis_showscale=False)
 
+df_b = df_a.sort_values('P18YM_PB', ascending=False, ignore_index=True)
+
+d1n = df_b.iloc[0]['NOM_ZM']
+d2n = df_b.iloc[1]['NOM_ZM']
+d3n = df_b.iloc[2]['NOM_ZM']
+d4n = df_b.iloc[3]['NOM_ZM']
+d5n = df_b.iloc[4]['NOM_ZM']
+
+d1v = df_b.iloc[0]['P18YM_PB_%']
+d2v = df_b.iloc[1]['P18YM_PB_%']
+d3v = df_b.iloc[2]['P18YM_PB_%']
+d4v = df_b.iloc[3]['P18YM_PB_%']
+d5v = df_b.iloc[4]['P18YM_PB_%']
+
+bullP18YM_PB = ("las 5 zonas metropolitanas con más población con educación posbásica completa son "+ d1n +" ("+ str(d1v) +"%), "+ d2n +" ("+ str(d2v) +"%), "+ d3n +" ("+ str(d3v) +"%), "+ d4n +" ("+ str(d4v) +"%) y "+ d5n +" ("+ str(d5v) +"%).")
+
 #vars-------------------------------------------------------------------------------------------------------------------3
 # POBLACION FEMENINA NACIDA EN OTRA ENtIDAD
 
@@ -584,16 +843,29 @@ nacidaenotraentidadmujer_graf = px.bar_polar(df_a,
 nacidaenotraentidadmujer_graf.update_layout(title = 'MUJERES NACIDAS EN OTRA ENTIDAD',
                                        title_font_family="Montserrat",
                                        title_font_color="black",
-                                       
                                        title_font_size= 18,
-                         
-                         #legend=dict(showscale=False),
-                  font=dict(family="Arial",
+                         font=dict(family="Arial",
                               size=7,
                               color="black"),
                      paper_bgcolor="rgba(0,0,0,0)",
                      plot_bgcolor="rgba(0,0,0,0)")
 nacidaenotraentidadmujer_graf.update(layout_coloraxis_showscale=False)
+
+df_b = df_a.sort_values('PNACOE_F', ascending=False, ignore_index=True)
+
+d1n = df_b.iloc[0]['NOM_ZM']
+d2n = df_b.iloc[1]['NOM_ZM']
+d3n = df_b.iloc[2]['NOM_ZM']
+d4n = df_b.iloc[3]['NOM_ZM']
+d5n = df_b.iloc[4]['NOM_ZM']
+
+d1v = df_b.iloc[0]['PNACOE_F_%']
+d2v = df_b.iloc[1]['PNACOE_F_%']
+d3v = df_b.iloc[2]['PNACOE_F_%']
+d4v = df_b.iloc[3]['PNACOE_F_%']
+d5v = df_b.iloc[4]['PNACOE_F_%']
+
+bullPNACOE_F = ("las 5 zonas metropolitanas con más mujeres nacidas en otra entidad son "+ d1n +" ("+ str(d1v) +"%), "+ d2n +" ("+ str(d2v) +"%), "+ d3n +" ("+ str(d3v) +"%), "+ d4n +" ("+ str(d4v) +"%) y "+ d5n +" ("+ str(d5v) +"%).")
 
 #vars-------------------------------------------------------------------------------------------------------------------3
 # POBLACION DE 15 A 64
@@ -617,6 +889,23 @@ pob15a64_graf.update_layout(title = '6 A 11 AÑOS',
                      plot_bgcolor="rgba(0,0,0,0)")
 pob15a64_graf.update(layout_coloraxis_showscale=False)
 
+df_b = df_a.sort_values('P_6A11', ascending=False, ignore_index=True)
+
+d1n = df_b.iloc[0]['NOM_ZM']
+d2n = df_b.iloc[1]['NOM_ZM']
+d3n = df_b.iloc[2]['NOM_ZM']
+d4n = df_b.iloc[3]['NOM_ZM']
+d5n = df_b.iloc[4]['NOM_ZM']
+
+d1v = df_b.iloc[0]['P_6A11_%']
+d2v = df_b.iloc[1]['P_6A11_%']
+d3v = df_b.iloc[2]['P_6A11_%']
+d4v = df_b.iloc[3]['P_6A11_%']
+d5v = df_b.iloc[4]['P_6A11_%']
+
+bullP_6A11 = ("las 5 zonas metropolitanas con mayor población de 6 a 11 años de edad son "+ d1n +" ("+ str(d1v) +"%), "+ d2n +" ("+ str(d2v) +"%), "+ d3n +" ("+ str(d3v) +"%), "+ d4n +" ("+ str(d4v) +"%) y "+ d5n +" ("+ str(d5v) +"%).")
+             
+
 #vars-------------------------------------------------------------------------------------------------------------------3
 # STREAMING
 
@@ -639,6 +928,23 @@ hogaresconstreaming_graf.update_layout(title = 'CON STREAMING',
                      plot_bgcolor="rgba(0,0,0,0)")
 hogaresconstreaming_graf.update(layout_coloraxis_showscale=False)
 
+df_b = df_a.sort_values('VPH_SPMVPI', ascending=False, ignore_index=True)
+
+d1n = df_b.iloc[0]['NOM_ZM']
+d2n = df_b.iloc[1]['NOM_ZM']
+d3n = df_b.iloc[2]['NOM_ZM']
+d4n = df_b.iloc[3]['NOM_ZM']
+d5n = df_b.iloc[4]['NOM_ZM']
+
+d1v = df_b.iloc[0]['VPH_SPMVPI_%']
+d2v = df_b.iloc[1]['VPH_SPMVPI_%']
+d3v = df_b.iloc[2]['VPH_SPMVPI_%']
+d4v = df_b.iloc[3]['VPH_SPMVPI_%']
+d5v = df_b.iloc[4]['VPH_SPMVPI_%']
+
+bullVPH_SPMVP = ("las 5 zonas metropolitanas con más servicios de streaming son "+ d1n +" ("+ str(d1v) +"%), "+ d2n +" ("+ str(d2v) +"%), "+ d3n +" ("+ str(d3v) +"%), "+ d4n +" ("+ str(d4v) +"%) y "+ d5n +" ("+ str(d5v) +"%).")
+             
+
 #vars-------------------------------------------------------------------------------------------------------------------3
 # HLI
 
@@ -660,6 +966,22 @@ hli_graf.update_layout(title = 'HABLAN LENGUA INDÍGENA',
                      paper_bgcolor="rgba(0,0,0,0)",
                      plot_bgcolor="rgba(0,0,0,0)")
 hli_graf.update(layout_coloraxis_showscale=False)
+
+df_b = df_a.sort_values('P3YM_HLI', ascending=False, ignore_index=True)
+
+d1n = df_b.iloc[0]['NOM_ZM']
+d2n = df_b.iloc[1]['NOM_ZM']
+d3n = df_b.iloc[2]['NOM_ZM']
+d4n = df_b.iloc[3]['NOM_ZM']
+d5n = df_b.iloc[4]['NOM_ZM']
+
+d1v = df_b.iloc[0]['P3YM_HLI_%']
+d2v = df_b.iloc[1]['P3YM_HLI_%']
+d3v = df_b.iloc[2]['P3YM_HLI_%']
+d4v = df_b.iloc[3]['P3YM_HLI_%']
+d5v = df_b.iloc[4]['P3YM_HLI_%']
+
+bullP3YM_HLI = ("las 5 zonas metropolitanas con más hablantes de lenguas indígenas son "+ d1n +" ("+ str(d1v) +"%), "+ d2n +" ("+ str(d2v) +"%), "+ d3n +" ("+ str(d3v) +"%), "+ d4n +" ("+ str(d4v) +"%) y "+ d5n +" ("+ str(d5v) +"%).")
 
 
 #vars-------------------------------------------------------------------------------------------------------------------3
@@ -684,6 +1006,22 @@ pobhoghli_graf.update_layout(title = 'HOGARES INDÍGENAS',
                      plot_bgcolor="rgba(0,0,0,0)")
 pobhoghli_graf.update(layout_coloraxis_showscale=False)
 
+df_b = df_a.sort_values('PHOG_IND', ascending=False, ignore_index=True)
+
+d1n = df_b.iloc[0]['NOM_ZM']
+d2n = df_b.iloc[1]['NOM_ZM']
+d3n = df_b.iloc[2]['NOM_ZM']
+d4n = df_b.iloc[3]['NOM_ZM']
+d5n = df_b.iloc[4]['NOM_ZM']
+
+d1v = df_b.iloc[0]['PHOG_IND_%']
+d2v = df_b.iloc[1]['PHOG_IND_%']
+d3v = df_b.iloc[2]['PHOG_IND_%']
+d4v = df_b.iloc[3]['PHOG_IND_%']
+d5v = df_b.iloc[4]['PHOG_IND_%']
+
+bullPHOG_IND = ("las 5 zonas metropolitanas con más población en hogares indígenas son "+ d1n +" ("+ str(d1v) +"%), "+ d2n +" ("+ str(d2v) +"%), "+ d3n +" ("+ str(d3v) +"%), "+ d4n +" ("+ str(d4v) +"%) y "+ d5n +" ("+ str(d5v) +"%).")
+
 
 #vars-------------------------------------------------------------------------------------------------------------------3
 # pob afro
@@ -707,6 +1045,22 @@ afro_graf.update_layout(title = 'AFRODESCENDIENTES',
                      plot_bgcolor="rgba(0,0,0,0)")
 afro_graf.update(layout_coloraxis_showscale=False)
 
+df_b = df_a.sort_values('POB_AFRO', ascending=False, ignore_index=True)
+
+d1n = df_b.iloc[0]['NOM_ZM']
+d2n = df_b.iloc[1]['NOM_ZM']
+d3n = df_b.iloc[2]['NOM_ZM']
+d4n = df_b.iloc[3]['NOM_ZM']
+d5n = df_b.iloc[4]['NOM_ZM']
+
+d1v = df_b.iloc[0]['POB_AFRO_%']
+d2v = df_b.iloc[1]['POB_AFRO_%']
+d3v = df_b.iloc[2]['POB_AFRO_%']
+d4v = df_b.iloc[3]['POB_AFRO_%']
+d5v = df_b.iloc[4]['POB_AFRO_%']
+
+bullPOB_AFRO = ("las 5 zonas metropolitanas con más población afrodescendiente son "+ d1n +" ("+ str(d1v) +"%), "+ d2n +" ("+ str(d2v) +"%), "+ d3n +" ("+ str(d3v) +"%), "+ d4n +" ("+ str(d4v) +"%) y "+ d5n +" ("+ str(d5v) +"%).")
+
 
 #vars-------------------------------------------------------------------------------------------------------------------3
 # 1 cuarto
@@ -729,6 +1083,23 @@ viviendascon1cuarto.update_layout(title = 'VIVIENDAS CON UN CUARTO',
                      paper_bgcolor="rgba(0,0,0,0)",
                      plot_bgcolor="rgba(0,0,0,0)")
 viviendascon1cuarto.update(layout_coloraxis_showscale=False)
+
+df_b = df_a.sort_values('VPH_1CUART', ascending=False, ignore_index=True)
+
+d1n = df_b.iloc[0]['NOM_ZM']
+d2n = df_b.iloc[1]['NOM_ZM']
+d3n = df_b.iloc[2]['NOM_ZM']
+d4n = df_b.iloc[3]['NOM_ZM']
+d5n = df_b.iloc[4]['NOM_ZM']
+
+d1v = df_b.iloc[0]['VPH_1CUART_%']
+d2v = df_b.iloc[1]['VPH_1CUART_%']
+d3v = df_b.iloc[2]['VPH_1CUART_%']
+d4v = df_b.iloc[3]['VPH_1CUART_%']
+d5v = df_b.iloc[4]['VPH_1CUART_%']
+
+bullVPH_1CUART = ("las 5 zonas metropolitanas con más habitantes por cuarto son "+ d1n +" ("+ str(d1v) +"%), "+ d2n +" ("+ str(d2v) +"%), "+ d3n +" ("+ str(d3v) +"%), "+ d4n +" ("+ str(d4v) +"%) y "+ d5n +" ("+ str(d5v) +"%).")
+
 
 
 ######################################
@@ -1283,6 +1654,18 @@ metropolis = dbc.Card(
                     'margin-left': '80px',
                     #"width": "78rem", 
                         }),
+    dbc.Row([
+        dbc.Col(html.P(bullP_6A11, style={ "text-align": "justify","color": "black", "font-size": "10px","font-family": "Arial",}),style={'backgroundColor': 'lightgray'}),
+        dbc.Col(html.P(bullP_18YMAS, style={ "text-align": "justify","color": "black", "font-size": "10px","font-family": "Arial",}),style={'backgroundColor': 'lightgray'}),
+        dbc.Col(html.P(bullP_60YMAS, style={ "text-align": "justify","color": "black", "font-size": "10px","font-family": "Arial",}),style={'backgroundColor': 'lightgray'}),
+    ],style={'backgroundColor': 'lightgray',
+                    'width': '1200px',
+                    'margin-top': '0px',
+                    'margin-left': '80px',
+                    #"width": "78rem", 
+                        }),
+            
+            
       
    html.Br(),
 
@@ -1312,6 +1695,17 @@ metropolis = dbc.Card(
                     'margin-left': '80px',
                     #"width": "78rem", 
                         }),
+        
+   dbc.Row([
+        dbc.Col(html.P(bullPCON_DISC, style={ "text-align": "justify","color": "black", "font-size": "10px","font-family": "Arial",}),style={'backgroundColor': 'lightgray'}),
+        dbc.Col(html.P(bullPSINDER, style={ "text-align": "justify","color": "black", "font-size": "10px","font-family": "Arial",}),style={'backgroundColor': 'lightgray'}),
+        dbc.Col(html.P(bullPAFIL_IPRIV, style={ "text-align": "justify","color": "black", "font-size": "10px","font-family": "Arial",}),style={'backgroundColor': 'lightgray'}),
+    ],style={'backgroundColor': 'lightgray',
+                    'width': '1200px',
+                    'margin-top': '0px',
+                    'margin-left': '80px',
+                    #"width": "78rem", 
+                        }),
 
    html.Br(),
             
@@ -1332,6 +1726,17 @@ metropolis = dbc.Card(
                  style={#"width": "50px",
                       'backgroundColor': 'lightgray'}),],
              style={'backgroundColor': 'lightgray',
+                    'width': '1200px',
+                    'margin-top': '0px',
+                    'margin-left': '80px',
+                    #"width": "78rem", 
+                        }),
+            
+        dbc.Row([
+            dbc.Col(html.P(bullP15YM_AN, style={ "text-align": "justify","color": "black", "font-size": "10px","font-family": "Arial",}),style={'backgroundColor': 'lightgray'}),
+            dbc.Col(html.P(bullP15SEC_CO, style={ "text-align": "justify","color": "black", "font-size": "10px","font-family": "Arial",}),style={'backgroundColor': 'lightgray'}),
+            dbc.Col(html.P(bullP18YM_PB, style={ "text-align": "justify","color": "black", "font-size": "10px","font-family": "Arial",}),style={'backgroundColor': 'lightgray'}),
+        ],style={'backgroundColor': 'lightgray',
                     'width': '1200px',
                     'margin-top': '0px',
                     'margin-left': '80px',
@@ -1374,6 +1779,16 @@ metropolis = dbc.Card(
                     'margin-left': '80px',
                     #"width": "78rem", 
                         }),
+    dbc.Row([
+        dbc.Col(html.P(bullPCATOLICA, style={ "text-align": "justify","color": "black", "font-size": "10px","font-family": "Arial",}),style={'backgroundColor': 'lightgray'}),
+        dbc.Col(html.P(bullPRO_CRIEVA, style={ "text-align": "justify","color": "black", "font-size": "10px","font-family": "Arial",}),style={'backgroundColor': 'lightgray'}),
+        dbc.Col(html.P(bullPSIN_RELIG, style={ "text-align": "justify","color": "black", "font-size": "10px","font-family": "Arial",}),style={'backgroundColor': 'lightgray'}),
+    ],style={'backgroundColor': 'lightgray',
+                    'width': '1200px',
+                    'margin-top': '0px',
+                    'margin-left': '80px',
+                    #"width": "78rem", 
+                        }),
             
        
    html.Br(),    
@@ -1399,6 +1814,17 @@ metropolis = dbc.Card(
                     'margin-left': '80px',
                     #"width": "78rem", 
                         }),
+    dbc.Row([
+        dbc.Col(html.P(bullPNACOE, style={ "text-align": "justify","color": "black", "font-size": "10px","font-family": "Arial",}),style={'backgroundColor': 'lightgray'}),
+        dbc.Col(html.P(bullPNACOE_F, style={ "text-align": "justify","color": "black", "font-size": "10px","font-family": "Arial",}),style={'backgroundColor': 'lightgray'}),
+        dbc.Col(html.P(bullPDESOCUP, style={ "text-align": "justify","color": "black", "font-size": "10px","font-family": "Arial",}),style={'backgroundColor': 'lightgray'}),
+    ],style={'backgroundColor': 'lightgray',
+                    'width': '1200px',
+                    'margin-top': '0px',
+                    'margin-left': '80px',
+                    #"width": "78rem", 
+                        }),
+    
 
    html.Br(),    
 
@@ -1419,6 +1845,16 @@ metropolis = dbc.Card(
                  style={#"width": "50px",
                       'backgroundColor': 'lightgray'}),
          ],style={'backgroundColor': 'lightgray',
+                    'width': '1200px',
+                    'margin-top': '0px',
+                    'margin-left': '80px',
+                    #"width": "78rem", 
+                        }),
+    dbc.Row([
+        dbc.Col(html.P(bullP3YM_HLI, style={ "text-align": "justify","color": "black", "font-size": "10px","font-family": "Arial",}),style={'backgroundColor': 'lightgray'}),
+        dbc.Col(html.P(bullPHOG_IND, style={ "text-align": "justify","color": "black", "font-size": "10px","font-family": "Arial",}),style={'backgroundColor': 'lightgray'}),
+        dbc.Col(html.P(bullPOB_AFRO, style={ "text-align": "justify","color": "black", "font-size": "10px","font-family": "Arial",}),style={'backgroundColor': 'lightgray'}),
+    ],style={'backgroundColor': 'lightgray',
                     'width': '1200px',
                     'margin-top': '0px',
                     'margin-left': '80px',
@@ -1451,6 +1887,17 @@ metropolis = dbc.Card(
                     'margin-left': '80px',
                     #"width": "78rem", 
                         }),
+    dbc.Row([
+        dbc.Col(html.P(bullHOGJEF_F, style={ "text-align": "justify","color": "black", "font-size": "10px","font-family": "Arial",}),style={'backgroundColor': 'lightgray'}),
+        dbc.Col(html.P(bullVPH_1CUART, style={ "text-align": "justify","color": "black", "font-size": "10px","font-family": "Arial",}),style={'backgroundColor': 'lightgray'}),
+        dbc.Col(html.P(bullVPH_BICI, style={ "text-align": "justify","color": "black", "font-size": "10px","font-family": "Arial",}),style={'backgroundColor': 'lightgray'}),
+    ],style={'backgroundColor': 'lightgray',
+                    'width': '1200px',
+                    'margin-top': '0px',
+                    'margin-left': '80px',
+                    #"width": "78rem", 
+                        }),
+    
             
             dbc.Row([
        
@@ -1486,6 +1933,17 @@ metropolis = dbc.Card(
                     'margin-left': '80px',
                     #"width": "78rem", 
                         }),
+    dbc.Row([
+        dbc.Col(html.P(bullVPH_PC, style={ "text-align": "justify","color": "black", "font-size": "10px","font-family": "Arial",   }),style={'backgroundColor': 'lightgray'}),
+        dbc.Col(html.P(bullVPH_INTER, style={ "text-align": "justify","color": "black", "font-size": "10px","font-family": "Arial",}),style={'backgroundColor': 'lightgray'}),
+        dbc.Col(html.P(bullVPH_SPMVP, style={ "text-align": "justify","color": "black", "font-size": "10px","font-family": "Arial",}),style={'backgroundColor': 'lightgray'}),
+    ],style={'backgroundColor': 'lightgray',
+                    'width': '1200px',
+                    'margin-top': '0px',
+                    'margin-left': '80px',
+                    #"width": "78rem", 
+                        }),
+    
    
        
     ############################################### winik <<<<<<<<<<<<<<<<<<<<<<
@@ -1515,13 +1973,13 @@ metropolis = dbc.Card(
                            " México, 2021 "),
                   width={'size': 3, 'offset': 0}),
                ], justify="start",),
-            
-     dbc.Row([    
-           dbc.Col(html.H5([dbc.Badge("Equipo responsable", 
-                          href="https://innovation-learning.herokuapp.com/",
-                                     )]),
-                  width={'size': 3,  "offset": 4}),
-                       ], justify="start",),
+     #     
+     ##dbc.Row([    
+     #      dbc.Col(html.H5([dbc.Badge("Equipo responsable", 
+      #                    href="https://innovation-learning.herokuapp.com/",
+     #                                )]),
+     #             width={'size': 3,  "offset": 4}),
+     #                  ], justify="start",),
    
     html.Br(),
     
