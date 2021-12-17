@@ -151,7 +151,7 @@ sinderechohabiencia_graf.update_layout(title = 'SIN DERECHOHABIENCIA',
 sinderechohabiencia_graf.update(layout_coloraxis_showscale=False)  
 
 
-df_b = df_a.sort_values('PSINDER', ascending=False, ignore_index=True)
+df_b = df_a.sort_values('PSINDER_%', ascending=False, ignore_index=True)
 
 d1n = df_b.iloc[0]['NOM_ZM']
 d2n = df_b.iloc[1]['NOM_ZM']
@@ -192,7 +192,7 @@ discapacidad_graf.update_layout(title = 'DISCAPACIDAD ',
                      plot_bgcolor="rgba(0,0,0,0)")
 discapacidad_graf.update(layout_coloraxis_showscale=False)  
 
-df_b = df_a.sort_values('PCON_DISC', ascending=False, ignore_index=True)
+df_b = df_a.sort_values('PCON_DISC_%', ascending=False, ignore_index=True)
 
 d1n = df_b.iloc[0]['NOM_ZM']
 d2n = df_b.iloc[1]['NOM_ZM']
@@ -230,7 +230,7 @@ internet_graf.update_layout(title = 'CON INTERNET',
                      plot_bgcolor="rgba(0,0,0,0)")
 internet_graf.update(layout_coloraxis_showscale=False) 
 
-df_b = df_a.sort_values('VPH_INTER', ascending=False, ignore_index=True)
+df_b = df_a.sort_values('VPH_INTER_%', ascending=False, ignore_index=True)
 
 d1n = df_b.iloc[0]['NOM_ZM']
 d2n = df_b.iloc[1]['NOM_ZM']
@@ -271,7 +271,7 @@ desocupada12ymas_graf.update_layout(title = 'DESOCUPADOS',
                      plot_bgcolor="rgba(0,0,0,0)")
 desocupada12ymas_graf.update(layout_coloraxis_showscale=False)
 
-df_b = df_a.sort_values('PDESOCUP', ascending=False, ignore_index=True)
+df_b = df_a.sort_values('PDESOCUP_%', ascending=False, ignore_index=True)
 
 d1n = df_b.iloc[0]['NOM_ZM']
 d2n = df_b.iloc[1]['NOM_ZM']
@@ -313,7 +313,7 @@ nacidaenotraentidad_graf.update_layout(title = 'NACIDOS EN OTRA ENTIDAD',
 nacidaenotraentidad_graf.update(layout_coloraxis_showscale=False)
 
 
-df_b = df_a.sort_values('PNACOE', ascending=False, ignore_index=True)
+df_b = df_a.sort_values('PNACOE_%', ascending=False, ignore_index=True)
 
 d1n = df_b.iloc[0]['NOM_ZM']
 d2n = df_b.iloc[1]['NOM_ZM']
@@ -351,7 +351,7 @@ pobde60ymas_graf.update_layout(title = '60 AÑOS Y MÁS',
                      plot_bgcolor="rgba(0,0,0,0)")
 pobde60ymas_graf.update(layout_coloraxis_showscale=False)
 
-df_b = df_a.sort_values('P_60YMAS', ascending=False, ignore_index=True)
+df_b = df_a.sort_values('P_60YMAS_%', ascending=False, ignore_index=True)
 
 d1n = df_b.iloc[0]['NOM_ZM']
 d2n = df_b.iloc[1]['NOM_ZM']
@@ -392,7 +392,7 @@ servsaludpriv_graf.update_layout(title = 'SALUD PRIVADA',#'CON AFILIACIÓN A SER
                      plot_bgcolor="rgba(0,0,0,0)")
 servsaludpriv_graf.update(layout_coloraxis_showscale=False)
 
-df_b = df_a.sort_values('PAFIL_IPRIV', ascending=False, ignore_index=True)
+df_b = df_a.sort_values('PAFIL_IPRIV_%', ascending=False, ignore_index=True)
 
 d1n = df_b.iloc[0]['NOM_ZM']
 d2n = df_b.iloc[1]['NOM_ZM']
@@ -454,7 +454,7 @@ relgprotevang_graf.update_layout(title = 'PROTESTANTES O EVANGÉLICOS',#'GRUPO R
                      plot_bgcolor="rgba(0,0,0,0)")
 relgprotevang_graf.update(layout_coloraxis_showscale=False)
 
-df_b = df_a.sort_values('PRO_CRIEVA', ascending=False, ignore_index=True)
+df_b = df_a.sort_values('PRO_CRIEVA_%', ascending=False, ignore_index=True)
 
 d1n = df_b.iloc[0]['NOM_ZM']
 d2n = df_b.iloc[1]['NOM_ZM']
@@ -494,7 +494,7 @@ hogconjfa_graf.update_layout(title = 'JEFAS DE FAMILIA',#'HOGARES CENSALES CON P
                      plot_bgcolor="rgba(0,0,0,0)")
 hogconjfa_graf.update(layout_coloraxis_showscale=False)
 
-df_b = df_a.sort_values('HOGJEF_F', ascending=False, ignore_index=True)
+df_b = df_a.sort_values('HOGJEF_F_%', ascending=False, ignore_index=True)
 
 d1n = df_b.iloc[0]['NOM_ZM']
 d2n = df_b.iloc[1]['NOM_ZM']
@@ -534,7 +534,7 @@ hogaresconbici_graf.update_layout(title = ' CON BICICLETA',
                      plot_bgcolor="rgba(0,0,0,0)")
 hogaresconbici_graf.update(layout_coloraxis_showscale=False)
 
-df_b = df_a.sort_values('VPH_BICI', ascending=False, ignore_index=True)
+df_b = df_a.sort_values('VPH_BICI_%', ascending=False, ignore_index=True)
 
 d1n = df_b.iloc[0]['NOM_ZM']
 d2n = df_b.iloc[1]['NOM_ZM']
@@ -574,7 +574,7 @@ pobanalfabeta_graf.update_layout(title = 'ANALFABETAS',
                      plot_bgcolor="rgba(0,0,0,0)")
 pobanalfabeta_graf.update(layout_coloraxis_showscale=False)
 
-df_b = df_a.sort_values('P15YM_AN', ascending=False, ignore_index=True)
+df_b = df_a.sort_values('P15YM_AN_%', ascending=False, ignore_index=True)
 
 d1n = df_b.iloc[0]['NOM_ZM']
 d2n = df_b.iloc[1]['NOM_ZM']
@@ -613,7 +613,7 @@ pob18ymas_graf.update_layout(title = '18 AÑOS Y MÁS',
                      plot_bgcolor="rgba(0,0,0,0)")
 pob18ymas_graf.update(layout_coloraxis_showscale=False)
 
-df_b = df_a.sort_values('P_18YMAS', ascending=False, ignore_index=True)
+df_b = df_a.sort_values('P_18YMAS_%', ascending=False, ignore_index=True)
 
 d1n = df_b.iloc[0]['NOM_ZM']
 d2n = df_b.iloc[1]['NOM_ZM']
@@ -651,7 +651,7 @@ catolica_graf.update_layout(title = 'CATÓLICOS',
                      plot_bgcolor="rgba(0,0,0,0)")
 catolica_graf.update(layout_coloraxis_showscale=False)
 
-df_b = df_a.sort_values('PCATOLICA', ascending=False, ignore_index=True)
+df_b = df_a.sort_values('PCATOLICA_%', ascending=False, ignore_index=True)
 
 d1n = df_b.iloc[0]['NOM_ZM']
 d2n = df_b.iloc[1]['NOM_ZM']
@@ -692,7 +692,7 @@ sinrelig_graf.update_layout(title = 'SIN RELIGIÓN',
                      plot_bgcolor="rgba(0,0,0,0)")
 sinrelig_graf.update(layout_coloraxis_showscale=False)
 
-df_b = df_a.sort_values('PSIN_RELIG', ascending=False, ignore_index=True)
+df_b = df_a.sort_values('PSIN_RELIG_%', ascending=False, ignore_index=True)
 
 d1n = df_b.iloc[0]['NOM_ZM']
 d2n = df_b.iloc[1]['NOM_ZM']
@@ -732,7 +732,7 @@ conpc_graf.update_layout(title = 'CON COMPUTADORA',
                      plot_bgcolor="rgba(0,0,0,0)")
 conpc_graf.update(layout_coloraxis_showscale=False)
 
-df_b = df_a.sort_values('VPH_PC', ascending=False, ignore_index=True)
+df_b = df_a.sort_values('VPH_PC_%', ascending=False, ignore_index=True)
 
 d1n = df_b.iloc[0]['NOM_ZM']
 d2n = df_b.iloc[1]['NOM_ZM']
@@ -773,7 +773,7 @@ secundaria_graf.update_layout(title = 'SECUNDARIA COMPLETA',
                      plot_bgcolor="rgba(0,0,0,0)")
 secundaria_graf.update(layout_coloraxis_showscale=False)
 
-df_b = df_a.sort_values('P15SEC_CO', ascending=False, ignore_index=True)
+df_b = df_a.sort_values('P15SEC_CO_%', ascending=False, ignore_index=True)
 
 d1n = df_b.iloc[0]['NOM_ZM']
 d2n = df_b.iloc[1]['NOM_ZM']
@@ -814,7 +814,7 @@ posbasica_graf.update_layout(title = '+18 CON POSBÁSICA',
                      plot_bgcolor="rgba(0,0,0,0)")
 posbasica_graf.update(layout_coloraxis_showscale=False)
 
-df_b = df_a.sort_values('P18YM_PB', ascending=False, ignore_index=True)
+df_b = df_a.sort_values('P18YM_PB_%', ascending=False, ignore_index=True)
 
 d1n = df_b.iloc[0]['NOM_ZM']
 d2n = df_b.iloc[1]['NOM_ZM']
@@ -851,7 +851,7 @@ nacidaenotraentidadmujer_graf.update_layout(title = 'MUJERES NACIDAS EN OTRA ENT
                      plot_bgcolor="rgba(0,0,0,0)")
 nacidaenotraentidadmujer_graf.update(layout_coloraxis_showscale=False)
 
-df_b = df_a.sort_values('PNACOE_F', ascending=False, ignore_index=True)
+df_b = df_a.sort_values('PNACOE_F_%', ascending=False, ignore_index=True)
 
 d1n = df_b.iloc[0]['NOM_ZM']
 d2n = df_b.iloc[1]['NOM_ZM']
@@ -889,7 +889,7 @@ pob15a64_graf.update_layout(title = '6 A 11 AÑOS',
                      plot_bgcolor="rgba(0,0,0,0)")
 pob15a64_graf.update(layout_coloraxis_showscale=False)
 
-df_b = df_a.sort_values('P_6A11', ascending=False, ignore_index=True)
+df_b = df_a.sort_values('P_6A11_%', ascending=False, ignore_index=True)
 
 d1n = df_b.iloc[0]['NOM_ZM']
 d2n = df_b.iloc[1]['NOM_ZM']
@@ -928,7 +928,7 @@ hogaresconstreaming_graf.update_layout(title = 'CON STREAMING',
                      plot_bgcolor="rgba(0,0,0,0)")
 hogaresconstreaming_graf.update(layout_coloraxis_showscale=False)
 
-df_b = df_a.sort_values('VPH_SPMVPI', ascending=False, ignore_index=True)
+df_b = df_a.sort_values('VPH_SPMVPI_%', ascending=False, ignore_index=True)
 
 d1n = df_b.iloc[0]['NOM_ZM']
 d2n = df_b.iloc[1]['NOM_ZM']
@@ -967,7 +967,7 @@ hli_graf.update_layout(title = 'HABLAN LENGUA INDÍGENA',
                      plot_bgcolor="rgba(0,0,0,0)")
 hli_graf.update(layout_coloraxis_showscale=False)
 
-df_b = df_a.sort_values('P3YM_HLI', ascending=False, ignore_index=True)
+df_b = df_a.sort_values('P3YM_HLI_%', ascending=False, ignore_index=True)
 
 d1n = df_b.iloc[0]['NOM_ZM']
 d2n = df_b.iloc[1]['NOM_ZM']
@@ -1006,7 +1006,7 @@ pobhoghli_graf.update_layout(title = 'HOGARES INDÍGENAS',
                      plot_bgcolor="rgba(0,0,0,0)")
 pobhoghli_graf.update(layout_coloraxis_showscale=False)
 
-df_b = df_a.sort_values('PHOG_IND', ascending=False, ignore_index=True)
+df_b = df_a.sort_values('PHOG_IND_%', ascending=False, ignore_index=True)
 
 d1n = df_b.iloc[0]['NOM_ZM']
 d2n = df_b.iloc[1]['NOM_ZM']
@@ -1045,7 +1045,7 @@ afro_graf.update_layout(title = 'AFRODESCENDIENTES',
                      plot_bgcolor="rgba(0,0,0,0)")
 afro_graf.update(layout_coloraxis_showscale=False)
 
-df_b = df_a.sort_values('POB_AFRO', ascending=False, ignore_index=True)
+df_b = df_a.sort_values('POB_AFRO_%', ascending=False, ignore_index=True)
 
 d1n = df_b.iloc[0]['NOM_ZM']
 d2n = df_b.iloc[1]['NOM_ZM']
@@ -1084,7 +1084,7 @@ viviendascon1cuarto.update_layout(title = 'VIVIENDAS CON UN CUARTO',
                      plot_bgcolor="rgba(0,0,0,0)")
 viviendascon1cuarto.update(layout_coloraxis_showscale=False)
 
-df_b = df_a.sort_values('VPH_1CUART', ascending=False, ignore_index=True)
+df_b = df_a.sort_values('VPH_1CUART_%', ascending=False, ignore_index=True)
 
 d1n = df_b.iloc[0]['NOM_ZM']
 d2n = df_b.iloc[1]['NOM_ZM']
