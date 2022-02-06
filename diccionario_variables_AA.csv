@@ -70,7 +70,7 @@ total_c,Pandemia,Contagios por COVID19,Contagios por COVID19
 total_d,Pandemia,Decesos por COVID19,Decesos por COVID19
 A111A,Economía,PIB,PIB
 H001A,Economía,Población económicamente activa,Población económicamente activa
-A171A,Economía,Salario,Salario
+A171A_,Economía,Salario,Salario
 Grand total,Delitos,Delitos,Delitos
 Micro empresas,Economía,Micro empresas,Micro empresas
 Pequeñas empresas,Economía,Pequeñas empresas,Pequeñas empresas
