@@ -1,44 +1,44 @@
 MNEMONICO,TEMATICA,DESCRIPCION,DESCRIPCIONvieja
-P_0A2,Poblaci髇,0 a 2 a駉s,de 0 a 2 a駉s
-P_3A5,Poblaci髇,3 a 5 a駉s,Poblaci髇 de 3 a 5 a駉s 
-P_6A11,Poblaci髇,6 a 11 a駉s,Poblaci髇 de 6 a 11 a駉s 
-P_12A14,Poblaci髇,12 a 14 a駉s,Poblaci髇 de 12 a 14 a駉s 
-P_15A17,Poblaci髇,15 a 17 a駉s,Poblaci髇 de 15 a 17 a駉s 
-POB15_64,Poblaci髇,15 a 64 a駉s,Poblaci髇 de 15 a 64 a駉s 
-P_60YMAS,Poblaci髇,60 y m醩,Poblaci髇 de 60 y m醩
-P_15YMAS,Poblaci髇,15 y m醩,Poblaci髇 de 15 y m醩
-P_18YMAS,Poblaci髇,18 y m醩,Poblaci髇 de 18 y m醩
-PNACOE,Migraci髇,Nacidos en otra entidad,Poblaci髇 nacida en otra entidad 
-PNACOE_F,Migraci髇,Mujeres nacidas en otra entidad,Poblaci髇 femenina nacida en otra entidad 
-PRESOE15,Migraci髇,Resid韆 en otra entidad (mar2015) ,Poblaci髇 de 5 a駉s y m醩 residente en otra entidad en marzo de 2015
-P15YM_AN,Educaci髇,Analfabetas,Poblaci髇 de 15 a駉s y m醩 analfabeta 
-P15SEC_CO,Educaci髇,Secundaria completa,Poblaci髇 de 15 a駉s y m醩 con secundaria completa
-P18YM_PB,Educaci髇,18+ con educaci髇 posb醩ica,Poblaci髇 de 18 y m醩 con educaci髇 posb醩ica
-PE_INAC,Econom韆,12+ no econ髆icamente activa,Poblaci髇 de 12 a駉s y m醩 no econ髆icamente activa 
-POCUPADA,Econom韆,Ocupada,Poblaci髇 ocupada 
-POCUPADA_F,Econom韆,12+ desocupada,Poblaci髇 femenina de 12 a駉s y m醩 desocupada 
-POCUPADA_M,Econom韆,12+ ocupada,Poblaci髇 masculina de 12 a駉s y m醩 ocupada 
-PDESOCUP,Econom韆,12+ desocupada,Poblaci髇 de 12 a駉s y m醩 desocupada 
-PSINDER,Derehohabiencia,Sin derechohabiencia,Poblaci髇 sin afiliaci髇 a servicios de salud  
-PDER_IMSS,Derehohabiencia,IMSS,Poblaci髇 afiliada a servicios de salud en el IMSS  
-PDER_SEGP,Derehohabiencia,Instituto de Bienestar,Poblaci髇 afiliada a servicios de salud en el Instituto de Salud para el Bienestar  
-PAFIL_IPRIV,Derehohabiencia,Instituciones privadas,Poblaci髇 afiliada a servicios de salud en una instituci髇 privada 
-PCATOLICA,Religi髇,Cat髄icos,Poblaci髇 con religi髇 cat髄ica 
-PRO_CRIEVA,Religi髇,Protestantes o evang閘icos,Poblaci髇 con grupo religioso protestante/ cristiano evang閘ico  
-POTRAS_REL,Religi髇,Otras religiones,Poblaci髇 con otras religiones diferentes a las anteriores  
-PSIN_RELIG,Religi髇,Sin religi髇,Poblaci髇 sin religi髇 o sin adscripci髇 religiosa 
+P_0A2,Poblaci贸n,0 a 2 a帽os,de 0 a 2 a帽os
+P_3A5,Poblaci贸n,3 a 5 a帽os,Poblaci贸n de 3 a 5 a帽os 
+P_6A11,Poblaci贸n,6 a 11 a帽os,Poblaci贸n de 6 a 11 a帽os 
+P_12A14,Poblaci贸n,12 a 14 a帽os,Poblaci贸n de 12 a 14 a帽os 
+P_15A17,Poblaci贸n,15 a 17 a帽os,Poblaci贸n de 15 a 17 a帽os 
+POB15_64,Poblaci贸n,15 a 64 a帽os,Poblaci贸n de 15 a 64 a帽os 
+P_60YMAS,Poblaci贸n,60 y m谩s,Poblaci贸n de 60 y m谩s
+P_15YMAS,Poblaci贸n,15 y m谩s,Poblaci贸n de 15 y m谩s
+P_18YMAS,Poblaci贸n,18 y m谩s,Poblaci贸n de 18 y m谩s
+PNACOE,Migraci贸n,Nacidos en otra entidad,Poblaci贸n nacida en otra entidad 
+PNACOE_F,Migraci贸n,Mujeres nacidas en otra entidad,Poblaci贸n femenina nacida en otra entidad 
+PRESOE15,Migraci贸n,Resid铆a en otra entidad (mar2015) ,Poblaci贸n de 5 a帽os y m谩s residente en otra entidad en marzo de 2015
+P15YM_AN,Educaci贸n,Analfabetas,Poblaci贸n de 15 a帽os y m谩s analfabeta 
+P15SEC_CO,Educaci贸n,Secundaria completa,Poblaci贸n de 15 a帽os y m谩s con secundaria completa
+P18YM_PB,Educaci贸n,18+ con educaci贸n posb谩sica,Poblaci贸n de 18 y m谩s con educaci贸n posb谩sica
+PE_INAC,Econom铆a,12+ no econ贸micamente activa,Poblaci贸n de 12 a帽os y m谩s no econ贸micamente activa 
+POCUPADA,Econom铆a,Ocupada,Poblaci贸n ocupada 
+POCUPADA_F,Econom铆a,12+ desocupada,Poblaci贸n femenina de 12 a帽os y m谩s desocupada 
+POCUPADA_M,Econom铆a,12+ ocupada,Poblaci贸n masculina de 12 a帽os y m谩s ocupada 
+PDESOCUP,Econom铆a,12+ desocupada,Poblaci贸n de 12 a帽os y m谩s desocupada 
+PSINDER,Derehohabiencia,Sin derechohabiencia,Poblaci贸n sin afiliaci贸n a servicios de salud  
+PDER_IMSS,Derehohabiencia,IMSS,Poblaci贸n afiliada a servicios de salud en el IMSS  
+PDER_SEGP,Derehohabiencia,Instituto de Bienestar,Poblaci贸n afiliada a servicios de salud en el Instituto de Salud para el Bienestar  
+PAFIL_IPRIV,Derehohabiencia,Instituciones privadas,Poblaci贸n afiliada a servicios de salud en una instituci贸n privada 
+PCATOLICA,Religi贸n,Cat贸licos,Poblaci贸n con religi贸n cat贸lica 
+PRO_CRIEVA,Religi贸n,Protestantes o evang茅licos,Poblaci贸n con grupo religioso protestante/ cristiano evang茅lico  
+POTRAS_REL,Religi贸n,Otras religiones,Poblaci贸n con otras religiones diferentes a las anteriores  
+PSIN_RELIG,Religi贸n,Sin religi贸n,Poblaci贸n sin religi贸n o sin adscripci贸n religiosa 
 TOTHOG,Hogares,Numero de hogares ,Total de hogares censales 
 HOGJEF_F,Hogares,Hogares con jefas de familia,Hogares censales con persona de referencia mujer 
-POBHOG,Hogares,Pob en hogares censales,Poblaci髇 en hogares censales 
-PHOGJEF_F,Hogares,hogares con jefatura femenina,Poblaci髇 en hogares censales con persona de referencia mujer 
-PHOGJEF_M,Hogares,Pob en hogares con jefes,Poblaci髇 en hogares censales con persona de referencia hombre 
-VIVTOT,Viviendas,N鷐ero de viviendas,Total de viviendas
+POBHOG,Hogares,Pob en hogares censales,Poblaci贸n en hogares censales 
+PHOGJEF_F,Hogares,hogares con jefatura femenina,Poblaci贸n en hogares censales con persona de referencia mujer 
+PHOGJEF_M,Hogares,Pob en hogares con jefes,Poblaci贸n en hogares censales con persona de referencia hombre 
+VIVTOT,Viviendas,N煤mero de viviendas,Total de viviendas
 TVIVHAB,Viviendas,Viviendas habitadas,Total de viviendas habitadas
 PROM_OCUP,Viviendas,Ocupantes en vivienda,Promedio de  ocupantes en viviendas particulares habitadas 
 PRO_OCUP_C,Viviendas,Ocupantes por cuarto ,Promedio de ocupantes por cuarto en viviendas particulares habitadas 
 VPH_1DOR,Viviendas,Con un dormitorio,Viviendas particulares habitadas con un dormitorio 
-VPH_C_ELEC,Viviendas,Electricidad,Viviendas particulares habitadas que disponen de energ韆 el閏trica  
-VPH_AGUADV,Viviendas,Agua entubada,Viviendas particulares habitadas que disponen de agua entubada en el 醡bito de la viviendas 
+VPH_C_ELEC,Viviendas,Electricidad,Viviendas particulares habitadas que disponen de energ铆a el茅ctrica  
+VPH_AGUADV,Viviendas,Agua entubada,Viviendas particulares habitadas que disponen de agua entubada en el 谩mbito de la viviendas 
 VPH_TINACO,Viviendas,Tinaco,Viviendas particulares habitadas que disponen de tinaco 
 VPH_CISTER,Viviendas,Cisterna,Viviendas particulares habitadas que disponen de cisterna o aljibe 
 VPH_EXCSA,Viviendas,Sanitario,Viviendas particulares habitadas que disponen de excusado o sanitario 
@@ -48,27 +48,31 @@ VPH_LAVAD,Viviendas,Lavadora,Viviendas particulares habitadas que disponen de la
 VPH_BICI,Viviendas,Bicicleta,Viviendas particulares habitadas que disponen de bicicleta como medio de transporte 
 VPH_TV,Viviendas,Televisor,Viviendas particulares habitadas que disponen de televisor 
 VPH_PC,Viviendas,PC,Viviendas particulares habitadas que disponen de computadora
-VPH_CEL,Viviendas,Celular,Viviendas particulares habitadas que disponen de tel閒ono celular 
+VPH_CEL,Viviendas,Celular,Viviendas particulares habitadas que disponen de tel茅fono celular 
 VPH_INTER,Viviendas,Internet,Viviendas particulares habitadas que disponen de Internet 
-VPH_SPMVPI,Viviendas,Streaming,Viviendas particulares habitadas que disponen de servicio de pel韈ulas
+VPH_SPMVPI,Viviendas,Streaming,Viviendas particulares habitadas que disponen de servicio de pel铆culas
 VPH_1CUART,Viviendas,Un cuarto,Viviendas particulares habitadas con solo un cuarto
-PCON_DISC,Discapacidad,Discapacidad,Poblaci髇 con discapacidad 
-PCDISC_MOT,Discapacidad,Discapacidad para desplazarse,Poblaci髇 con discapacidad para caminar subir o bajar
-PCDISC_VIS,Discapacidad,Discapacidad para ver,Poblaci髇 con discapacidad para ver aun con lentes
-PCDISC_LENG,Discapacidad,Discapacidad para hablar,Poblaci髇 con discapacidadpara hablar 
-PCDISC_AUD,Discapacidad,Discapacidad para oir,Poblaci髇 con discapacidad para oir
-P3YM_HLI,Etnicidad,Hablantes de lengua ind韌ena,Poblaci髇 de 3 a駉s y m醩 que habla alguna lengua ind韌ena
-P3HLINHE,Etnicidad,Hablante de lengua indigena s/espa駉l,Poblaci髇 de 3 a駉s y m醩 que habla alguna lengua ind韌ena y no habla espa駉l
-P3HLI_HE,Etnicidad,Hablante de lengua indigena c/espa駉l,Poblaci髇 de 3 a駉s y m醩 que habla alguna lengua ind韌ena y si habla espa駉l
-POB_AFRO,Etnicidad,Afrodescendientes,Poblaci髇 que se considera afromexicana o afrodescendiente
-PHOG_IND,Etnicidad,Hogares ind韌enas,Poblacion en hoares censales ind韌enas
-GRAPROES,Poblaci髇,Grado promedio de escolaridad,Grado promedio de escolaridad
-POBFEM,Poblaci髇,Poblaci髇 femenina,Poblaci髇 femenina
-POBMAS,Poblaci髇,Poblaci髇 maculina,Poblaci髇 maculina
-POBTOT,Poblaci髇,Poblaci髇 total,Poblaci髇 total
+PCON_DISC,Discapacidad,Discapacidad,Poblaci贸n con discapacidad 
+PCDISC_MOT,Discapacidad,Discapacidad para desplazarse,Poblaci贸n con discapacidad para caminar subir o bajar
+PCDISC_VIS,Discapacidad,Discapacidad para ver,Poblaci贸n con discapacidad para ver aun con lentes
+PCDISC_LENG,Discapacidad,Discapacidad para hablar,Poblaci贸n con discapacidadpara hablar 
+PCDISC_AUD,Discapacidad,Discapacidad para oir,Poblaci贸n con discapacidad para oir
+P3YM_HLI,Etnicidad,Hablantes de lengua ind铆gena,Poblaci贸n de 3 a帽os y m谩s que habla alguna lengua ind铆gena
+P3HLINHE,Etnicidad,Hablante de lengua indigena s/espa帽ol,Poblaci贸n de 3 a帽os y m谩s que habla alguna lengua ind铆gena y no habla espa帽ol
+P3HLI_HE,Etnicidad,Hablante de lengua indigena c/espa帽ol,Poblaci贸n de 3 a帽os y m谩s que habla alguna lengua ind铆gena y si habla espa帽ol
+POB_AFRO,Etnicidad,Afrodescendientes,Poblaci贸n que se considera afromexicana o afrodescendiente
+PHOG_IND,Etnicidad,Hogares ind铆genas,Poblacion en hoares censales ind铆genas
+GRAPROES,Poblaci贸n,Grado promedio de escolaridad,Grado promedio de escolaridad
+POBFEM,Poblaci贸n,Poblaci贸n femenina,Poblaci贸n femenina
+POBMAS,Poblaci贸n,Poblaci贸n maculina,Poblaci贸n maculina
+POBTOT,Poblaci贸n,Poblaci贸n total,Poblaci贸n total
 total_c,Pandemia,Contagios por COVID19,Contagios por COVID19
 total_d,Pandemia,Decesos por COVID19,Decesos por COVID19
-A111A,Econom韆,PIB,PIB
-H001A,Econom韆,Poblaci髇 econ髆icamente activa,Poblaci髇 econ髆icamente activa
-A171A,Econom韆,Salario,Salario
+A111A,Econom铆a,PIB,PIB
+H001A,Econom铆a,Poblaci贸n econ贸micamente activa,Poblaci贸n econ贸micamente activa
+A171A,Econom铆a,Salario,Salario
 Grand total,Delitos,Delitos,Delitos
+Micro empresas,Econom铆a,Micro empresas,Micro empresas
+Peque帽as empresas,Econom铆a,Peque帽as empresas,Peque帽as empresas
+Mediana empresas,Econom铆a,Mediana empresas,Mediana empresas
+Grandes empresas,Econom铆a,Grandes empresas,Grandes empresas
