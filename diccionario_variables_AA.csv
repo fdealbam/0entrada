@@ -36,15 +36,15 @@ VIVTOT,Viviendas,Número de viviendas,Total de viviendas
 TVIVHAB,Viviendas,Viviendas habitadas,Total de viviendas habitadas
 PROM_OCUP,Viviendas,Ocupantes en vivienda,Promedio de  ocupantes en viviendas particulares habitadas 
 PRO_OCUP_C,Viviendas,Ocupantes por cuarto ,Promedio de ocupantes por cuarto en viviendas particulares habitadas 
-VPH_1DOR,Viviendas,Con un dormitorio,Viviendas particulares habitadas con un dormitorio 
+VPH_1DOR,Viviendas,viviendas con un dormitorio,Viviendas particulares habitadas con un dormitorio 
 VPH_C_ELEC,Viviendas,Electricidad,Viviendas particulares habitadas que disponen de energía eléctrica  
-VPH_AGUADV,Viviendas,Agua entubada,Viviendas particulares habitadas que disponen de agua entubada en el ámbito de la viviendas 
+VPH_AGUADV,Viviendas,viviendas con agua entubada,Viviendas particulares habitadas que disponen de agua entubada en el ámbito de la viviendas 
 VPH_TINACO,Viviendas,Tinaco,Viviendas particulares habitadas que disponen de tinaco 
 VPH_CISTER,Viviendas,Cisterna,Viviendas particulares habitadas que disponen de cisterna o aljibe 
 VPH_EXCSA,Viviendas,Sanitario,Viviendas particulares habitadas que disponen de excusado o sanitario 
 VPH_DRENAJ,Viviendas,Drenaje,Viviendas particulares habitadas que disponen de drenaje 
 VPH_REFRI,Viviendas,Refrigerador,Viviendas particulares habitadas que disponen de refrigerador 
-VPH_LAVAD,Viviendas,Lavadora,Viviendas particulares habitadas que disponen de lavadora  
+VPH_LAVAD,Viviendas,viviendas con lavadora,Viviendas particulares habitadas que disponen de lavadora  
 VPH_BICI,Viviendas,Bicicleta,Viviendas particulares habitadas que disponen de bicicleta como medio de transporte 
 VPH_TV,Viviendas,Televisor,Viviendas particulares habitadas que disponen de televisor 
 VPH_PC,Viviendas,PC,Viviendas particulares habitadas que disponen de computadora
