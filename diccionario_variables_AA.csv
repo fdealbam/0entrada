@@ -22,7 +22,7 @@ PDESOCUP,Economía,12+ desocupada,Población de 12 años y más desocupada
 PSINDER,Derehohabiencia,Sin derechohabiencia,Población sin afiliación a servicios de salud  
 PDER_IMSS,Derehohabiencia,personas afiliadas al IMSS,Población afiliada a servicios de salud en el IMSS  
 PDER_SEGP,Derehohabiencia,personas afiliadas al Instituto de Salud para el Bienestar,Población afiliada a servicios de salud en el Instituto de Salud para el Bienestar  
-PAFIL_IPRIV,Derehohabiencia,Instituciones privadas,Población afiliada a servicios de salud en una institución privada 
+PAFIL_IPRIV,Derehohabiencia,personas afiliadas a instituciones privadas de salud,Población afiliada a servicios de salud en una institución privada 
 PCATOLICA,Religión,Católicos,Población con religión católica 
 PRO_CRIEVA,Religión,Protestantes o evangélicos,Población con grupo religioso protestante/ cristiano evangélico  
 POTRAS_REL,Religión,Otras religiones,Población con otras religiones diferentes a las anteriores  
