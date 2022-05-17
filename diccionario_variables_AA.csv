@@ -28,7 +28,7 @@ PRO_CRIEVA,Religión,Protestantes o evangélicos,Población con grupo religioso 
 POTRAS_REL,Religión,Otras religiones,Población con otras religiones diferentes a las anteriores  
 PSIN_RELIG,Religión,Sin religión,Población sin religión o sin adscripción religiosa 
 TOTHOG,Hogares,Numero de hogares ,Total de hogares censales 
-HOGJEF_F,Hogares,Hogares con jefas de familia,Hogares censales con persona de referencia mujer 
+HOGJEF_F,Hogares,hogares con jefas de familia,Hogares censales con persona de referencia mujer 
 POBHOG,Hogares,Pob en hogares censales,Población en hogares censales 
 PHOGJEF_F,Hogares,hogares con jefatura femenina,Población en hogares censales con persona de referencia mujer 
 PHOGJEF_M,Hogares,Pob en hogares con jefes,Población en hogares censales con persona de referencia hombre 
