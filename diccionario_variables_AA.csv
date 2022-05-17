@@ -20,7 +20,7 @@ POCUPADA_F,Economía,12+ desocupada,Población femenina de 12 años y más desoc
 POCUPADA_M,Economía,12+ ocupada,Población masculina de 12 años y más ocupada 
 PDESOCUP,Economía,12+ desocupada,Población de 12 años y más desocupada 
 PSINDER,Derehohabiencia,Sin derechohabiencia,Población sin afiliación a servicios de salud  
-PDER_IMSS,Derehohabiencia,IMSS,Población afiliada a servicios de salud en el IMSS  
+PDER_IMSS,Derehohabiencia,personas afiliadas al IMSS,Población afiliada a servicios de salud en el IMSS  
 PDER_SEGP,Derehohabiencia,Instituto de Bienestar,Población afiliada a servicios de salud en el Instituto de Salud para el Bienestar  
 PAFIL_IPRIV,Derehohabiencia,Instituciones privadas,Población afiliada a servicios de salud en una institución privada 
 PCATOLICA,Religión,Católicos,Población con religión católica 
