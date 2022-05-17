@@ -52,7 +52,7 @@ VPH_CEL,Viviendas,Celular,Viviendas particulares habitadas que disponen de telé
 VPH_INTER,Viviendas,Internet,Viviendas particulares habitadas que disponen de Internet 
 VPH_SPMVPI,Viviendas,Streaming,Viviendas particulares habitadas que disponen de servicio de películas
 VPH_1CUART,Viviendas,Un cuarto,Viviendas particulares habitadas con solo un cuarto
-PCON_DISC,Discapacidad,Discapacidad,Población con discapacidad 
+PCON_DISC,Discapacidad,población con discapacidad,Población con discapacidad 
 PCDISC_MOT,Discapacidad,Discapacidad para desplazarse,Población con discapacidad para caminar subir o bajar
 PCDISC_VIS,Discapacidad,Discapacidad para ver,Población con discapacidad para ver aun con lentes
 PCDISC_LENG,Discapacidad,Discapacidad para hablar,Población con discapacidadpara hablar 
