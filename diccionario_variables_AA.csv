@@ -47,9 +47,9 @@ VPH_REFRI,Viviendas,Refrigerador,Viviendas particulares habitadas que disponen d
 VPH_LAVAD,Viviendas,viviendas con lavadora,Viviendas particulares habitadas que disponen de lavadora  
 VPH_BICI,Viviendas,Bicicleta,Viviendas particulares habitadas que disponen de bicicleta como medio de transporte 
 VPH_TV,Viviendas,Televisor,Viviendas particulares habitadas que disponen de televisor 
-VPH_PC,Viviendas,PC,Viviendas particulares habitadas que disponen de computadora
-VPH_CEL,Viviendas,Celular,Viviendas particulares habitadas que disponen de teléfono celular 
-VPH_INTER,Viviendas,Internet,Viviendas particulares habitadas que disponen de Internet 
+VPH_PC,Viviendas,viviendas con computadora,Viviendas particulares habitadas que disponen de computadora
+VPH_CEL,Viviendas,viviendas con celular,Viviendas particulares habitadas que disponen de teléfono celular 
+VPH_INTER,Viviendas,viviendas con internet,Viviendas particulares habitadas que disponen de Internet 
 VPH_SPMVPI,Viviendas,Streaming,Viviendas particulares habitadas que disponen de servicio de películas
 VPH_1CUART,Viviendas,Un cuarto,Viviendas particulares habitadas con solo un cuarto
 PCON_DISC,Discapacidad,población con discapacidad,Población con discapacidad 
